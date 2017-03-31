@@ -28,5 +28,5 @@ repository: `https://github.com/joaojunior/identify_paragraphs_in_image <https:/
 
 .. author:: default
 .. categories:: none
-.. tags:: none
+.. tags:: Computer Vision, OpenCV, Python
 .. comments::
