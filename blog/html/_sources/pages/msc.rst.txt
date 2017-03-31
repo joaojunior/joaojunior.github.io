@@ -11,7 +11,7 @@ tree backbone in order to reduce the routing total costs.
 My advisor in MSc was an intelligent and brilliant person: `Thiago Ferreira <http://homepages.dcc.ufmg.br/~tfn>`_. He helped me
 to improve my skills in Operational Research. We also conversation about the life. Nowadays, Thiago beyond be an advisor is a special
 friend too.
-My co-advisor in MSC was an intelligent and a brilliant person too: `Andréa Cynthia <http://losi.utt.fr/fr/_plugins/mypage/mypage/content/duhamela.html>`_. Nowadays she is a special friend and I work with she in my :ref:`phd`.
+My co-advisor in MSC was: `Andréa Cynthia <http://losi.utt.fr/fr/_plugins/mypage/mypage/content/duhamela.html>`_. Nowadays, I work with she in my :ref:`phd`.
 
 My thesis: **Exact algorithms to the robust shortest path problem and the tree hub location problem** 
 is available(in portuguese) `here <http://www.bibliotecadigital.ufmg.br/dspace/bitstream/handle/1843/ESBF-A9UMM3/jo_ocarlosabreujunior.pdf>`_.
