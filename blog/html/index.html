@@ -71,6 +71,40 @@
                 </li>
               </ul>
           </nav><div class="main-container" role="main"><div class="main wrapper body clearfix"><article><div class="timestamp postmeta">
+            <span>March 29, 2017</span>
+        </div>
+        <div class="section">
+            <h1><a href="2017/03/29/identify_paragraphs.html">Identify Paragraphs</a></h1>
+<p>I’m learning computer vision and I’m using the <a class="reference external" href="http://docs.opencv.org/">Opencv</a>
+and <a class="reference external" href="https://www.python.org/">Python</a> to write algorithms in this field of computer science. This field
+is very interisting because it envolves computer science and math. It is necessary to have good ideas to solve the problems.</p>
+<p>Here, I will show my first algorithm in computer vision. It is to identifies paragraphs in a text image. It consider that the image
+have a white background and that the characters have a black color.</p>
+<p>This algorithm have two main ideas: First, it removes blank lines and columns before finding the text. After this, it calculate
+the number of blank lines between no blank lines. The minimum and the maximum number of blank lines is computed. Though
+that the number of blank lines between two no blank lines is greather or equal 90%(maximum - minimum), we consider that we found
+a new paragraph.</p>
+<p>Below, you can see the image with text to input in the algorithm:</p>
+<div class="figure">
+<img alt="Text extract from python's doc" src="_images/input.png"/>
+</div>
+<p>And in the image below is possible to see the image with the identified paragraphs:</p>
+<div class="figure">
+<img alt="Identified paragraphs" src="_images/output.png"/>
+</div>
+<p>You can download the algorithm and get more details in the
+repository: <a class="reference external" href="https://github.com/joaojunior/identify_paragraphs_in_image">https://github.com/joaojunior/identify_paragraphs_in_image</a></p>
+
+        </div>
+        <div class="postmeta">
+        <div class="author">
+            <span>Posted by João Júnior</span>
+        </div>
+        
+        
+        <div class="comments">
+            <a href="http://joaojunior.org/blog/html/2017/03/29/identify_paragraphs.html#disqus_thread" data-disqus-identifier="2017/03/29/identify_paragraphs">Leave a comment</a>
+        </div></div><div class="separator post_separator"></div><div class="timestamp postmeta">
             <span>February 26, 2017</span>
         </div>
         <div class="section">
@@ -121,6 +155,8 @@ I write this post, because I don’t find this information in Cplex’s document
     </div></article><aside class="sidebar"><section><div class="widget">
     <h1>Recent Posts</h1>
     <ul><li>
+            <a href="2017/03/29/identify_paragraphs.html">Identify Paragraphs</a>
+        </li><li>
             <a href="2017/02/26/resources_in_operational_research.html">Resources in Operational Research</a>
         </li><li>
             <a href="2017/01/08/callbacks_in_cplex.html">Callbacks in Cplex</a>
