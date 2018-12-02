@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Creating a faster crawler</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css">
+    <link rel="stylesheet" href="css/my.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/github-gist.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Creating a faster crawler</h2>
+          <h4>João Júnior</h4>
+          <h4>Pymalta - December 5, 2018</h4>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ## Contacts
+            <ul style="list-style-type:none">
+                <li><img class="plain" style="vertical-align:middle" src="icons/website.png">[ joaojunior.org](http://joaojunior.org)</li>
+                <li><img class="plain" style="vertical-align:middle" src="icons/email.png"> jj@joaojunior.org</li>
+                <li><img class="plain" style="vertical-align:middle" src="icons/twitter.png"> [@joaojunior_ma](https://twitter.com/joaojunior_ma)</li>
+                <li><img class="plain" style="vertical-align:middle" src="icons/github.png"> https://github.com/joaojunior</li>
+                <li><img class="plain" style="vertical-align:middle" src="icons/linkedin.png"> https://www.linkedin.com/in/joaojunior/</li>
+            </ul>
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ## Programming paradigm
+            ## Sequential
+            ### VS
+            ## Parallelism
+            ### VS
+            ## Concurrent
+          </textarea>
+        </section>
+        <section data-gif="repeat">
+          <h3>Sequential</h3>
+          <img src="gifs/sequential.gif" />
+        </section>
+        <section data-gif="repeat">
+          <h3>Parallel</h3>
+          <img src="gifs/parallel.gif" />
+        </section>
+        <section data-gif="repeat">
+          <h3>Concurrent</h3>
+          <img src="gifs/concurrent.gif" />
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ## **Type of problems**
+            ## CPU bound
+            ### VS
+            ## I/O bound
+            <p class="fragment step-fade-in-then-out">In this talk we speak about I/O bound problems</p>
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ### I/O bound problems with Python
+            <div style="text-align: left; float: left;">
+              - **"Parallel"**
+              <p class="fragment step-fade-in-then-out">multiprocessing</p>
+              - **Concurrent**
+                <p class="fragment step-fade-in-then-out">asyncio</p>
+                <p class="fragment step-fade-in-then-out">greenlet</p>
+                <p class="fragment step-fade-in-then-out">threading</p>
+            </div>
+            <div style="text-align: right; float: right;">
+              <img class="fragment step-fade-in-then-out" src="gifs/crazy.gif" />
+            </div>
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ## API
+              - endpoint /faster: wait 1 second and return
+              - endpoint /slowly: wait 10 seconds and return
+              - endpoint /text: return simple text
+          </textarea>
+        </section>
+        <section>
+          <h3>API</h3>
+          <pre><code class="line-numbers" class="python" style="max-height:600px;">import time
+from flask import Flask
+
+app = Flask(__name__)
+TIME_FASTER, TIME_SLOWLY = 1, 10
+
+@app.route("/faster")
+def faster():
+  time.sleep(TIME_FASTER); return "Faster!"
+
+@app.route("/slowly")
+def slowly():
+  time.sleep(TIME_SLOWLY); return "Slowly!"
+
+@app.route("/text")
+def text():
+    return "Text!"</code></pre>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ## Crawlers
+          </textarea>
+        </section>
+        <section>
+          <h3>Crawler Sequential</h3>
+          <pre>
+            <code class="line-numbers" class="python">import requests
+
+from constants import URL_FASTER, URL_SLOWLY
+
+def crawler(url):
+    response = requests.get(url)
+    return response.status_code
+
+if __name__ == '__main__':
+    crawler(URL_SLOWLY)
+    for i in range(20):
+        crawler(URL_FASTER)</code>
+          </pre>
+        </section>
+        <section>
+          <h3>Crawler Concurrent - Threads</h3>
+          <pre>
+            <code class="line-numbers" class="python" style="max-height:600px;">from threading import Thread
+import requests
+from constants import URL_FASTER, URL_SLOWLY
+
+def crawler(url):
+    response = requests.get(url)
+    return response.status_code
+
+threads = [Thread(target=crawler, args=(URL_SLOWLY,))]
+for i in range(20):
+    threads.append(Thread(target=crawler, args=(URL_FASTER,)))
+for t in threads:
+    t.start()
+for t in threads:
+    t.join()</code>
+          </pre>
+        </section>
+        <section>
+          <h3>Crawler Concurrent - GreenThreads</h3>
+          <pre>
+            <code class="line-numbers" class="python">import requests
+import gevent.monkey
+from gevent import Greenlet
+from constants import URL_FASTER, URL_SLOWLY
+gevent.monkey.patch_socket()
+
+def crawler(url):
+    response = requests.get(url)
+    return response.status_code
+
+gthreads = [Greenlet(crawler, URL_SLOWLY)]
+for i in range(20):
+    gthreads.append(Greenlet(crawler, URL_FASTER))
+for gthread in gthreads: gthread.start()
+gevent.joinall(gthreads)</code>
+          </pre>
+        </section>
+        <section>
+          <h3>Crawler Concurrent - AsyncIO</h3>
+          <pre>
+            <code class="line-numbers" class="python">import asyncio
+import aiohttp
+from constants import URL_FASTER, URL_SLOWLY
+
+async def crawler(url):
+    async with aiohttp.ClientSession() as session:
+        response = await session.get(url)
+        return response.status
+
+loop = asyncio.get_event_loop()
+futures = [asyncio.ensure_future(crawler(URL_SLOWLY))]
+for i in range(20):
+    futures.append(asyncio.ensure_future(crawler(URL_FASTER)))
+loop.run_until_complete(asyncio.gather(*futures))</code>
+          </pre>
+        </section>
+        <section>
+          <h3>Crawler "Parallel" - Multiprocessing</h3>
+          <pre>
+            <code class="line-numbers" class="python">from multiprocessing import Pool
+import requests
+from constants import URL_FASTER, URL_SLOWLY
+
+def crawler(url):
+    response = requests.get(url)
+    return response.status_code
+
+p = Pool(21)
+urls = [URL_SLOWLY]
+for i in range(20):
+    urls.append(URL_FASTER)
+p.map(crawler, urls)</code>
+          </pre>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ## **Benchmarks**
+
+            <div class='threecolumn'>
+              <div>
+                <h5> **Benchmark #1**</h5>
+                  <ul>
+                    <li>1 request: /slowly</li>
+                    <li>20 requests: /faster</li>
+                  </ul>
+              </div>
+              <div>
+                <h5> **Benchmark #2**</h5>
+                  <ul>
+                    <li>10k requests: /faster</li>
+                    <li>Batch size: 100 requests</li>
+                  </ul>
+              </div>
+              <div>
+                <h5> **Benchmark #3**</h5>
+                  <ul>
+                    <li>1 million requests: /faster</li>
+                    <li>Batch size: 1k requests</li>
+                  </ul>
+              </div>
+            </div>
+          </textarea>
+        </section>
+      <section data-markdown>
+        <textarea data-template>
+          ## **Benchmark #1**
+          * 1 request: /slowly
+          * 20 requests: /faster
+          * crawlers: thread, green thread, asyncio, multiprocessing
+          * 5 graphs
+          * 100 rounds per graph
+        </textarea>
+      </section>
+      <section>
+        Benchmark #1 - Graph #1
+        <object data="benchmarks/1/benchmark_20181128_224807.svg" type="image/svg+xml" class="stretch">
+        </object>
+      </section>
+      <section>
+        Benchmark #1 - Graph #2
+        <object data="benchmarks/1/benchmark_20181129_220821.svg" type="image/svg+xml" class="stretch">
+        </object>
+      </section>
+      <section>
+        Benchmark #1 - Graph #3
+        <object data="benchmarks/1/benchmark_20181130_231206.svg" type="image/svg+xml" class="stretch">
+        </object>
+      </section>
+      <section>
+        Benchmark #1 - Graph #4
+        <object data="benchmarks/1/benchmark_20181201_190822.svg" type="image/svg+xml" class="stretch">
+        </object>
+      </section>
+      <section data-markdown>
+        <textarea data-template>
+          ## **Benchmark #2**
+          * 10k requests: /faster
+          * Batch size: 100 requests
+          * crawlers: thread, green thread, asyncio
+          * 5 graphs
+          * 50 rounds per graph
+        </textarea>
+      </section>
+      <section>
+        Benchmark #2 - Graph #1
+        <object data="benchmarks/2/benchmark_20181128_235811.svg" type="image/svg+xml" class="stretch">
+        </object>
+      </section>
+      <section>
+        Benchmark #2 - Graph #2
+        <object data="benchmarks/2/benchmark_20181129_231826.svg" type="image/svg+xml" class="stretch">
+        </object>
+      </section>
+      <section>
+        Benchmark #2 - Graph #3
+        <object data="benchmarks/2/benchmark_20181201_002223.svg" type="image/svg+xml" class="stretch">
+        </object>
+      </section>
+      <section>
+        Benchmark #2 - Graph #4
+        <object data="benchmarks/2/benchmark_20181201_201825.svg" type="image/svg+xml" class="stretch">
+        </object>
+      </section>
+      <section data-markdown>
+        <textarea data-template>
+          ## **Benchmark #3**
+          * 1 million requests: /text
+          * Batch size: 1k requests
+          * crawlers: asyncio, asyncio with uvloop
+          * 5 graphs
+          * 5 rounds per graph
+        </textarea>
+      </section>
+      <section>
+        Benchmark #3 - Graph #1
+        <object data="benchmarks/3/benchmark_20181202_013039.svg" type="image/svg+xml" class="stretch">
+        </object>
+      </section>
+      <section data-markdown>
+        <textarea data-template>
+          ## References
+
+          * [Official Documentation](https://docs.python.org/3/library/asyncio.html) - asyncio
+          * [Official Documentation](https://docs.python.org/3.7/library/threading.html) - threading
+          * [Official Documentation](https://docs.python.org/3.7/library/multiprocessing.html) - multiprocessing
+          * [Official Documentation](https://greenlet.readthedocs.io/en/latest/) - greenlet
+          * [Official Documentation](https://aiohttp.readthedocs.io/en/stable/) - aiohttp
+          * [Official Documentation](http://docs.python-requests.org/en/master/) - requests
+          * [Understanding the Python GIL](http://www.dabeaz.com/GIL/) - David Dabeaz
+          * How to run a stable benchmark - Victor Stinner [video](https://www.youtube.com/watch?v=JA7xe9X_1MM),
+          [slides](https://speakerdeck.com/haypo/how-to-run-a-stable-benchmark)
+        </textarea>
+      </section>
+
+      <section data-markdown>
+        <textarea data-template>
+          ## Grazzi!
+          ## Obrigado!
+          ## Thank you!
+          <img src="gifs/thatisall.gif" />
+        </textarea>
+      </section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+  // - https://github.com/hakimel/reveal.js#configuration
+  // - https://github.com/hakimel/reveal.js#dependencies
+  Reveal.initialize({
+    dependencies: [
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/line-numbers/line-numbers.js', async: false},
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+  });
+  Reveal.configure({ slideNumber: true });
+  </script>
+</body>
+</html>
