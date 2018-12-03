@@ -26,13 +26,13 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <h2>Creating a faster crawler</h2>
+          <h2><b>Creating a faster crawler</b></h2>
           <h4>João Júnior</h4>
-          <h4>Pymalta - December 5, 2018</h4>
+          <h4>PyMalta - December 5, 2018</h4>
         </section>
         <section data-markdown>
           <textarea data-template>
-            ## Contacts
+            ## **Contacts**
             <ul style="list-style-type:none">
                 <li><img class="plain" style="vertical-align:middle" src="icons/website.png">[ joaojunior.org](http://joaojunior.org)</li>
                 <li><img class="plain" style="vertical-align:middle" src="icons/email.png"> jj@joaojunior.org</li>
@@ -44,7 +44,22 @@
         </section>
         <section data-markdown>
           <textarea data-template>
-            ## Programming paradigm
+            ## **Disclaimer!!!**
+            ### This talk is not about how to scale a crawler.
+            ### **It is about how to use I/O efficiently.**
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ## **Overview**
+            #### 1. Programming paradigm: Sequential vs Parallelism vs Concurrent
+            #### 2. Problems: CPU bound and I/O Bound
+            #### 3. Examples in Python: from 1 to 1 million of requests
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ## **Programming paradigm:**
             ## Sequential
             ### VS
             ## Parallelism
@@ -53,20 +68,20 @@
           </textarea>
         </section>
         <section data-gif="repeat">
-          <h3>Sequential</h3>
+          <h3><b>Sequential</b></h3>
           <img src="gifs/sequential.gif" />
         </section>
         <section data-gif="repeat">
-          <h3>Parallel</h3>
+          <h3><b>Parallelism</b></h3>
           <img src="gifs/parallel.gif" />
         </section>
         <section data-gif="repeat">
-          <h3>Concurrent</h3>
+          <h3><b>Concurrent</b></h3>
           <img src="gifs/concurrent.gif" />
         </section>
         <section data-markdown>
           <textarea data-template>
-            ## **Type of problems**
+            ## **Type of problems:**
             ## CPU bound
             ### VS
             ## I/O bound
@@ -75,13 +90,13 @@
         </section>
         <section data-markdown>
           <textarea data-template>
-            ### I/O bound problems with Python
+            ### **I/O bound problems with Python**
             <div style="text-align: left; float: left;">
-              - **"Parallel"**
+              - **"Parallelism"**
               <p class="fragment step-fade-in-then-out">multiprocessing</p>
               - **Concurrent**
                 <p class="fragment step-fade-in-then-out">asyncio</p>
-                <p class="fragment step-fade-in-then-out">greenlet</p>
+                <p class="fragment step-fade-in-then-out">gevent</p>
                 <p class="fragment step-fade-in-then-out">threading</p>
             </div>
             <div style="text-align: right; float: right;">
@@ -91,14 +106,19 @@
         </section>
         <section data-markdown>
           <textarea data-template>
-            ## API
+            ## **Examples**
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ## **API**
               - endpoint /faster: wait 1 second and return
               - endpoint /slowly: wait 10 seconds and return
               - endpoint /text: return simple text
           </textarea>
         </section>
         <section>
-          <h3>API</h3>
+          <h3><b>API</b></h3>
           <pre><code class="line-numbers" class="python" style="max-height:600px;">import time
 from flask import Flask
 
@@ -119,11 +139,11 @@ def text():
         </section>
         <section data-markdown>
           <textarea data-template>
-            ## Crawlers
+            ## **Crawlers**
           </textarea>
         </section>
         <section>
-          <h3>Crawler Sequential</h3>
+          <h3><b>Crawler Sequential</b></h3>
           <pre>
             <code class="line-numbers" class="python">import requests
 
@@ -140,7 +160,7 @@ if __name__ == '__main__':
           </pre>
         </section>
         <section>
-          <h3>Crawler Concurrent - Threads</h3>
+          <h3><b>Crawler Concurrent - Threads</b></h3>
           <pre>
             <code class="line-numbers" class="python" style="max-height:600px;">from threading import Thread
 import requests
@@ -160,7 +180,7 @@ for t in threads:
           </pre>
         </section>
         <section>
-          <h3>Crawler Concurrent - GreenThreads</h3>
+          <h3><b>Crawler Concurrent - GreenThreads</b></h3>
           <pre>
             <code class="line-numbers" class="python">import requests
 import gevent.monkey
@@ -180,7 +200,7 @@ gevent.joinall(gthreads)</code>
           </pre>
         </section>
         <section>
-          <h3>Crawler Concurrent - AsyncIO</h3>
+          <h3><b>Crawler Concurrent - AsyncIO</b></h3>
           <pre>
             <code class="line-numbers" class="python">import asyncio
 import aiohttp
@@ -199,7 +219,7 @@ loop.run_until_complete(asyncio.gather(*futures))</code>
           </pre>
         </section>
         <section>
-          <h3>Crawler "Parallel" - Multiprocessing</h3>
+          <h3><b>Crawler "Parallel" - Multiprocessing</b></h3>
           <pre>
             <code class="line-numbers" class="python">from multiprocessing import Pool
 import requests
@@ -321,7 +341,7 @@ p.map(crawler, urls)</code>
           * 1 million requests: /text
           * Batch size: 1k requests
           * crawlers: asyncio, asyncio with uvloop
-          * 5 graphs
+          * 3 graphs
           * 5 rounds per graph
         </textarea>
       </section>
@@ -337,20 +357,58 @@ p.map(crawler, urls)</code>
       </section>
       <section data-markdown>
         <textarea data-template>
+          ## **Before finish**
+          <table style="width:100%">
+            <tr>
+              <th>Code</th>
+              <th>Scale?</th>
+              <th>Control</th>
+            </tr>
+            <tr>
+              <td>Sequential</td>
+              <td>No</td>
+              <td>SO</td>
+            </tr>
+            <tr>
+              <td>Multiprocessing</td>
+              <td>No</td>
+              <td>SO</td>
+            </tr>
+            <tr>
+              <td>Threading</td>
+              <td>No</td>
+              <td>SO</td>
+            </tr>
+            <tr>
+              <td>Gevent</td>
+              <td>Yes</td>
+              <td>Application</td>
+            </tr>
+            <tr>
+              <td>AsyncIO</td>
+              <td>Yes</td>
+              <td>In Your hand</td>
+            </tr>
+          </table>
+        </textarea>
+      </section>
+      <section data-markdown>
+        <textarea data-template>
           ## References
 
+          * [github.com/joaojunior/talk_creating_faster_crawler](https://github.com/joaojunior/talk_creating_faster_crawler)
           * [Official Documentation](https://docs.python.org/3/library/asyncio.html) - asyncio
           * [Official Documentation](https://docs.python.org/3.7/library/threading.html) - threading
           * [Official Documentation](https://docs.python.org/3.7/library/multiprocessing.html) - multiprocessing
           * [Official Documentation](https://greenlet.readthedocs.io/en/latest/) - greenlet
           * [Official Documentation](https://aiohttp.readthedocs.io/en/stable/) - aiohttp
+          * [Official Documentation](https://github.com/MagicStack/uvloop) - uvloop
           * [Official Documentation](http://docs.python-requests.org/en/master/) - requests
           * [Understanding the Python GIL](http://www.dabeaz.com/GIL/) - David Dabeaz
           * How to run a stable benchmark - Victor Stinner [video](https://www.youtube.com/watch?v=JA7xe9X_1MM),
           [slides](https://speakerdeck.com/haypo/how-to-run-a-stable-benchmark)
         </textarea>
       </section>
-
       <section data-markdown>
         <textarea data-template>
           ## Grazzi!
