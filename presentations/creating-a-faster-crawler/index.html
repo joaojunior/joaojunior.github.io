@@ -450,7 +450,7 @@ p.map(crawler, urls)</code>
       <section data-markdown>
         <textarea data-template>
           ## **Benchmark #3**
-          <table style="width:100%" class="reveal">
+          <table class="reveal">
             <tr>
               <th>Crawler</th>
               <th>Min</th>
@@ -478,36 +478,42 @@ p.map(crawler, urls)</code>
       <section data-markdown>
         <textarea data-template>
           ## **Before finish**
-          <table style="width:100%">
+          <table style="width:100%" class="reveal">
             <tr>
               <th>Code</th>
-              <th>Scale?</th>
-              <th>Control</th>
+              <th>Easy to Scale?</th>
+              <th>I/O Control</th>
+              <th>Context Switch</th>
             </tr>
             <tr>
               <td>Sequential</td>
               <td>No</td>
+              <td>SO</td>
               <td>SO</td>
             </tr>
             <tr>
               <td>Multiprocessing</td>
               <td>No</td>
               <td>SO</td>
+              <td>SO</td>
             </tr>
             <tr>
               <td>Threading</td>
               <td>No</td>
+              <td>SO</td>
               <td>SO</td>
             </tr>
             <tr>
               <td>Gevent</td>
               <td>Yes</td>
               <td>Application</td>
+              <td>Application/SO</td>
             </tr>
             <tr>
               <td>AsyncIO</td>
               <td>Yes</td>
               <td>In Your hand</td>
+              <td>In Your hand/SO</td>
             </tr>
           </table>
         </textarea>
