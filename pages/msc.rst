@@ -13,7 +13,7 @@ to improve my skills in Operational Research. We also conversation about the lif
 friend too.
 
 My thesis: **Exact algorithms to the robust shortest path problem and the tree hub location problem** 
-is available(in portuguese) `here <http://www.bibliotecadigital.ufmg.br/dspace/bitstream/handle/1843/ESBF-A9UMM3/jo_ocarlosabreujunior.pdf>`_.
+is available(in portuguese) `here <http://hdl.handle.net/1843/ESBF-A9UMM3>`_.
 During the MSc, I have published the following articles:
 
 * `An integer linear programming formulation and heuristics for the minmax relative regret robust shortest path problem 
