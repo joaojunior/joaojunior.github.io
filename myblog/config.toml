@@ -1,0 +1,80 @@
+baseURL = "https://joaojunior.org/"
+defaultContentLanguage = "en"
+hasCJKLanguage = true
+languageCode = "en"
+paginate = 4
+theme = "beautifulhugo"
+title = "Joao Junior"
+
+disqusShortname = "joaojunior"
+googleAnalytics = "UA-96580878-1"
+pygmentsUseClasses = true
+
+[Params]
+#  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+  subtitle = "a.k.a JJ"
+  mainSections = ["post","posts"]
+  logo = "jj.jpg" # Expecting square dimensions
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  comments = true
+  readingTime = true
+  wordCount = true
+  useHLJS = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
+#  hideAuthor = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+[Author]
+  name = "Joao Junior"
+  website = "https://joaojunior.org/"
+  email = "blog@joaojunior.org"
+  github = "joaojunior"
+  gitlab = "joaojunior_jj"
+  twitter = "joaojunior_ma"
+  linkedin = "joaojunior"
+  mastodon = "url"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  identifier = "MCS"
+  name = "MCS"
+  url = "/MCS/"
+  weight = 2
+[[menu.main]]
+  identifier = "about"
+  name = "About me"
+  url = "/about/"
+  weight = 33
+
+[params]
+  custom_css = []
+  description = "an example site for hugo theme TeXify"
+  enable_mathjax = true
+  footnote = "Follow me on <a class=link href=https://github.com/queensferryme>GitHub</a>, <a class=link href=https://twitter.com/queensferryme>Twitter</a> or <a class=link href=/index.xml>RSS</a> | <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh target=_blank rel=noopener>CC BY-NC-SA 4.0</a>"
+  keywords = ["hugo", "latex", "theme"]
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
