@@ -1,7 +1,7 @@
 ---
 title: "Callbacks in Cplex"
 date: 2017-01-08T16:48:25-05:00
-draft: true
+draft: false
 tags: ["CPLEX", "Branch And Cut", "Optimization", "Operational Research"]
 ---
 
