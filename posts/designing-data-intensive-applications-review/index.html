@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Designing Data-Intensive Applications: Review - Joao Junior</title>
+  <meta name="description" content="Disclaimer: Don&rsquo;t read this review, go ahead and read the book, it will be much better for you. The only reason that I wrote this is for my future reference.
+First of all, I love to read books and I do not believe that a review should influence someone to read or not a book. However, as a researcher, one of the most important things that I learned during my years at the university was the importance to write a review of papers.">
+  <meta name="author" content="Joao Junior"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Joao Junior",
+    
+    "url": "https:\/\/joaojunior.org\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/joaojunior.org\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/joaojunior.org\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/joaojunior.org\/posts\/designing-data-intensive-applications-review\/",
+          "name": "Designing data intensive applications review"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Joao Junior"
+  },
+  "headline": "Designing Data-Intensive Applications: Review",
+  "description" : "Disclaimer: Don\u0026rsquo;t read this review, go ahead and read the book, it will be much better for you. The only reason that I wrote this is for my future reference.\nFirst of all, I love to read books and I do not believe that a review should influence someone to read or not a book. However, as a researcher, one of the most important things that I learned during my years at the university was the importance to write a review of papers.",
+  "inLanguage" : "en",
+  "wordCount":  896 ,
+  "datePublished" : "2021-07-20T10:02:04",
+  "dateModified" : "2021-07-20T10:02:04",
+  "image" : "https:\/\/joaojunior.org\/jj.jpg",
+  "keywords" : [ "Book review, Data Intensive Applications, Distributed System" ],
+  "mainEntityOfPage" : "https:\/\/joaojunior.org\/posts\/designing-data-intensive-applications-review\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/joaojunior.org\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/joaojunior.org\/jj.jpg",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Designing Data-Intensive Applications: Review" />
+<meta property="og:description" content="Disclaimer: Don&rsquo;t read this review, go ahead and read the book, it will be much better for you. The only reason that I wrote this is for my future reference.
+First of all, I love to read books and I do not believe that a review should influence someone to read or not a book. However, as a researcher, one of the most important things that I learned during my years at the university was the importance to write a review of papers.">
+<meta property="og:image" content="https://joaojunior.org/jj.jpg" />
+<meta property="og:url" content="https://joaojunior.org/posts/designing-data-intensive-applications-review/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Joao Junior" />
+
+  <meta name="twitter:title" content="Designing Data-Intensive Applications: Review" />
+  <meta name="twitter:description" content="Disclaimer: Don&rsquo;t read this review, go ahead and read the book, it will be much better for you. The only reason that I wrote this is for my future reference.
+First of all, I love to read books …">
+  <meta name="twitter:image" content="https://joaojunior.org/jj.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@joaojunior_ma" />
+  <meta name="twitter:creator" content="@joaojunior_ma" />
+  <link href='https://joaojunior.org/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.76.5" />
+  <link rel="alternate" href="https://joaojunior.org/index.xml" type="application/rss+xml" title="Joao Junior"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://joaojunior.org/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://joaojunior.org/css/highlight.min.css" /><link rel="stylesheet" href="https://joaojunior.org/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-96580878-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://joaojunior.org/">Joao Junior</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Posts" href="/">Posts</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="MCS" href="/mcs/">MCS</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About me" href="/about/">About me</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Joao Junior" href="https://joaojunior.org/">
+            <img class="avatar-img" src="https://joaojunior.org/jj.jpg" alt="Joao Junior" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>Designing Data-Intensive Applications: Review</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Disclaimer: Don&rsquo;t read this review, go ahead and read the <a href="https://dataintensive.net/">book</a>, it will be much better for you. The only reason that I wrote this is for my future reference.</p>
+<p>First of all, I love to read books and I do not believe that a review should influence someone to read or not a book. However, as a researcher, one of the most important things that I learned during my years at the university was the importance to write a review of papers. After reading a paper, we should write a review. Not to publish, but to describe in our words what we read and also to future references. So, do not expect here a complete resume of the book or the concepts present in it. Also, do not think that this is a replacement or a complement of the book, it is not. This book is fantastic and you should read it if you like this subject.</p>
+<p>After the important disclaimer and the clarification about this review, here are my notes after reading this book.</p>
+<p>The book <a href="https://dataintensive.net/">Designing Data-Intensive Applications</a> by <a href="https://martin.kleppmann.com/">Martin Kleppmann</a> is divided in 3 parts. Part 1, called Foundations of Data Systems, is composed of chapters 1 to 4 and describes the foundations of the book, partners to storage, encoding, and retrieval information. Part 2, called Distributed Data,
+is composed of chapters 5 to 9 and it presents commons problems and solutions in distributed systems. Part 3, called Derived Data, is the last of this book and it is composed of chapters 10 to 12. This part is dedicated to offline and near-real-time systems.</p>
+<p>Chapter 1 is the introduction of the book and describes in many details the 3 keywords of the book: <a href="https://en.wikipedia.org/wiki/Reliability_engineering">Reliability</a>, <a href="https://en.wikipedia.org/wiki/Scalability">Scalability</a>, and <a href="https://en.wikipedia.org/wiki/Maintainability">Maintainability</a>. Chapter 2 compares different data models and query languages. This chapter shows examples of how to model the same problem in <a href="https://en.wikipedia.org/wiki/Relational_database">relational</a> and <a href="https://en.wikipedia.org/wiki/NoSQL">NoSQL</a> databases and compares the pros and cons of each solution. Also, it provides a historic overview of data models and query languages improvements.</p>
+<p>Chapter 3 describes different ways of storing and retrieve information. It has an excellent introduction to <a href="https://en.wikipedia.org/wiki/Log-structured_merge-tree">Log-structured merge tree (LSM-Trees)</a> and <a href="https://en.wikipedia.org/wiki/B-tree">B-trees</a>. In addition, this chapter finishes comparing different types of storage to <a href="https://en.wikipedia.org/wiki/Online_transaction_processing">Online transaction processing (OLTP)</a> and <a href="https://en.wikipedia.org/wiki/Online_analytical_processing">Online Analytic Processing (OLAP)</a>. Chapter 4, the last of part 1, describes ways to serialize data when we need to send it through a network. Also, it describes the forward and backward compatibility problem when updating a data serialization model. An overview of serialization problems is presented with possible solutions. CSV, XML, and JSON are non-binary data format discussed, while <a href="https://thrift.apache.org/">Thrift</a>, <a href="https://developers.google.com/protocol-buffers">Protocol buffers</a>, and <a href="http://avro.apache.org/">Avro</a> are presented as a binary format options. At the end of the chapter, <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a>, <a href="https://en.wikipedia.org/wiki/Remote_procedure_call">Remote procedure call (RPC)</a>, and <a href="https://en.wikipedia.org/wiki/Message_passing">Message-Passing</a> data flow are described. If you are not interested in how to serialize data or how to enable 2 services to communicate via data, you can skip this chapter.</p>
+<p>Chapter 5 describes problems and solutions to do <a href="https://en.wikipedia.org/wiki/Replication_(computing)">replication</a>, which is a very simple concept but difficult to implement correctly. Chapter 6 complements the previous and explains the <a href="https://en.wikipedia.org/wiki/Partition_(database)">partition</a> problem and possible solutions.
+Even though replication and partition are similar problems, they differ by the proposal. Replication is more used to distribute requests between servers while the partition is used to divide the data between servers.
+In other words, we use replication to store the same data in different places while we use partition to split the data in different servers. These two concepts are complementary and used together.</p>
+<p>Chapter 7 explains the concept of <a href="https://en.wikipedia.org/wiki/Transaction_processing">transactions</a> and what this can ensure. In addition, it explains many <a href="https://en.wikipedia.org/wiki/Isolation_(database_systems)">isolation levels</a> and what happens when a race condition occurs. It is a very important chapter if you would like to understand possible problems when working with transactions in databases. Chapter 8 describes many different types of errors that can happen in a distributed system.
+This chapter is so useful if you would like to start understanding how difficult distributed systems could be. The Chapter 9, the last of the part 2, presents central ideas in distributed system: <a href="https://en.wikipedia.org/wiki/Consistency_model">Consistency</a> and <a href="https://en.wikipedia.org/wiki/Consensus_(computer_science)">Consensus</a>. It explains how difficult could be to resolve the problems presented in Chapter 8. In addition, it shows and describes many techniques to resolve them.</p>
+<p>Chapter 10 is dedicated to <a href="https://en.wikipedia.org/wiki/Batch_processing">batch processing</a> and it shows a very good example of this technique with Unix tools. Also, it describes the foundation of <a href="https://en.wikipedia.org/wiki/MapReduce">MapReduce</a> and what are the problems which this technology resolves. Of course, it shows the limitation of this technology too. Chapter 11 presents <a href="https://en.wikipedia.org/wiki/Stream_processing">stream processing</a> and its similarities and differences with batch processing.
+Part 3 finishes with Chapter 12 which is a vision of the author about the future of data systems.</p>
+<p>When I was a young software engineer, I always tried to learn all the concepts present in this book and I remembered that it was not easy to find good references to study these subjects. I believe that this book is exactly this: a strong reference to distributed system. Also, this book, in my opinion, is in the category: Should be read! Another aspect that got my attention in this book is the literature reference that it provides. So, only by reading this book, you could find excellent references to dive into any subject present in the book. I hope you will enjoy reading this book!</p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://joaojunior.org//tags/book-review/">Book review</a>&nbsp;
+            
+              <a href="https://joaojunior.org//tags/data-intensive-applications/">Data Intensive Applications</a>&nbsp;
+            
+              <a href="https://joaojunior.org//tags/distributed-system/">Distributed System</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fjoaojunior.org%2fposts%2fdesigning-data-intensive-applications-review%2f&amp;text=Designing%20Data-Intensive%20Applications%3a%20Review&amp;via=joaojunior_ma" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjoaojunior.org%2fposts%2fdesigning-data-intensive-applications-review%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjoaojunior.org%2fposts%2fdesigning-data-intensive-applications-review%2f&amp;title=Designing%20Data-Intensive%20Applications%3a%20Review" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjoaojunior.org%2fposts%2fdesigning-data-intensive-applications-review%2f&amp;title=Designing%20Data-Intensive%20Applications%3a%20Review" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjoaojunior.org%2fposts%2fdesigning-data-intensive-applications-review%2f&amp;title=Designing%20Data-Intensive%20Applications%3a%20Review" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjoaojunior.org%2fposts%2fdesigning-data-intensive-applications-review%2f&amp;description=Designing%20Data-Intensive%20Applications%3a%20Review" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://joaojunior.org/posts/my-first-post/" data-toggle="tooltip" data-placement="top" title="Chrome with selenium, python and docker">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+          
+          <div class="disqus-comments">                  
+            <button id="show-comments" class="btn btn-default" type="button">Show <span class="disqus-comment-count" data-disqus-url="https://joaojunior.org/posts/designing-data-intensive-applications-review">comments</span></button>
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+              var disqus_config = function () {
+              this.page.url = 'https:\/\/joaojunior.org\/posts\/designing-data-intensive-applications-review';
+            };
+
+          </script>
+          </div>
+          
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:blog@joaojunior.org" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/joaojunior" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/joaojunior_jj" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/joaojunior_ma" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/joaojunior" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://url" title="Mastodon">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://joaojunior.org/">Joao Junior</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2021
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://joaojunior.org/">Joao Junior</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.76.5</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://joaojunior.org/js/main.js"></script>
+<script src="https://joaojunior.org/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://joaojunior.org/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+  $('#show-comments').on('click', function(){
+    var disqus_shortname = 'joaojunior';
+      
+    (function() {
+      var disqus = document.createElement('script'); 
+      disqus.type = 'text/javascript'; 
+      disqus.async = true;
+      disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
+    })();
+      
+    $(this).hide(); 
+    });
+  });
+      
+</script>
+<script id="dsq-count-scr" src="//joaojunior.disqus.com/count.js" async></script>
+
+
+
+
+    
+  </body>
+</html>
+
