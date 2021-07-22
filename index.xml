@@ -8,7 +8,17 @@
     <language>en</language>
     <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
     <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
-    <lastBuildDate>Tue, 20 Jul 2021 10:02:04 -0400</lastBuildDate><atom:link href="https://joaojunior.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jul 2021 15:54:55 -0400</lastBuildDate><atom:link href="https://joaojunior.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quicksort</title>
+      <link>https://joaojunior.org/posts/quicksort/</link>
+      <pubDate>Thu, 22 Jul 2021 15:54:55 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/posts/quicksort/</guid>
+      <description>The Quicksort algorithm was created by Tony Hoare in 1961 and it is a very powerful algorithm to sort an array in memory until today. Here, I will describe the Quicksort algorithm, show an implementation in Python, and analyze the time complexity of this algorithm in the worst and best scenarios.
+The idea behind the Quicksort is so simple: to sort an array \(V\) of \(n\) elements, it is easier to sort smaller sub-arrays of \(V\).</description>
+    </item>
+    
     <item>
       <title>Designing Data-Intensive Applications: Review</title>
       <link>https://joaojunior.org/posts/designing-data-intensive-applications-review/</link>

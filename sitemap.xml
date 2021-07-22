@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://joaojunior.org/</loc>
+    <lastmod>2021-07-22T15:54:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joaojunior.org/posts/</loc>
+    <lastmod>2021-07-22T15:54:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joaojunior.org/posts/quicksort/</loc>
+    <lastmod>2021-07-22T15:54:55-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joaojunior.org/tags/book-review/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
   </url>
@@ -19,16 +34,6 @@
   
   <url>
     <loc>https://joaojunior.org/tags/distributed-system/</loc>
-    <lastmod>2021-07-20T10:02:04-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joaojunior.org/</loc>
-    <lastmod>2021-07-20T10:02:04-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joaojunior.org/posts/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
   </url>
   
