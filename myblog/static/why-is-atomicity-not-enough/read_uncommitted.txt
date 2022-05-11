@@ -1,0 +1,15 @@
+title Dirty reads with Read Uncommitted isolation level
+Transaction A->Database:Start a transaction
+Transaction A<--Database:Ok
+Transaction A->Database:select amount from accounts where id=1
+Transaction A<--Database:amount=500
+Transaction A->Database:update accounts set amount=0 where id=1
+Transaction A<--Database:Ok
+Transaction A->Database:update accounts set amount=amount+500 where id=2
+Transaction A<--Database:Ok
+Transaction B->Database:Start a transaction, Read Uncommitted isolation level
+Transaction B<--Database:Ok
+Transaction B->Database:select amount from accounts where id=1
+Transaction B<--Database:amount=0
+Transaction A->Database:Rollback and end transaction
+Transaction A<--Database:ok
