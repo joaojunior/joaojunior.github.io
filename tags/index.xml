@@ -8,7 +8,43 @@
     <language>en</language>
     <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
     <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
-    <lastBuildDate>Tue, 20 Jul 2021 10:02:04 -0400</lastBuildDate><atom:link href="https://joaojunior.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 May 2022 10:29:19 -0400</lastBuildDate><atom:link href="https://joaojunior.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ACID</title>
+      <link>https://joaojunior.org/tags/acid/</link>
+      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/tags/acid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Concurrent transactions</title>
+      <link>https://joaojunior.org/tags/concurrent-transactions/</link>
+      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/tags/concurrent-transactions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database transactions</title>
+      <link>https://joaojunior.org/tags/database-transactions/</link>
+      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/tags/database-transactions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Isolation level</title>
+      <link>https://joaojunior.org/tags/isolation-level/</link>
+      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/tags/isolation-level/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Book review</title>
       <link>https://joaojunior.org/tags/book-review/</link>

@@ -94,7 +94,7 @@ The idea behind the Quicksort is so simple: to sort an array \(V\) of \(n\) elem
   <meta name="twitter:site" content="@joaojunior_ma" />
   <meta name="twitter:creator" content="@joaojunior_ma" />
   <link href='https://joaojunior.org/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.76.5" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <link rel="alternate" href="https://joaojunior.org/index.xml" type="application/rss+xml" title="Joao Junior"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://joaojunior.org/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -284,36 +284,36 @@ Also \(v\) could be the smallest element of \(V\) and in this case, we change \(
 It is important to remember that the <code>quicksort</code> method does not return anything, because it sorts the array <code>items</code> in place.
 The <code>partition</code> is responsible to choice an element \(v\) of <code>items</code> and move all values that are less than or equal \(v\) to the left side of \(v\) in <code>items</code> and move all values that are greater than \(v\) to the right side of \(v\) in <code>items</code>.
 Also, the <code>parition</code> finishes returning the position of \(v\) in <code>items</code>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
-<span class="kn">import</span> <span class="nn">random</span>
-
-
-<span class="k">def</span> <span class="nf">quicksort</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">r</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
-        <span class="n">r</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="n">partition</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="n">l</span><span class="p">:</span>
-        <span class="n">quicksort</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="n">r</span><span class="p">:</span>
-        <span class="n">quicksort</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">partition</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">):</span>
-    <span class="n">divided_idx</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
-    <span class="n">v</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">divided_idx</span><span class="p">]</span>
-    <span class="n">items</span><span class="p">[</span><span class="n">divided_idx</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">divided_idx</span><span class="p">]</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="n">l</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="n">j</span> <span class="o">=</span> <span class="n">r</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">j</span><span class="p">:</span>
-        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">r</span> <span class="ow">and</span> <span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">v</span><span class="p">:</span>
-            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">while</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="n">l</span> <span class="ow">and</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">v</span><span class="p">:</span>
-            <span class="n">j</span> <span class="o">-=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">j</span><span class="p">:</span>
-            <span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="n">items</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">v</span>
-    <span class="k">return</span> <span class="n">j</span>
-</code></pre></div><h2 id="run-time-complexity">Run-time complexity</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">quicksort</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">r</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">r</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="n">partition</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="n">l</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">quicksort</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="n">r</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">quicksort</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">partition</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">divided_idx</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">v</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">divided_idx</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">items</span><span class="p">[</span><span class="n">divided_idx</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">divided_idx</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="n">l</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">j</span> <span class="o">=</span> <span class="n">r</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">j</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">r</span> <span class="ow">and</span> <span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">v</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="n">l</span> <span class="ow">and</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">v</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">j</span> <span class="o">-=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">j</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">items</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">v</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">j</span>
+</span></span></code></pre></div><h2 id="run-time-complexity">Run-time complexity</h2>
 <p>To analyze the time complexity of the Quicksort we will use the <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big-O notation</a> and we will consider how many times this algorithm access an element in the array.
 Also, \(T(n)\) here is the function which calculates the amount of time to sort an array \(V\) of size \(n\).
 Considering these, we will divide our analysis into the worst and the best-case scenarios.</p>
@@ -415,6 +415,10 @@ So
               <a href="https://joaojunior.org/posts/designing-data-intensive-applications-review/" data-toggle="tooltip" data-placement="top" title="Designing Data-Intensive Applications: Review">&larr; Previous Post</a>
             </li>
           
+          
+            <li class="next">
+              <a href="https://joaojunior.org/posts/why-is-atomicity-not-enough/" data-toggle="tooltip" data-placement="top" title="Why Is Atomicity Not Enough?">Next Post &rarr;</a>
+            </li>
           
         </ul>
       
@@ -518,7 +522,7 @@ So
 
           &nbsp;&bull;&nbsp;&copy;
           
-            2021
+            2022
           
 
           
@@ -528,7 +532,7 @@ So
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.76.5</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.98.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>

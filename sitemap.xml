@@ -1,141 +1,100 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://joaojunior.org/tags/acid/</loc>
+    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/concurrent-transactions/</loc>
+    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/database-transactions/</loc>
+    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/isolation-level/</loc>
+    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
+  </url><url>
     <loc>https://joaojunior.org/</loc>
-    <lastmod>2021-07-22T15:54:55-04:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
+  </url><url>
     <loc>https://joaojunior.org/posts/</loc>
-    <lastmod>2021-07-22T15:54:55-04:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/</loc>
+    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/posts/why-is-atomicity-not-enough/</loc>
+    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
+  </url><url>
     <loc>https://joaojunior.org/posts/quicksort/</loc>
     <lastmod>2021-07-22T15:54:55-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/book-review/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/data-intensive-applications/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/posts/designing-data-intensive-applications-review/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/distributed-system/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joaojunior.org/tags/</loc>
-    <lastmod>2021-07-20T10:02:04-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/chrome/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/posts/my-first-post/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/crashed/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/docker/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/python/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/selenium/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/webdriverexception/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/computer-vision/</loc>
     <lastmod>2017-03-29T17:00:19-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/posts/identify-paragraphs/</loc>
     <lastmod>2017-03-29T17:00:19-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/opencv/</loc>
     <lastmod>2017-03-29T17:00:19-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/operational-research/</loc>
     <lastmod>2017-02-26T09:42:04-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/posts/my-second-post/</loc>
     <lastmod>2017-02-26T09:42:04-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/branch-and-cut/</loc>
     <lastmod>2017-01-08T16:48:25-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/posts/callbacks-in-cplex/</loc>
     <lastmod>2017-01-08T16:48:25-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/cplex/</loc>
     <lastmod>2017-01-08T16:48:25-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/tags/optimization/</loc>
     <lastmod>2017-01-08T16:48:25-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/mcs/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://joaojunior.org/series/</loc>
   </url>
-  
 </urlset>
