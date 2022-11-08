@@ -8,49 +8,22 @@
     <language>en</language>
     <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
     <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
-    <lastBuildDate>Wed, 11 May 2022 10:29:19 -0400</lastBuildDate><atom:link href="https://joaojunior.org/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ACID</title>
-      <link>https://joaojunior.org/tags/acid/</link>
-      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
-      <author>blog@joaojunior.org (Joao Junior)</author>
-      <guid>https://joaojunior.org/tags/acid/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Concurrent transactions</title>
-      <link>https://joaojunior.org/tags/concurrent-transactions/</link>
-      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
-      <author>blog@joaojunior.org (Joao Junior)</author>
-      <guid>https://joaojunior.org/tags/concurrent-transactions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Database transactions</title>
-      <link>https://joaojunior.org/tags/database-transactions/</link>
-      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
-      <author>blog@joaojunior.org (Joao Junior)</author>
-      <guid>https://joaojunior.org/tags/database-transactions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Isolation level</title>
-      <link>https://joaojunior.org/tags/isolation-level/</link>
-      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
-      <author>blog@joaojunior.org (Joao Junior)</author>
-      <guid>https://joaojunior.org/tags/isolation-level/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 07 Nov 2022 22:51:26 -0500</lastBuildDate><atom:link href="https://joaojunior.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book review</title>
       <link>https://joaojunior.org/tags/book-review/</link>
-      <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate>
+      <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate>
       <author>blog@joaojunior.org (Joao Junior)</author>
       <guid>https://joaojunior.org/tags/book-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Peopleware</title>
+      <link>https://joaojunior.org/tags/peopleware/</link>
+      <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/tags/peopleware/</guid>
       <description></description>
     </item>
     

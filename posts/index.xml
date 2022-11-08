@@ -8,15 +8,15 @@
     <language>en</language>
     <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
     <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
-    <lastBuildDate>Wed, 11 May 2022 10:29:19 -0400</lastBuildDate><atom:link href="https://joaojunior.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Nov 2022 22:51:26 -0500</lastBuildDate><atom:link href="https://joaojunior.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Why Is Atomicity Not Enough?</title>
-      <link>https://joaojunior.org/posts/why-is-atomicity-not-enough/</link>
-      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
+      <title>Peopleware: Productive Projects and Teams</title>
+      <link>https://joaojunior.org/posts/peopleware-productive-projects-and-teams/</link>
+      <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate>
       <author>blog@joaojunior.org (Joao Junior)</author>
-      <guid>https://joaojunior.org/posts/why-is-atomicity-not-enough/</guid>
-      <description>When we study transactions in relational databases, one of the first things we learn are the guarantees that a transaction must provide. ACID(Atomicity, Consistency, Isolation, Durability) are the properties that we desire. Here, I will discuss the Isolation level in more detail and show that atomicity alone is not enough when handling concurrency.
-One classic example of the importance of atomicity is moving money between accounts. So, imagine that we have two accounts and we would like to transfer the total amount from one account to another one.</description>
+      <guid>https://joaojunior.org/posts/peopleware-productive-projects-and-teams/</guid>
+      <description>First things first, this is a classic book by Tom DeMarco and Timothy Lister that everyone working in the software industry must read.
+The third edition divides this book into 6 parts with 39 chapters and 249 pages. It is an easy book to read and follow. However, it is necessary to stop constantly to reflect on the facts and ideas presented. Also, the reading would be like a map of the industry if you had a lot of experience in the software development industry.</description>
     </item>
     
     <item>

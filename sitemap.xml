@@ -2,35 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://joaojunior.org/tags/acid/</loc>
-    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
-  </url><url>
-    <loc>https://joaojunior.org/tags/concurrent-transactions/</loc>
-    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
-  </url><url>
-    <loc>https://joaojunior.org/tags/database-transactions/</loc>
-    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
-  </url><url>
-    <loc>https://joaojunior.org/tags/isolation-level/</loc>
-    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
+    <loc>https://joaojunior.org/tags/book-review/</loc>
+    <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/</loc>
-    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
+    <lastmod>2022-11-07T22:51:26-05:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/peopleware/</loc>
+    <lastmod>2022-11-07T22:51:26-05:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/posts/peopleware-productive-projects-and-teams/</loc>
+    <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/posts/</loc>
-    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
+    <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/tags/</loc>
-    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
-  </url><url>
-    <loc>https://joaojunior.org/posts/why-is-atomicity-not-enough/</loc>
-    <lastmod>2022-05-11T10:29:19-04:00</lastmod>
+    <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/posts/quicksort/</loc>
     <lastmod>2021-07-22T15:54:55-04:00</lastmod>
-  </url><url>
-    <loc>https://joaojunior.org/tags/book-review/</loc>
-    <lastmod>2021-07-20T10:02:04-04:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/tags/data-intensive-applications/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
