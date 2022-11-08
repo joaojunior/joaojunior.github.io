@@ -1,7 +1,7 @@
 ---
 title: "Why Is Atomicity Not Enough?"
 date: 2022-05-11T10:29:19-04:00
-draft: true
+draft: false
 tags: ["ACID", "Isolation level", "Database transactions", "Concurrent transactions"]
 ---
 

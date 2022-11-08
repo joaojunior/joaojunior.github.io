@@ -266,6 +266,60 @@ The third edition divides this book into 6 parts with 39 chapters and 249 pages.
 </article>
           
             <article class="post-preview">
+    <a href="https://joaojunior.org/posts/why-is-atomicity-not-enough/">
+        <h2 class="post-title">Why Is Atomicity Not Enough?</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on May 11, 2022
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1231&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Joao Junior
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        When we study transactions in relational databases, one of the first things we learn are the guarantees that a transaction must provide. ACID(Atomicity, Consistency, Isolation, Durability) are the properties that we desire. Here, I will discuss the Isolation level in more detail and show that atomicity alone is not enough when handling concurrency.
+One classic example of the importance of atomicity is moving money between accounts. So, imagine that we have two accounts and we would like to transfer the total amount from one account to another one.
+        <a href="https://joaojunior.org/posts/why-is-atomicity-not-enough/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+        <a href="https://joaojunior.org//tags/acid/">ACID</a>&nbsp;
+        
+        <a href="https://joaojunior.org//tags/isolation-level/">Isolation level</a>&nbsp;
+        
+        <a href="https://joaojunior.org//tags/database-transactions/">Database transactions</a>&nbsp;
+        
+        <a href="https://joaojunior.org//tags/concurrent-transactions/">Concurrent transactions</a>&nbsp;
+        
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
     <a href="https://joaojunior.org/posts/quicksort/">
         <h2 class="post-title">Quicksort</h2>
         
@@ -353,67 +407,6 @@ First of all, I love to read books and I do not believe that a review should inf
         <a href="https://joaojunior.org//tags/data-intensive-applications/">Data Intensive Applications</a>&nbsp;
         
         <a href="https://joaojunior.org//tags/distributed-system/">Distributed System</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://joaojunior.org/posts/my-first-post/">
-        <h2 class="post-title">Chrome with selenium, python and docker</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on September 16, 2019
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;219&nbsp;words
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Joao Junior
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        Sometimes, when I execute the Chrome inside a docker container I receive the error below:
-selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: crashed
-It is caused because Chrome uses the /dev/shm to share memory and the docker, by default, set 64MB for this partition.
-Here, I will describe how to reproduce this error and how to resolve it.
-How to reproduce To reproduce this error, we need to create a docker image with chrome and python.
-        <a href="https://joaojunior.org/posts/my-first-post/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://joaojunior.org//tags/python/">Python</a>&nbsp;
-        
-        <a href="https://joaojunior.org//tags/selenium/">Selenium</a>&nbsp;
-        
-        <a href="https://joaojunior.org//tags/chrome/">Chrome</a>&nbsp;
-        
-        <a href="https://joaojunior.org//tags/docker/">Docker</a>&nbsp;
-        
-        <a href="https://joaojunior.org//tags/crashed/">Crashed</a>&nbsp;
-        
-        <a href="https://joaojunior.org//tags/webdriverexception/">WebDriverException</a>&nbsp;
         
     </div>
     
