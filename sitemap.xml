@@ -2,22 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://joaojunior.org/tags/book-review/</loc>
-    <lastmod>2022-11-07T22:51:26-05:00</lastmod>
+    <loc>https://joaojunior.org/tags/data-structure/</loc>
+    <lastmod>2023-03-13T14:04:03-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/flamegraph/</loc>
+    <lastmod>2023-03-13T14:04:03-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/hashmap/</loc>
+    <lastmod>2023-03-13T14:04:03-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/improving-comparisons/</loc>
+    <lastmod>2023-03-13T14:04:03-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/improving-performance/</loc>
+    <lastmod>2023-03-13T14:04:03-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/</loc>
+    <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/</loc>
+    <lastmod>2023-03-13T14:04:03-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/posts/</loc>
+    <lastmod>2023-03-13T14:04:03-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/ruby/</loc>
+    <lastmod>2023-03-13T14:04:03-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/set/</loc>
+    <lastmod>2023-03-13T14:04:03-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/</loc>
+    <lastmod>2023-03-13T14:04:03-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/book-review/</loc>
     <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/tags/peopleware/</loc>
     <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/posts/peopleware-productive-projects-and-teams/</loc>
-    <lastmod>2022-11-07T22:51:26-05:00</lastmod>
-  </url><url>
-    <loc>https://joaojunior.org/posts/</loc>
-    <lastmod>2022-11-07T22:51:26-05:00</lastmod>
-  </url><url>
-    <loc>https://joaojunior.org/tags/</loc>
     <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/tags/acid/</loc>

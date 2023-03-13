@@ -8,7 +8,70 @@
     <language>en</language>
     <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
     <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
-    <lastBuildDate>Mon, 07 Nov 2022 22:51:26 -0500</lastBuildDate><atom:link href="https://joaojunior.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Mar 2023 14:04:03 -0400</lastBuildDate><atom:link href="https://joaojunior.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data structure</title>
+      <link>https://joaojunior.org/tags/data-structure/</link>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/tags/data-structure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FlameGraph</title>
+      <link>https://joaojunior.org/tags/flamegraph/</link>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/tags/flamegraph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HashMap</title>
+      <link>https://joaojunior.org/tags/hashmap/</link>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/tags/hashmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improving comparisons</title>
+      <link>https://joaojunior.org/tags/improving-comparisons/</link>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/tags/improving-comparisons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improving performance</title>
+      <link>https://joaojunior.org/tags/improving-performance/</link>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/tags/improving-performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruby</title>
+      <link>https://joaojunior.org/tags/ruby/</link>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/tags/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Set</title>
+      <link>https://joaojunior.org/tags/set/</link>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/tags/set/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Book review</title>
       <link>https://joaojunior.org/tags/book-review/</link>

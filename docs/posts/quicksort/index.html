@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Quicksort - Joao Junior</title>
+  <meta name="description" content="The Quicksort algorithm was created by Tony Hoare in 1961 and it is a very powerful algorithm to sort an array in memory until today. Here, I will describe the Quicksort algorithm, show an implementation in Python, and analyze the time complexity of this algorithm in the worst and best scenarios.
+The idea behind the Quicksort is so simple: to sort an array \(V\) of \(n\) elements, it is easier to sort smaller sub-arrays of \(V\).">
+  <meta name="author" content="Joao Junior"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Joao Junior",
+    
+    "url": "https:\/\/joaojunior.org\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/joaojunior.org\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/joaojunior.org\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/joaojunior.org\/posts\/quicksort\/",
+          "name": "Quicksort"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Joao Junior"
+  },
+  "headline": "Quicksort",
+  "description" : "The Quicksort algorithm was created by Tony Hoare in 1961 and it is a very powerful algorithm to sort an array in memory until today. Here, I will describe the Quicksort algorithm, show an implementation in Python, and analyze the time complexity of this algorithm in the worst and best scenarios.\nThe idea behind the Quicksort is so simple: to sort an array \\(V\\) of \\(n\\) elements, it is easier to sort smaller sub-arrays of \\(V\\).",
+  "inLanguage" : "en",
+  "wordCount":  1277 ,
+  "datePublished" : "2021-07-22T15:54:55",
+  "dateModified" : "2021-07-22T15:54:55",
+  "image" : "https:\/\/joaojunior.org\/jj.jpg",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/joaojunior.org\/posts\/quicksort\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/joaojunior.org\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/joaojunior.org\/jj.jpg",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Quicksort" />
+<meta property="og:description" content="The Quicksort algorithm was created by Tony Hoare in 1961 and it is a very powerful algorithm to sort an array in memory until today. Here, I will describe the Quicksort algorithm, show an implementation in Python, and analyze the time complexity of this algorithm in the worst and best scenarios.
+The idea behind the Quicksort is so simple: to sort an array \(V\) of \(n\) elements, it is easier to sort smaller sub-arrays of \(V\).">
+<meta property="og:image" content="https://joaojunior.org/jj.jpg" />
+<meta property="og:url" content="https://joaojunior.org/posts/quicksort/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Joao Junior" />
+
+  <meta name="twitter:title" content="Quicksort" />
+  <meta name="twitter:description" content="The Quicksort algorithm was created by Tony Hoare in 1961 and it is a very powerful algorithm to sort an array in memory until today. Here, I will describe the Quicksort algorithm, show an …">
+  <meta name="twitter:image" content="https://joaojunior.org/jj.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@joaojunior_ma" />
+  <meta name="twitter:creator" content="@joaojunior_ma" />
+  <link href='https://joaojunior.org/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="alternate" href="https://joaojunior.org/index.xml" type="application/rss+xml" title="Joao Junior"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://joaojunior.org/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://joaojunior.org/css/highlight.min.css" /><link rel="stylesheet" href="https://joaojunior.org/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-96580878-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://joaojunior.org/">Joao Junior</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Posts" href="/">Posts</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="MCS" href="/mcs/">MCS</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About me" href="/about/">About me</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Joao Junior" href="https://joaojunior.org/">
+            <img class="avatar-img" src="https://joaojunior.org/jj.jpg" alt="Joao Junior" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>Quicksort</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>The <a href="https://doi.org/10.1145/366622.366644">Quicksort</a> algorithm was created by <a href="https://www.cs.ox.ac.uk/people/tony.hoare/">Tony Hoare</a> in 1961 and it is a very powerful algorithm to sort an array in memory until today. Here, I will describe the Quicksort algorithm, show an implementation in Python, and analyze the time complexity of this algorithm in the worst and best scenarios.</p>
+<p>The idea behind the Quicksort is so simple: to sort an array \(V\) of \(n\) elements, it is easier to sort smaller sub-arrays of \(V\).
+We can think of this approach as <a href="https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm">divide-and-conquer</a>, where we break a problem into smaller sub-problems and combine their solutions to form the solution to the original problem.</p>
+<p>The procedure that Quicksort uses to create smaller sub-problems is called partition. Given an array \(V\) of \(n\) elements, this procedure choices an element \(v \in V\) and produce two arrays \(V_1\) and \(V_2\) such that
+all elements in \(V_1\) are smaller than or equal \(v\) and all elements in \(V_2\) are greater than \(v\). After this procedure, the element \(v\) will stay in its correct position in \(V\).
+Therefore, every time Quicksort calls partition, the problem to be solved is reduced to two smaller problems.</p>
+<p>Besides creating sub-problems, another important part of the divide-and-conquer technique is deciding when to stop to divide sub-problems and resolve them. In the Quicksort algorithm, repeating the partition procedure in the sub-problems
+will eventually produce arrays of \(1\) element. At this point, it is not necessary to divide the sub-problem because an array with \(1\) element is already sorted.</p>
+<p>We already explain how Quicksort breaks the array in smaller sub-arrays and when this procedure stop. One question is now open: How Quicksort combines two sorted sub-arrays? The trick here is that combine the solution is not necessary.
+Actually, the Quicksort doesn&rsquo;t generate new arrays. It always works in the same array \(V\).
+What the Quicksort does to divide the array \(V\) in sub-arrays is only use indexes \(l_1\), \(l_2\), \(r_1\), and \(r_2\) with \(l_1 \le r_1 \lt l_2 \le r_2\).
+So the sub-array \(V_1\) is the array \(V\) but only between the indexes \(l_1\) and \(r_1\). The same is valid to array \(V_2\) but considering the indexes \(l_2\) and \(r_2\).</p>
+<p>Using only the array \(V\) is part of the power of the Quicksort because this algorithm does not use extra memory. One drawback of it is that we cannot parallelize this algorithm in multiple machines or processes. At least, not with any modifications.</p>
+<h2 id="choosing-v">Choosing \(v\)</h2>
+<p>As we described, the partition procedure choices an element \(v \in V\) to divide the array \(V\) into \(2\) sub-arrays. So, what are the best and worst values to \(v\)?
+We will analyze it in more detail in the Run-time complexity section, but for now, it is only important for us to know that, usually, in the divide-and-conquer technique, we would like to divide a problem into sub-problems of the same size.</p>
+<p>On one hand, the best choosing of \(v\) is the element that divide \(V\) in two sub-arrays \(V_1\) and \(V_2\) of the same size. In this case, the element \(v\) is called <a href="https://en.wikipedia.org/wiki/Median">median or p-50</a> of \(V\).
+On the other hand, the worst choice of \(v\) is one that the array \(V_1\) contains all, except \(v\), elements of \(V\) and the array \(V_2\) is an empty array. In this case, the \(v\) is the greatest value of \(V\).
+Also \(v\) could be the smallest element of \(V\) and in this case, we change \(V_1\) with \(V_2\). To resolve this problem, the author suggest to choice \(v\) randomly.</p>
+<h2 id="python-implementation">Python Implementation</h2>
+<p>In this implementation, we have 2 methods: <code>quicksort</code> and <code>partition</code>. The <code>quicksort</code> is responsible to call the <code>partition</code> when necessary. It happens always that the sub-array has at least one element.
+It is important to remember that the <code>quicksort</code> method does not return anything, because it sorts the array <code>items</code> in place.
+The <code>partition</code> is responsible to choice an element \(v\) of <code>items</code> and move all values that are less than or equal \(v\) to the left side of \(v\) in <code>items</code> and move all values that are greater than \(v\) to the right side of \(v\) in <code>items</code>.
+Also, the <code>parition</code> finishes returning the position of \(v\) in <code>items</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">quicksort</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">r</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">r</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="n">partition</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="n">l</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">quicksort</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="n">r</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">quicksort</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">partition</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">divided_idx</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">v</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">divided_idx</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">items</span><span class="p">[</span><span class="n">divided_idx</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">divided_idx</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="n">l</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">j</span> <span class="o">=</span> <span class="n">r</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">j</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">r</span> <span class="ow">and</span> <span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">v</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="n">l</span> <span class="ow">and</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">v</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">j</span> <span class="o">-=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">j</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">items</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">v</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">j</span>
+</span></span></code></pre></div><h2 id="run-time-complexity">Run-time complexity</h2>
+<p>To analyze the time complexity of the Quicksort we will use the <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big-O notation</a> and we will consider how many times this algorithm access an element in the array.
+Also, \(T(n)\) here is the function which calculates the amount of time to sort an array \(V\) of size \(n\).
+Considering these, we will divide our analysis into the worst and the best-case scenarios.</p>
+<h3 id="worst-scenario">Worst scenario</h3>
+<p>The worst scenario happens when the partition procedure always choices \(v\) as the smallest or biggest element of an array \(V\). In this case, this procedure will produce one sub-array of size \(|V| - 1\) and another empty array.</p>
+<p>As the partition procedure is always generating an array to be sorted removing only one element of the input array. This procedure will run \(n - 1\) times.
+Furthermore, in each call to partition procedure with an array \(V\), one of the two nested loops runs exactly \(|V| - 1\) times, because \(v\) is the smallest or biggest element of \(V\).
+The other nested loop runs exactly 1 time because the check-in of this loop will be not true. Also, in each run, both nested loops access an element of the array. Therefore, in total, the two nested loops access an element of the array |V| times.</p>
+<p>In the first time that Quicksort calls the partition procedure, the array \(V\) has size \(n\). In the second time it has size \(n-1\). The last time it has size 2.
+So
+\[T(n) = \sum_{i=1}^{n-1} n + 1 - i\]
+\[T(n) = n + (n - 1) + (n - 2) + &hellip; (2)\]
+\[T(n) = \frac{(n - 1) \times (n - 2)}{2} \]
+\[T(n) = \frac{n^2 + 2n -n - 2}{2} \]
+\[T(n) = \frac{n^2 +n - 2}{2} \]
+\[O(T(n)) = n^2 \]</p>
+<h3 id="best-scenario">Best scenario</h3>
+<p>The best scenario happens when the partition procedure always choices \(v\) as the p-50 element of the array. In this case, this procedure divides the array in the middle, generating two sub-arrays of the same size.
+Actually, if the size of the array \(V\) is odd, the two sub-arrays generated have the same size. Otherwise, the size of the two sub-arrays will have a difference of \(1\). Without loss of generality, we will consider sub-arrays of the same size here.</p>
+<p>In this scenario, to sort an array of \(n\) elements, the partition produces two arrays to be sorted in each iteration \(i\). Both of these arrays has \(\frac{n}{2^i}\) elements. This happens until the partition produces arrays of only one element.
+Therefore this happens until \(\frac{n}{2^i}=1\), which is \(\log_n\) times. Besides, in each iteration \(i\), the partition access all elements of the array, which is a total of \(2^i \times \frac{n}{2^i}\) times.
+So
+\[T(n) = \sum_{i=0}^{\log_n} 2^i \times \frac{n}{2^i}\]
+\[T(n) = \sum_{i=0}^{\log_n} n\]
+\[T(n) = (\log_n + 1) \times n\]
+\[O(T(n)) = n \times log_n\]</p>
+
+
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fjoaojunior.org%2fposts%2fquicksort%2f&amp;text=Quicksort&amp;via=joaojunior_ma" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjoaojunior.org%2fposts%2fquicksort%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjoaojunior.org%2fposts%2fquicksort%2f&amp;title=Quicksort" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjoaojunior.org%2fposts%2fquicksort%2f&amp;title=Quicksort" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjoaojunior.org%2fposts%2fquicksort%2f&amp;title=Quicksort" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjoaojunior.org%2fposts%2fquicksort%2f&amp;description=Quicksort" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://joaojunior.org/posts/designing-data-intensive-applications-review/" data-toggle="tooltip" data-placement="top" title="Designing Data-Intensive Applications: Review">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://joaojunior.org/posts/why-is-atomicity-not-enough/" data-toggle="tooltip" data-placement="top" title="Why Is Atomicity Not Enough?">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+          
+          <div class="disqus-comments">                  
+            <button id="show-comments" class="btn btn-default" type="button">Show <span class="disqus-comment-count" data-disqus-url="https://joaojunior.org/posts/quicksort">comments</span></button>
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+              var disqus_config = function () {
+              this.page.url = 'https:\/\/joaojunior.org\/posts\/quicksort';
+            };
+
+          </script>
+          </div>
+          
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:blog@joaojunior.org" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/joaojunior" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/joaojunior_jj" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/joaojunior_ma" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/joaojunior" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://url" title="Mastodon">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://joaojunior.org/">Joao Junior</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2022
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://joaojunior.org/">Joao Junior</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.105.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://joaojunior.org/js/main.js"></script>
+<script src="https://joaojunior.org/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://joaojunior.org/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+  $('#show-comments').on('click', function(){
+    var disqus_shortname = 'joaojunior';
+      
+    (function() {
+      var disqus = document.createElement('script'); 
+      disqus.type = 'text/javascript'; 
+      disqus.async = true;
+      disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
+    })();
+      
+    $(this).hide(); 
+    });
+  });
+      
+</script>
+<script id="dsq-count-scr" src="//joaojunior.disqus.com/count.js" async></script>
+
+
+
+
+    
+  </body>
+</html>
+
