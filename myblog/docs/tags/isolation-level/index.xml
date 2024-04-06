@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Isolation level on Joao Junior</title>
+    <link>https://joaojunior.org/tags/isolation-level/</link>
+    <description>Recent content in Isolation level on Joao Junior</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
+    <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
+    <lastBuildDate>Wed, 11 May 2022 10:29:19 -0400</lastBuildDate><atom:link href="https://joaojunior.org/tags/isolation-level/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Is Atomicity Not Enough?</title>
+      <link>https://joaojunior.org/posts/why-is-atomicity-not-enough/</link>
+      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/posts/why-is-atomicity-not-enough/</guid>
+      <description>When we study transactions in relational databases, one of the first things we learn are the guarantees that a transaction must provide. ACID(Atomicity, Consistency, Isolation, Durability) are the properties that we desire. Here, I will discuss the Isolation level in more detail and show that atomicity alone is not enough when handling concurrency.
+One classic example of the importance of atomicity is moving money between accounts. So, imagine that we have two accounts and we would like to transfer the total amount from one account to another one.</description>
+    </item>
+    
+  </channel>
+</rss>

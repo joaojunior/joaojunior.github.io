@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CPLEX on Joao Junior</title>
+    <link>https://joaojunior.org/tags/cplex/</link>
+    <description>Recent content in CPLEX on Joao Junior</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
+    <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
+    <lastBuildDate>Sun, 08 Jan 2017 16:48:25 -0500</lastBuildDate><atom:link href="https://joaojunior.org/tags/cplex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Callbacks in Cplex</title>
+      <link>https://joaojunior.org/posts/callbacks-in-cplex/</link>
+      <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate>
+      <author>blog@joaojunior.org (Joao Junior)</author>
+      <guid>https://joaojunior.org/posts/callbacks-in-cplex/</guid>
+      <description>Callbacks in Cplex I used LazyConstraintCallback to implement a Branch and Cut algorithm with CPLEX, but when I implemented and run this algorithm, it was very slow if I compare it with its version that doesn&amp;rsquo;t use callbacks in Cplex. The reason is because ControlCallback(LazyConstraintCallback is a ControlCallback) switch Cplex to sequential mode by default and turn off dynamic search. I wrote this post, because I didn&amp;rsquo;t find this information in Cplex’s documentation, I only found it in this technical forum.</description>
+    </item>
+    
+  </channel>
+</rss>
