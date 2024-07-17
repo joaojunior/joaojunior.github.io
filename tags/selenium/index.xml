@@ -4,23 +4,18 @@
     <title>Selenium on Joao Junior</title>
     <link>https://joaojunior.org/tags/selenium/</link>
     <description>Recent content in Selenium on Joao Junior</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
     <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
-    <lastBuildDate>Mon, 16 Sep 2019 09:15:55 -0400</lastBuildDate><atom:link href="https://joaojunior.org/tags/selenium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Sep 2019 09:15:55 -0400</lastBuildDate>
+    <atom:link href="https://joaojunior.org/tags/selenium/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chrome with selenium, python and docker</title>
       <link>https://joaojunior.org/posts/my-first-post/</link>
-      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate>
-      <author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
       <guid>https://joaojunior.org/posts/my-first-post/</guid>
-      <description>Sometimes, when I execute the Chrome inside a docker container I receive the error below:
-selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: crashed
-It is caused because Chrome uses the /dev/shm to share memory and the docker, by default, set 64MB for this partition.
-Here, I will describe how to reproduce this error and how to resolve it.
-How to reproduce To reproduce this error, we need to create a docker image with chrome and python.</description>
+      <description>Sometimes, when I execute the Chrome inside a docker container I receive the error below:&#xA;selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: crashed&#xA;It is caused because Chrome uses the /dev/shm to share memory and the docker, by default, set 64MB for this partition.&#xA;Here, I will describe how to reproduce this error and how to resolve it.&#xA;How to reproduce To reproduce this error, we need to create a docker image with chrome and python.</description>
     </item>
-    
   </channel>
 </rss>

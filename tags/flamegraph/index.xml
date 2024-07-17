@@ -4,20 +4,18 @@
     <title>FlameGraph on Joao Junior</title>
     <link>https://joaojunior.org/tags/flamegraph/</link>
     <description>Recent content in FlameGraph on Joao Junior</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
     <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
-    <lastBuildDate>Mon, 13 Mar 2023 14:04:03 -0400</lastBuildDate><atom:link href="https://joaojunior.org/tags/flamegraph/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Mar 2023 14:04:03 -0400</lastBuildDate>
+    <atom:link href="https://joaojunior.org/tags/flamegraph/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Improving the check if an object is in a Set/HashMap data structure in Ruby by using better comparisons, memoization, and object orientation practices</title>
       <link>https://joaojunior.org/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/</link>
-      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
-      <author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
       <guid>https://joaojunior.org/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/</guid>
-      <description>I was verifying the performance of an endpoint in an API using framegraph when I noticed that checking if an object is in a set or a hash data structure was consuming a lot of time. This post explains the problem and the solution to it.
-First of all, checking if an object is in a Set or HashMap is O(1) when we don&amp;rsquo;t consider collisions. Even in the presence of collisions, it should be much less than O(n), where n is the number of items in the set.</description>
+      <description>I was verifying the performance of an endpoint in an API using framegraph when I noticed that checking if an object is in a set or a hash data structure was consuming a lot of time. This post explains the problem and the solution to it.&#xA;First of all, checking if an object is in a Set or HashMap is O(1) when we don&amp;rsquo;t consider collisions. Even in the presence of collisions, it should be much less than O(n), where n is the number of items in the set.</description>
     </item>
-    
   </channel>
 </rss>

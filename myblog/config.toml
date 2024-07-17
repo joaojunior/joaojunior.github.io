@@ -27,6 +27,7 @@ pygmentsUseClasses = true
   socialShare = true
   delayDisqus = true
   showRelatedPosts = true
+  math = true
 #  hideAuthor = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
@@ -41,10 +42,13 @@ pygmentsUseClasses = true
   mastodon = "url"
 
 [markup]
-  defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
 
 [[menu.main]]
   identifier = "posts"

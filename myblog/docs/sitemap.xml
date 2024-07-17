@@ -2,10 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://joaojunior.org/tags/atomic-operations/</loc>
-    <lastmod>2024-04-08T14:15:00+00:00</lastmod>
+    <loc>https://joaojunior.org/tags/gil/</loc>
+    <lastmod>2024-07-17T12:40:06-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</loc>
+    <lastmod>2024-07-17T12:40:06-04:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/</loc>
+    <lastmod>2024-07-17T12:40:06-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/nogil/</loc>
+    <lastmod>2024-07-17T12:40:06-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/posts/</loc>
+    <lastmod>2024-07-17T12:40:06-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/python/</loc>
+    <lastmod>2024-07-17T12:40:06-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/</loc>
+    <lastmod>2024-07-17T12:40:06-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/threads/</loc>
+    <lastmod>2024-07-17T12:40:06-04:00</lastmod>
+  </url><url>
+    <loc>https://joaojunior.org/tags/atomic-operations/</loc>
     <lastmod>2024-04-08T14:15:00+00:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/tags/lua-scripts/</loc>
@@ -14,13 +35,7 @@
     <loc>https://joaojunior.org/posts/lua-scripts-are-not-atomic-in-redis/</loc>
     <lastmod>2024-04-08T14:15:00+00:00</lastmod>
   </url><url>
-    <loc>https://joaojunior.org/posts/</loc>
-    <lastmod>2024-04-08T14:15:00+00:00</lastmod>
-  </url><url>
     <loc>https://joaojunior.org/tags/redis/</loc>
-    <lastmod>2024-04-08T14:15:00+00:00</lastmod>
-  </url><url>
-    <loc>https://joaojunior.org/tags/</loc>
     <lastmod>2024-04-08T14:15:00+00:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/tags/data-structure/</loc>
@@ -93,9 +108,6 @@
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/tags/docker/</loc>
-    <lastmod>2019-09-16T09:15:55-04:00</lastmod>
-  </url><url>
-    <loc>https://joaojunior.org/tags/python/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
     <loc>https://joaojunior.org/tags/selenium/</loc>
