@@ -6,16 +6,14 @@
     <description>Recent content in Peopleware on Joao Junior</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
-    <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
     <lastBuildDate>Mon, 07 Nov 2022 22:51:26 -0500</lastBuildDate>
     <atom:link href="https://joaojunior.org/tags/peopleware/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Peopleware: Productive Projects and Teams</title>
       <link>https://joaojunior.org/posts/peopleware-productive-projects-and-teams/</link>
-      <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate>
       <guid>https://joaojunior.org/posts/peopleware-productive-projects-and-teams/</guid>
-      <description>First things first, this is a classic book by Tom DeMarco and Timothy Lister that everyone working in the software industry must read.&#xA;The third edition divides this book into 6 parts with 39 chapters and 249 pages. It is an easy book to read and follow. However, it is necessary to stop constantly to reflect on the facts and ideas presented. Also, the reading would be like a map of the industry if you had a lot of experience in the software development industry.</description>
+      <description>&lt;p&gt;First things first, this is a classic &lt;a href=&#34;https://www.goodreads.com/book/show/67825.Peopleware&#34;&gt;book&lt;/a&gt; by &lt;a href=&#34;https://en.wikipedia.org/wiki/Tom_DeMarco&#34;&gt;Tom DeMarco&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Tim_Lister&#34;&gt;Timothy Lister&lt;/a&gt; that everyone working in the software industry must read.&lt;/p&gt;&#xA;&lt;p&gt;The third edition divides this book into 6 parts with 39 chapters and 249 pages. It is an easy book to read and follow. However, it is necessary to stop constantly to reflect on the facts and ideas presented. Also, the reading would be like a map of the industry if you had a lot of experience in the software development industry. By this, I would like to say that many, maybe all, of the ideas presented in the book are implemented in all software-based companies I have seen.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

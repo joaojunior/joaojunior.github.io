@@ -6,238 +6,278 @@
     <description>Recent content in Tags on Joao Junior</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
-    <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
-    <lastBuildDate>Wed, 17 Jul 2024 12:40:06 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 14:07:06 -0500</lastBuildDate>
     <atom:link href="https://joaojunior.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Architecture</title>
+      <link>https://joaojunior.org/tags/architecture/</link>
+      <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
+      <guid>https://joaojunior.org/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Celery</title>
+      <link>https://joaojunior.org/tags/celery/</link>
+      <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
+      <guid>https://joaojunior.org/tags/celery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crawler</title>
+      <link>https://joaojunior.org/tags/crawler/</link>
+      <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
+      <guid>https://joaojunior.org/tags/crawler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ETL</title>
+      <link>https://joaojunior.org/tags/etl/</link>
+      <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
+      <guid>https://joaojunior.org/tags/etl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Improving Legacy Code</title>
+      <link>https://joaojunior.org/tags/improving-legacy-code/</link>
+      <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
+      <guid>https://joaojunior.org/tags/improving-legacy-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Task Queue</title>
+      <link>https://joaojunior.org/tags/task-queue/</link>
+      <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
+      <guid>https://joaojunior.org/tags/task-queue/</guid>
+      <description></description>
+    </item>
     <item>
       <title>GIL</title>
       <link>https://joaojunior.org/tags/gil/</link>
-      <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate>
       <guid>https://joaojunior.org/tags/gil/</guid>
       <description></description>
     </item>
     <item>
       <title>NoGIL</title>
       <link>https://joaojunior.org/tags/nogil/</link>
-      <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate>
       <guid>https://joaojunior.org/tags/nogil/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
       <link>https://joaojunior.org/tags/python/</link>
-      <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate>
       <guid>https://joaojunior.org/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Threads</title>
       <link>https://joaojunior.org/tags/threads/</link>
-      <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate>
       <guid>https://joaojunior.org/tags/threads/</guid>
       <description></description>
     </item>
     <item>
       <title>Atomic Operations</title>
       <link>https://joaojunior.org/tags/atomic-operations/</link>
-      <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate>
       <guid>https://joaojunior.org/tags/atomic-operations/</guid>
       <description></description>
     </item>
     <item>
       <title>Lua Scripts</title>
       <link>https://joaojunior.org/tags/lua-scripts/</link>
-      <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate>
       <guid>https://joaojunior.org/tags/lua-scripts/</guid>
       <description></description>
     </item>
     <item>
       <title>Redis</title>
       <link>https://joaojunior.org/tags/redis/</link>
-      <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate>
       <guid>https://joaojunior.org/tags/redis/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Structure</title>
       <link>https://joaojunior.org/tags/data-structure/</link>
-      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
       <guid>https://joaojunior.org/tags/data-structure/</guid>
       <description></description>
     </item>
     <item>
       <title>FlameGraph</title>
       <link>https://joaojunior.org/tags/flamegraph/</link>
-      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
       <guid>https://joaojunior.org/tags/flamegraph/</guid>
       <description></description>
     </item>
     <item>
       <title>HashMap</title>
       <link>https://joaojunior.org/tags/hashmap/</link>
-      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
       <guid>https://joaojunior.org/tags/hashmap/</guid>
       <description></description>
     </item>
     <item>
       <title>Improving Comparisons</title>
       <link>https://joaojunior.org/tags/improving-comparisons/</link>
-      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
       <guid>https://joaojunior.org/tags/improving-comparisons/</guid>
       <description></description>
     </item>
     <item>
       <title>Improving Performance</title>
       <link>https://joaojunior.org/tags/improving-performance/</link>
-      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
       <guid>https://joaojunior.org/tags/improving-performance/</guid>
       <description></description>
     </item>
     <item>
       <title>Ruby</title>
       <link>https://joaojunior.org/tags/ruby/</link>
-      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
       <guid>https://joaojunior.org/tags/ruby/</guid>
       <description></description>
     </item>
     <item>
       <title>Set</title>
       <link>https://joaojunior.org/tags/set/</link>
-      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
       <guid>https://joaojunior.org/tags/set/</guid>
       <description></description>
     </item>
     <item>
       <title>Book Review</title>
       <link>https://joaojunior.org/tags/book-review/</link>
-      <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate>
       <guid>https://joaojunior.org/tags/book-review/</guid>
       <description></description>
     </item>
     <item>
       <title>Peopleware</title>
       <link>https://joaojunior.org/tags/peopleware/</link>
-      <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate>
       <guid>https://joaojunior.org/tags/peopleware/</guid>
       <description></description>
     </item>
     <item>
       <title>ACID</title>
       <link>https://joaojunior.org/tags/acid/</link>
-      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
       <guid>https://joaojunior.org/tags/acid/</guid>
       <description></description>
     </item>
     <item>
       <title>Concurrent Transactions</title>
       <link>https://joaojunior.org/tags/concurrent-transactions/</link>
-      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
       <guid>https://joaojunior.org/tags/concurrent-transactions/</guid>
       <description></description>
     </item>
     <item>
       <title>Database Transactions</title>
       <link>https://joaojunior.org/tags/database-transactions/</link>
-      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
       <guid>https://joaojunior.org/tags/database-transactions/</guid>
       <description></description>
     </item>
     <item>
       <title>Isolation Level</title>
       <link>https://joaojunior.org/tags/isolation-level/</link>
-      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
       <guid>https://joaojunior.org/tags/isolation-level/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Intensive Applications</title>
       <link>https://joaojunior.org/tags/data-intensive-applications/</link>
-      <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate>
       <guid>https://joaojunior.org/tags/data-intensive-applications/</guid>
       <description></description>
     </item>
     <item>
       <title>Distributed System</title>
       <link>https://joaojunior.org/tags/distributed-system/</link>
-      <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate>
       <guid>https://joaojunior.org/tags/distributed-system/</guid>
       <description></description>
     </item>
     <item>
       <title>Chrome</title>
       <link>https://joaojunior.org/tags/chrome/</link>
-      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate>
       <guid>https://joaojunior.org/tags/chrome/</guid>
       <description></description>
     </item>
     <item>
       <title>Crashed</title>
       <link>https://joaojunior.org/tags/crashed/</link>
-      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate>
       <guid>https://joaojunior.org/tags/crashed/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
       <link>https://joaojunior.org/tags/docker/</link>
-      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate>
       <guid>https://joaojunior.org/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Selenium</title>
       <link>https://joaojunior.org/tags/selenium/</link>
-      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate>
       <guid>https://joaojunior.org/tags/selenium/</guid>
       <description></description>
     </item>
     <item>
       <title>WebDriverException</title>
       <link>https://joaojunior.org/tags/webdriverexception/</link>
-      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate>
       <guid>https://joaojunior.org/tags/webdriverexception/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer Vision</title>
       <link>https://joaojunior.org/tags/computer-vision/</link>
-      <pubDate>Wed, 29 Mar 2017 17:00:19 -0500</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Wed, 29 Mar 2017 17:00:19 -0500</pubDate>
       <guid>https://joaojunior.org/tags/computer-vision/</guid>
       <description></description>
     </item>
     <item>
       <title>OpenCV</title>
       <link>https://joaojunior.org/tags/opencv/</link>
-      <pubDate>Wed, 29 Mar 2017 17:00:19 -0500</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Wed, 29 Mar 2017 17:00:19 -0500</pubDate>
       <guid>https://joaojunior.org/tags/opencv/</guid>
       <description></description>
     </item>
     <item>
       <title>Operational Research</title>
       <link>https://joaojunior.org/tags/operational-research/</link>
-      <pubDate>Sun, 26 Feb 2017 09:42:04 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Sun, 26 Feb 2017 09:42:04 -0400</pubDate>
       <guid>https://joaojunior.org/tags/operational-research/</guid>
       <description></description>
     </item>
     <item>
       <title>Branch and Cut</title>
       <link>https://joaojunior.org/tags/branch-and-cut/</link>
-      <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate>
       <guid>https://joaojunior.org/tags/branch-and-cut/</guid>
       <description></description>
     </item>
     <item>
       <title>CPLEX</title>
       <link>https://joaojunior.org/tags/cplex/</link>
-      <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate>
       <guid>https://joaojunior.org/tags/cplex/</guid>
       <description></description>
     </item>
     <item>
       <title>Optimization</title>
       <link>https://joaojunior.org/tags/optimization/</link>
-      <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
+      <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate>
       <guid>https://joaojunior.org/tags/optimization/</guid>
       <description></description>
     </item>
