@@ -1,5 +1,5 @@
 baseURL = "https://joaojunior.org/"
-publishDir = "docs"
+publishDir = "../docs"
 defaultContentLanguage = "en"
 hasCJKLanguage = true
 languageCode = "en"

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redis on Joao Junior</title>
+    <link>https://joaojunior.org/tags/redis/</link>
+    <description>Recent content in Redis on Joao Junior</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 08 Apr 2024 14:15:00 +0000</lastBuildDate>
+    <atom:link href="https://joaojunior.org/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lua Scripts Are Not Atomic in Redis</title>
+      <link>https://joaojunior.org/posts/lua-scripts-are-not-atomic-in-redis/</link>
+      <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate>
+      <guid>https://joaojunior.org/posts/lua-scripts-are-not-atomic-in-redis/</guid>
+      <description>&lt;p&gt;Redis is an in-memory data structure store, very powerful, with an excellent abstraction via its API to manipulate its data structure. What makes Redis very powerful, in my opinion, is the variety of data structures it provides and the performance of its operations. This last feature is an effect of being an in-memory store.&lt;/p&gt;&#xA;&lt;p&gt;As with every software, Redis also has technical decisions and limitations that we need to be aware of and consider when choosing it. In this post, I will not describe a technical limitation but a poor documentation description of one feature.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
