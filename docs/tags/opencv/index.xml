@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OpenCV on Joao Junior</title>
-    <link>https://joaojunior.org/tags/opencv/</link>
+    <link>http://localhost:1313/tags/opencv/</link>
     <description>Recent content in OpenCV on Joao Junior</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 29 Mar 2017 17:00:19 -0500</lastBuildDate>
-    <atom:link href="https://joaojunior.org/tags/opencv/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/opencv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Identifying Paragraphs</title>
-      <link>https://joaojunior.org/posts/identify-paragraphs/</link>
+      <link>http://localhost:1313/posts/identify-paragraphs/</link>
       <pubDate>Wed, 29 Mar 2017 17:00:19 -0500</pubDate>
-      <guid>https://joaojunior.org/posts/identify-paragraphs/</guid>
+      <guid>http://localhost:1313/posts/identify-paragraphs/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m learning computer vision and I&amp;rsquo;m using the &lt;a href=&#34;http://docs.opencv.org/&#34;&gt;Opencv&lt;/a&gt;&#xA;and &lt;a href=&#34;https://www.python.org/&#34;&gt;Python&lt;/a&gt; to write algorithms in this field of computer science. This field&#xA;is very interesting because it involves computer science and math and also, it is necessary to have good ideas to solve problems.&lt;/p&gt;&#xA;&lt;p&gt;Here, I will show my first algorithm in computer vision. It is to identifies paragraphs in a text image. It consider that the image&#xA;have a white background and that the characters have a black color.&lt;/p&gt;</description>
     </item>
   </channel>

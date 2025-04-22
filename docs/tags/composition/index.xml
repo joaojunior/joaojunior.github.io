@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Composition on Joao Junior</title>
+    <link>http://localhost:1313/tags/composition/</link>
+    <description>Recent content in Composition on Joao Junior</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 22 Apr 2025 11:27:45 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/composition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Composition, Inheritance, and Liskov Substitution Principle</title>
+      <link>http://localhost:1313/posts/composition-inheritance-and-liskov-substitution-principle/</link>
+      <pubDate>Tue, 22 Apr 2025 11:27:45 -0400</pubDate>
+      <guid>http://localhost:1313/posts/composition-inheritance-and-liskov-substitution-principle/</guid>
+      <description>&lt;p&gt;In software development, organizing our codebase in a way that is easy to maintain is always a good practice, and this idea is not new.&#xA;Actually, I think this started in 1968 when the term &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_crisis&#34;&gt;software crisis&lt;/a&gt; was coined. Since then, we have developed many principles to help us achieve this goal.&#xA;One person who has made many contributions to this field is &lt;a href=&#34;https://pmg.csail.mit.edu/~liskov/&#34;&gt;Barbara Liskov&lt;/a&gt;. She is very famous for the &lt;a href=&#34;https://en.wikipedia.org/wiki/Liskov_substitution_principle&#34;&gt;Liskov Substitution Principle (LSP)&lt;/a&gt;, but she also invented the &lt;a href=&#34;https://dl.acm.org/doi/pdf/10.1145/800233.807045&#34;&gt;Abstract Data Type(ADT)&lt;/a&gt;, which is the core concept of classes and &lt;a href=&#34;https://en.wikipedia.org/wiki/Object-oriented_programming&#34;&gt;object-oriented programming&lt;/a&gt;.&#xA;Here, I want to discuss composition compared to inheritance and how understanding the Liskov Substitution Principle can help you develop better software.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

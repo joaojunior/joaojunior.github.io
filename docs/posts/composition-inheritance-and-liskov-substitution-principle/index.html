@@ -1,0 +1,482 @@
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>Composition, Inheritance, and Liskov Substitution Principle - </title>
+
+  <meta name="description" content="In software development, organizing our codebase in a way that is easy to maintain is always a good practice, and this idea is not new.
+Actually, I think this started in 1968 when the term software crisis was coined. Since then, we have developed many principles to help us achieve this goal.
+One person who has made many contributions to this field is Barbara Liskov. She is very famous for the Liskov Substitution Principle (LSP), but she also invented the Abstract Data Type(ADT), which is the core concept of classes and object-oriented programming.
+Here, I want to discuss composition compared to inheritance and how understanding the Liskov Substitution Principle can help you develop better software."><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Joao Junior",
+    
+    "url": "http:\/\/localhost:1313\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "http:\/\/localhost:1313\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "http:\/\/localhost:1313\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "http:\/\/localhost:1313\/posts\/composition-inheritance-and-liskov-substitution-principle\/",
+          "name": "Composition, inheritance, and liskov substitution principle"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : ""
+  },
+  "headline": "Composition, Inheritance, and Liskov Substitution Principle",
+  "description" : "In software development, organizing our codebase in a way that is easy to maintain is always a good practice, and this idea is not new. Actually, I think this started in 1968 when the term software crisis was coined. Since then, we have developed many principles to help us achieve this goal. One person who has made many contributions to this field is Barbara Liskov. She is very famous for the Liskov Substitution Principle (LSP), but she also invented the Abstract Data Type(ADT), which is the core concept of classes and object-oriented programming. Here, I want to discuss composition compared to inheritance and how understanding the Liskov Substitution Principle can help you develop better software.\n",
+  "inLanguage" : "en",
+  "wordCount":  865 ,
+  "datePublished" : "2025-04-22T11:27:45-04:00",
+  "dateModified" : "2025-04-22T11:27:45-04:00",
+  "image" : "http:\/\/localhost:1313\/jj.jpg",
+  "keywords" : [ "Inheritance, Composition, Liskov Substitution Principle, Barbara Liskov" ],
+  "mainEntityOfPage" : "http:\/\/localhost:1313\/posts\/composition-inheritance-and-liskov-substitution-principle\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "http:\/\/localhost:1313\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "http:\/\/localhost:1313\/jj.jpg",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+
+<meta property="og:title" content="Composition, Inheritance, and Liskov Substitution Principle" />
+<meta property="og:description" content="In software development, organizing our codebase in a way that is easy to maintain is always a good practice, and this idea is not new.
+Actually, I think this started in 1968 when the term software crisis was coined. Since then, we have developed many principles to help us achieve this goal.
+One person who has made many contributions to this field is Barbara Liskov. She is very famous for the Liskov Substitution Principle (LSP), but she also invented the Abstract Data Type(ADT), which is the core concept of classes and object-oriented programming.
+Here, I want to discuss composition compared to inheritance and how understanding the Liskov Substitution Principle can help you develop better software.">
+<meta property="og:image" content="http://localhost:1313/jj.jpg" />
+<meta property="og:url" content="http://localhost:1313/posts/composition-inheritance-and-liskov-substitution-principle/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Joao Junior" />
+
+  <meta name="twitter:title" content="Composition, Inheritance, and Liskov Substitution Principle" />
+  <meta name="twitter:description" content="In software development, organizing our codebase in a way that is easy to maintain is always a good practice, and this idea is not new.
+Actually, I think this started in 1968 when the term software …">
+  <meta name="twitter:image" content="http://localhost:1313/jj.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link href='http://localhost:1313/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.140.2">
+  <link rel="alternate" href="http://localhost:1313/index.xml" type="application/rss+xml" title="Joao Junior"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="http://localhost:1313/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="http://localhost:1313/css/highlight.min.css" /><link rel="stylesheet" href="http://localhost:1313/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://localhost:1313/">Joao Junior</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Posts" href="/">Posts</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="MCS" href="/mcs/">MCS</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About me" href="/about/">About me</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Joao Junior" href="http://localhost:1313/">
+            <img class="avatar-img" src="http://localhost:1313/jj.jpg" alt="Joao Junior" />
+           
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>Composition, Inheritance, and Liskov Substitution Principle</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>In software development, organizing our codebase in a way that is easy to maintain is always a good practice, and this idea is not new.
+Actually, I think this started in 1968 when the term <a href="https://en.wikipedia.org/wiki/Software_crisis">software crisis</a> was coined. Since then, we have developed many principles to help us achieve this goal.
+One person who has made many contributions to this field is <a href="https://pmg.csail.mit.edu/~liskov/">Barbara Liskov</a>. She is very famous for the <a href="https://en.wikipedia.org/wiki/Liskov_substitution_principle">Liskov Substitution Principle (LSP)</a>, but she also invented the <a href="https://dl.acm.org/doi/pdf/10.1145/800233.807045">Abstract Data Type(ADT)</a>, which is the core concept of classes and <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">object-oriented programming</a>.
+Here, I want to discuss composition compared to inheritance and how understanding the Liskov Substitution Principle can help you develop better software.</p>
+<p>First of all, currently, it is already a common practice and advice to prefer <a href="https://en.wikipedia.org/wiki/Composition_over_inheritance">composition over inheritance</a>. However, this was not always true. At least not for me; when I learned about object-oriented programming in earlier 2002, I was told that <a href="https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)">inheritance</a> was the best approach to reuse code. I was an inexperienced software engineer at that moment, and it took me a long time to understand the inheritance issues. Barbara Liskov talked about her preference for using <a href="https://en.wikipedia.org/wiki/Object_composition">composition</a> over inheritance long ago, in the late 60s or early 70s. This reminds us about the importance of learning the foundation well and reading the past to understand how we arrived at the present.</p>
+<p>However what is precisely the problems with inheritance? As Barbara Liskov said, the problem is that inheritance is used for two completely different ideas: implementation and type hierarchy.
+She mentioned that the implementation is the bad part of inheritance while the type hierarchy is the good one.</p>
+<p>One problem with the implementation is that it usually breaks the concept of <a href="https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)">encapsulation</a>: When we have a sub-class that uses direct variables of a super-class, we are breaking the encapsulation. The problem here is that we may need to modify the sub-class when we change the super-class. Another issue is that we can make a sub-class from a super-class when they are not directly related. Then, we can use composition over inheritance to avoid these problems, and Barbara Liskov mentioned exactly this point. Therefore, using composition over inheritance is also an excellent and old idea by Barbara Liskov.</p>
+<p>The type hierarchy is good because it allows us to write a piece of software that could be replaced without problems. Currently, we have ways to implement type hierarchy that try to mitigate the problems of implementation she mentioned. In Java, we have the concept of <a href="https://en.wikipedia.org/wiki/Interface_(Java)">Interfaces</a>; in other languages, such as C++ and Python, we have <a href="https://en.wikipedia.org/wiki/Class_(computer_programming)#Abstract_and_concrete">abstract classes</a>, for example. However, in the end, it is the developer&rsquo;s responsibility to use these concepts correctly. We can use Interfaces and abstract classes wrongly too.</p>
+<p>These two concepts, implementation and type hierarchy, are not easy to see as different concepts because we were usually taught they are the same; when it is clear, it is not the truth.
+So, this is the importance of the Liskov Substitution Principle and understanding it well. I&rsquo;m quoting below what she originally said:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">&#34;Objects of subtypes should behave like those of supertypes if used via supertype methods&#34;
+</span></span><span class="line"><span class="cl">Barbara Liskov
+</span></span></code></pre></div><p>As she said, It is not enough to have only the syntax; we should have semantics too.
+A wrong example of applying LSP she mentioned was a paper that made a <a href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)">stack</a> and a <a href="https://en.wikipedia.org/wiki/Queue_(abstract_data_type)">queue data structure</a> a subtype of each other by naming the methods generically enough. Here, the syntax is correct when we use one type or another in our program; however, semantically, it is wrong. Stack is a Last in First out(LIFO) data structure, while queue is a First in First out(FIFO) data structure. This could create many problems in our software because one&rsquo;s behaviour is different from the others.</p>
+<p>A good example of applying LSP is a different implementation of the same concept. For example, a <a href="https://en.wikipedia.org/wiki/Binary_search_tree">Binary Search Tree(BST)</a> and a <a href="https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree">Balanced Binary Search Tree(BBST)</a>. Both are syntactically and semantically identical to our program. The difference is only the performance in the implementation. While the BST has a linear time complexity in the worst case, the BBST has a logarithmic time complexity. Then, we can use either a BST or a BBST in our program without any problem. This is a good example of sub-types and the Liskov Substitution Principle.</p>
+<p>If you want to learn more about Barbara Liskov, her work on Abstract data types, and her principle, I recommend watching <a href="https://www.youtube.com/watch?v=qAKrMdUycb8">her speech during her ACM Turing Award acceptance</a>, entitled &ldquo;The Power of Abstraction.&rdquo; You can find the slides she used <a href="https://pmg.csail.mit.edu/~liskov/turing-09-5.pdf">here</a>.
+In my opinion, this is a must-watch talk for all software engineers. Barbara Liskov described how she invented the concept of Abstract Data Type and the Liskov Substitution Principle. She also showed the history of software development and object-oriented programming in this talk. It is a brilliant talk!</p>
+<p>You can also read the <a href="https://www.cs.tufts.edu/~nr/cs257/archive/barbara-liskov/data-abstraction-and-hierarchy.pdf">original paper</a> where she created the LSP to go deeper.</p>
+<p>If you are starting to learn object-oriented programming, choose composition over inheritance. When you use inheritance, always pay attention to whether you are breaking the concept of encapsulation; if you are, it is time to check your decisions.</p>
+
+
+        
+          <div class="blog-tags">
+            
+              
+              <a href="http://localhost:1313/tags/inheritance/">Inheritance</a>&nbsp;
+            
+              
+              <a href="http://localhost:1313/tags/composition/">Composition</a>&nbsp;
+            
+              
+              <a href="http://localhost:1313/tags/liskov-substitution-principle/">Liskov Substitution Principle</a>&nbsp;
+            
+              
+              <a href="http://localhost:1313/tags/barbara-liskov/">Barbara Liskov</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcomposition-inheritance-and-liskov-substitution-principle%2f&amp;text=Composition%2c%20Inheritance%2c%20and%20Liskov%20Substitution%20Principle&amp;via=" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fcomposition-inheritance-and-liskov-substitution-principle%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcomposition-inheritance-and-liskov-substitution-principle%2f&amp;title=Composition%2c%20Inheritance%2c%20and%20Liskov%20Substitution%20Principle" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcomposition-inheritance-and-liskov-substitution-principle%2f&amp;title=Composition%2c%20Inheritance%2c%20and%20Liskov%20Substitution%20Principle" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcomposition-inheritance-and-liskov-substitution-principle%2f&amp;title=Composition%2c%20Inheritance%2c%20and%20Liskov%20Substitution%20Principle" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcomposition-inheritance-and-liskov-substitution-principle%2f&amp;description=Composition%2c%20Inheritance%2c%20and%20Liskov%20Substitution%20Principle" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="http://localhost:1313/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/" data-toggle="tooltip" data-placement="top" title="Improving legacy code: Using Task Queue to Speed Up a Crawler in an ETL Process">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+      
+      
+      
+      
+          
+          <div class="disqus-comments">                  
+            <button id="show-comments" class="btn btn-default" type="button">Show <span class="disqus-comment-count" data-disqus-url="http://localhost:1313/posts/composition-inheritance-and-liskov-substitution-principle">comments</span></button>
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+              var disqus_config = function () {
+              this.page.url = 'http:\/\/localhost:1313\/posts\/composition-inheritance-and-liskov-substitution-principle';
+            };
+
+          </script>
+          </div>
+          
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      <footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2025
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="http://localhost:1313/">Joao Junior</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.140.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="http://localhost:1313/js/main.js"></script>
+<script src="http://localhost:1313/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="http://localhost:1313/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+  $('#show-comments').on('click', function(){
+    var disqus_shortname = 'joaojunior';
+      
+    (function() {
+      var disqus = document.createElement('script'); 
+      disqus.type = 'text/javascript'; 
+      disqus.async = true;
+      disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
+    })();
+      
+    $(this).hide(); 
+    });
+  });
+      
+</script>
+<script id="dsq-count-scr" src="//joaojunior.disqus.com/count.js" async></script>
+
+
+
+
+    
+    
+  </body>
+</html>
+
