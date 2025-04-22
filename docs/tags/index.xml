@@ -2,311 +2,311 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Joao Junior</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://joaojunior.org/tags/</link>
     <description>Recent content in Tags on Joao Junior</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 22 Apr 2025 11:27:45 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://joaojunior.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Barbara Liskov</title>
-      <link>http://localhost:1313/tags/barbara-liskov/</link>
+      <link>https://joaojunior.org/tags/barbara-liskov/</link>
       <pubDate>Tue, 22 Apr 2025 11:27:45 -0400</pubDate>
-      <guid>http://localhost:1313/tags/barbara-liskov/</guid>
+      <guid>https://joaojunior.org/tags/barbara-liskov/</guid>
       <description></description>
     </item>
     <item>
       <title>Composition</title>
-      <link>http://localhost:1313/tags/composition/</link>
+      <link>https://joaojunior.org/tags/composition/</link>
       <pubDate>Tue, 22 Apr 2025 11:27:45 -0400</pubDate>
-      <guid>http://localhost:1313/tags/composition/</guid>
+      <guid>https://joaojunior.org/tags/composition/</guid>
       <description></description>
     </item>
     <item>
       <title>Inheritance</title>
-      <link>http://localhost:1313/tags/inheritance/</link>
+      <link>https://joaojunior.org/tags/inheritance/</link>
       <pubDate>Tue, 22 Apr 2025 11:27:45 -0400</pubDate>
-      <guid>http://localhost:1313/tags/inheritance/</guid>
+      <guid>https://joaojunior.org/tags/inheritance/</guid>
       <description></description>
     </item>
     <item>
       <title>Liskov Substitution Principle</title>
-      <link>http://localhost:1313/tags/liskov-substitution-principle/</link>
+      <link>https://joaojunior.org/tags/liskov-substitution-principle/</link>
       <pubDate>Tue, 22 Apr 2025 11:27:45 -0400</pubDate>
-      <guid>http://localhost:1313/tags/liskov-substitution-principle/</guid>
+      <guid>https://joaojunior.org/tags/liskov-substitution-principle/</guid>
       <description></description>
     </item>
     <item>
       <title>Architecture</title>
-      <link>http://localhost:1313/tags/architecture/</link>
+      <link>https://joaojunior.org/tags/architecture/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
-      <guid>http://localhost:1313/tags/architecture/</guid>
+      <guid>https://joaojunior.org/tags/architecture/</guid>
       <description></description>
     </item>
     <item>
       <title>Celery</title>
-      <link>http://localhost:1313/tags/celery/</link>
+      <link>https://joaojunior.org/tags/celery/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
-      <guid>http://localhost:1313/tags/celery/</guid>
+      <guid>https://joaojunior.org/tags/celery/</guid>
       <description></description>
     </item>
     <item>
       <title>Crawler</title>
-      <link>http://localhost:1313/tags/crawler/</link>
+      <link>https://joaojunior.org/tags/crawler/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
-      <guid>http://localhost:1313/tags/crawler/</guid>
+      <guid>https://joaojunior.org/tags/crawler/</guid>
       <description></description>
     </item>
     <item>
       <title>ETL</title>
-      <link>http://localhost:1313/tags/etl/</link>
+      <link>https://joaojunior.org/tags/etl/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
-      <guid>http://localhost:1313/tags/etl/</guid>
+      <guid>https://joaojunior.org/tags/etl/</guid>
       <description></description>
     </item>
     <item>
       <title>Improving Legacy Code</title>
-      <link>http://localhost:1313/tags/improving-legacy-code/</link>
+      <link>https://joaojunior.org/tags/improving-legacy-code/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
-      <guid>http://localhost:1313/tags/improving-legacy-code/</guid>
+      <guid>https://joaojunior.org/tags/improving-legacy-code/</guid>
       <description></description>
     </item>
     <item>
       <title>Task Queue</title>
-      <link>http://localhost:1313/tags/task-queue/</link>
+      <link>https://joaojunior.org/tags/task-queue/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
-      <guid>http://localhost:1313/tags/task-queue/</guid>
+      <guid>https://joaojunior.org/tags/task-queue/</guid>
       <description></description>
     </item>
     <item>
       <title>GIL</title>
-      <link>http://localhost:1313/tags/gil/</link>
+      <link>https://joaojunior.org/tags/gil/</link>
       <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate>
-      <guid>http://localhost:1313/tags/gil/</guid>
+      <guid>https://joaojunior.org/tags/gil/</guid>
       <description></description>
     </item>
     <item>
       <title>NoGIL</title>
-      <link>http://localhost:1313/tags/nogil/</link>
+      <link>https://joaojunior.org/tags/nogil/</link>
       <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate>
-      <guid>http://localhost:1313/tags/nogil/</guid>
+      <guid>https://joaojunior.org/tags/nogil/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://joaojunior.org/tags/python/</link>
       <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://joaojunior.org/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Threads</title>
-      <link>http://localhost:1313/tags/threads/</link>
+      <link>https://joaojunior.org/tags/threads/</link>
       <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate>
-      <guid>http://localhost:1313/tags/threads/</guid>
+      <guid>https://joaojunior.org/tags/threads/</guid>
       <description></description>
     </item>
     <item>
       <title>Atomic Operations</title>
-      <link>http://localhost:1313/tags/atomic-operations/</link>
+      <link>https://joaojunior.org/tags/atomic-operations/</link>
       <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/atomic-operations/</guid>
+      <guid>https://joaojunior.org/tags/atomic-operations/</guid>
       <description></description>
     </item>
     <item>
       <title>Lua Scripts</title>
-      <link>http://localhost:1313/tags/lua-scripts/</link>
+      <link>https://joaojunior.org/tags/lua-scripts/</link>
       <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/lua-scripts/</guid>
+      <guid>https://joaojunior.org/tags/lua-scripts/</guid>
       <description></description>
     </item>
     <item>
       <title>Redis</title>
-      <link>http://localhost:1313/tags/redis/</link>
+      <link>https://joaojunior.org/tags/redis/</link>
       <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/redis/</guid>
+      <guid>https://joaojunior.org/tags/redis/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Structure</title>
-      <link>http://localhost:1313/tags/data-structure/</link>
+      <link>https://joaojunior.org/tags/data-structure/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
-      <guid>http://localhost:1313/tags/data-structure/</guid>
+      <guid>https://joaojunior.org/tags/data-structure/</guid>
       <description></description>
     </item>
     <item>
       <title>FlameGraph</title>
-      <link>http://localhost:1313/tags/flamegraph/</link>
+      <link>https://joaojunior.org/tags/flamegraph/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
-      <guid>http://localhost:1313/tags/flamegraph/</guid>
+      <guid>https://joaojunior.org/tags/flamegraph/</guid>
       <description></description>
     </item>
     <item>
       <title>HashMap</title>
-      <link>http://localhost:1313/tags/hashmap/</link>
+      <link>https://joaojunior.org/tags/hashmap/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
-      <guid>http://localhost:1313/tags/hashmap/</guid>
+      <guid>https://joaojunior.org/tags/hashmap/</guid>
       <description></description>
     </item>
     <item>
       <title>Improving Comparisons</title>
-      <link>http://localhost:1313/tags/improving-comparisons/</link>
+      <link>https://joaojunior.org/tags/improving-comparisons/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
-      <guid>http://localhost:1313/tags/improving-comparisons/</guid>
+      <guid>https://joaojunior.org/tags/improving-comparisons/</guid>
       <description></description>
     </item>
     <item>
       <title>Improving Performance</title>
-      <link>http://localhost:1313/tags/improving-performance/</link>
+      <link>https://joaojunior.org/tags/improving-performance/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
-      <guid>http://localhost:1313/tags/improving-performance/</guid>
+      <guid>https://joaojunior.org/tags/improving-performance/</guid>
       <description></description>
     </item>
     <item>
       <title>Ruby</title>
-      <link>http://localhost:1313/tags/ruby/</link>
+      <link>https://joaojunior.org/tags/ruby/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
-      <guid>http://localhost:1313/tags/ruby/</guid>
+      <guid>https://joaojunior.org/tags/ruby/</guid>
       <description></description>
     </item>
     <item>
       <title>Set</title>
-      <link>http://localhost:1313/tags/set/</link>
+      <link>https://joaojunior.org/tags/set/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
-      <guid>http://localhost:1313/tags/set/</guid>
+      <guid>https://joaojunior.org/tags/set/</guid>
       <description></description>
     </item>
     <item>
       <title>Book Review</title>
-      <link>http://localhost:1313/tags/book-review/</link>
+      <link>https://joaojunior.org/tags/book-review/</link>
       <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate>
-      <guid>http://localhost:1313/tags/book-review/</guid>
+      <guid>https://joaojunior.org/tags/book-review/</guid>
       <description></description>
     </item>
     <item>
       <title>Peopleware</title>
-      <link>http://localhost:1313/tags/peopleware/</link>
+      <link>https://joaojunior.org/tags/peopleware/</link>
       <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate>
-      <guid>http://localhost:1313/tags/peopleware/</guid>
+      <guid>https://joaojunior.org/tags/peopleware/</guid>
       <description></description>
     </item>
     <item>
       <title>ACID</title>
-      <link>http://localhost:1313/tags/acid/</link>
+      <link>https://joaojunior.org/tags/acid/</link>
       <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
-      <guid>http://localhost:1313/tags/acid/</guid>
+      <guid>https://joaojunior.org/tags/acid/</guid>
       <description></description>
     </item>
     <item>
       <title>Concurrent Transactions</title>
-      <link>http://localhost:1313/tags/concurrent-transactions/</link>
+      <link>https://joaojunior.org/tags/concurrent-transactions/</link>
       <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
-      <guid>http://localhost:1313/tags/concurrent-transactions/</guid>
+      <guid>https://joaojunior.org/tags/concurrent-transactions/</guid>
       <description></description>
     </item>
     <item>
       <title>Database Transactions</title>
-      <link>http://localhost:1313/tags/database-transactions/</link>
+      <link>https://joaojunior.org/tags/database-transactions/</link>
       <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
-      <guid>http://localhost:1313/tags/database-transactions/</guid>
+      <guid>https://joaojunior.org/tags/database-transactions/</guid>
       <description></description>
     </item>
     <item>
       <title>Isolation Level</title>
-      <link>http://localhost:1313/tags/isolation-level/</link>
+      <link>https://joaojunior.org/tags/isolation-level/</link>
       <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
-      <guid>http://localhost:1313/tags/isolation-level/</guid>
+      <guid>https://joaojunior.org/tags/isolation-level/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Intensive Applications</title>
-      <link>http://localhost:1313/tags/data-intensive-applications/</link>
+      <link>https://joaojunior.org/tags/data-intensive-applications/</link>
       <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate>
-      <guid>http://localhost:1313/tags/data-intensive-applications/</guid>
+      <guid>https://joaojunior.org/tags/data-intensive-applications/</guid>
       <description></description>
     </item>
     <item>
       <title>Distributed System</title>
-      <link>http://localhost:1313/tags/distributed-system/</link>
+      <link>https://joaojunior.org/tags/distributed-system/</link>
       <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate>
-      <guid>http://localhost:1313/tags/distributed-system/</guid>
+      <guid>https://joaojunior.org/tags/distributed-system/</guid>
       <description></description>
     </item>
     <item>
       <title>Chrome</title>
-      <link>http://localhost:1313/tags/chrome/</link>
+      <link>https://joaojunior.org/tags/chrome/</link>
       <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate>
-      <guid>http://localhost:1313/tags/chrome/</guid>
+      <guid>https://joaojunior.org/tags/chrome/</guid>
       <description></description>
     </item>
     <item>
       <title>Crashed</title>
-      <link>http://localhost:1313/tags/crashed/</link>
+      <link>https://joaojunior.org/tags/crashed/</link>
       <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate>
-      <guid>http://localhost:1313/tags/crashed/</guid>
+      <guid>https://joaojunior.org/tags/crashed/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
+      <link>https://joaojunior.org/tags/docker/</link>
       <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate>
-      <guid>http://localhost:1313/tags/docker/</guid>
+      <guid>https://joaojunior.org/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Selenium</title>
-      <link>http://localhost:1313/tags/selenium/</link>
+      <link>https://joaojunior.org/tags/selenium/</link>
       <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate>
-      <guid>http://localhost:1313/tags/selenium/</guid>
+      <guid>https://joaojunior.org/tags/selenium/</guid>
       <description></description>
     </item>
     <item>
       <title>WebDriverException</title>
-      <link>http://localhost:1313/tags/webdriverexception/</link>
+      <link>https://joaojunior.org/tags/webdriverexception/</link>
       <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate>
-      <guid>http://localhost:1313/tags/webdriverexception/</guid>
+      <guid>https://joaojunior.org/tags/webdriverexception/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer Vision</title>
-      <link>http://localhost:1313/tags/computer-vision/</link>
+      <link>https://joaojunior.org/tags/computer-vision/</link>
       <pubDate>Wed, 29 Mar 2017 17:00:19 -0500</pubDate>
-      <guid>http://localhost:1313/tags/computer-vision/</guid>
+      <guid>https://joaojunior.org/tags/computer-vision/</guid>
       <description></description>
     </item>
     <item>
       <title>OpenCV</title>
-      <link>http://localhost:1313/tags/opencv/</link>
+      <link>https://joaojunior.org/tags/opencv/</link>
       <pubDate>Wed, 29 Mar 2017 17:00:19 -0500</pubDate>
-      <guid>http://localhost:1313/tags/opencv/</guid>
+      <guid>https://joaojunior.org/tags/opencv/</guid>
       <description></description>
     </item>
     <item>
       <title>Operational Research</title>
-      <link>http://localhost:1313/tags/operational-research/</link>
+      <link>https://joaojunior.org/tags/operational-research/</link>
       <pubDate>Sun, 26 Feb 2017 09:42:04 -0400</pubDate>
-      <guid>http://localhost:1313/tags/operational-research/</guid>
+      <guid>https://joaojunior.org/tags/operational-research/</guid>
       <description></description>
     </item>
     <item>
       <title>Branch and Cut</title>
-      <link>http://localhost:1313/tags/branch-and-cut/</link>
+      <link>https://joaojunior.org/tags/branch-and-cut/</link>
       <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate>
-      <guid>http://localhost:1313/tags/branch-and-cut/</guid>
+      <guid>https://joaojunior.org/tags/branch-and-cut/</guid>
       <description></description>
     </item>
     <item>
       <title>CPLEX</title>
-      <link>http://localhost:1313/tags/cplex/</link>
+      <link>https://joaojunior.org/tags/cplex/</link>
       <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate>
-      <guid>http://localhost:1313/tags/cplex/</guid>
+      <guid>https://joaojunior.org/tags/cplex/</guid>
       <description></description>
     </item>
     <item>
       <title>Optimization</title>
-      <link>http://localhost:1313/tags/optimization/</link>
+      <link>https://joaojunior.org/tags/optimization/</link>
       <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate>
-      <guid>http://localhost:1313/tags/optimization/</guid>
+      <guid>https://joaojunior.org/tags/optimization/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,189 +2,189 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/barbara-liskov/</loc>
+    <loc>https://joaojunior.org/tags/barbara-liskov/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/composition/</loc>
+    <loc>https://joaojunior.org/tags/composition/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/composition-inheritance-and-liskov-substitution-principle/</loc>
+    <loc>https://joaojunior.org/posts/composition-inheritance-and-liskov-substitution-principle/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/inheritance/</loc>
+    <loc>https://joaojunior.org/tags/inheritance/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://joaojunior.org/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/liskov-substitution-principle/</loc>
+    <loc>https://joaojunior.org/tags/liskov-substitution-principle/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://joaojunior.org/posts/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://joaojunior.org/tags/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/architecture/</loc>
+    <loc>https://joaojunior.org/tags/architecture/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/celery/</loc>
+    <loc>https://joaojunior.org/tags/celery/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/crawler/</loc>
+    <loc>https://joaojunior.org/tags/crawler/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/etl/</loc>
+    <loc>https://joaojunior.org/tags/etl/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/improving-legacy-code/</loc>
+    <loc>https://joaojunior.org/tags/improving-legacy-code/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/</loc>
+    <loc>https://joaojunior.org/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/task-queue/</loc>
+    <loc>https://joaojunior.org/tags/task-queue/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/gil/</loc>
+    <loc>https://joaojunior.org/tags/gil/</loc>
     <lastmod>2024-07-17T12:40:06-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</loc>
+    <loc>https://joaojunior.org/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</loc>
     <lastmod>2024-07-17T12:40:06-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/nogil/</loc>
+    <loc>https://joaojunior.org/tags/nogil/</loc>
     <lastmod>2024-07-17T12:40:06-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>https://joaojunior.org/tags/python/</loc>
     <lastmod>2024-07-17T12:40:06-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/threads/</loc>
+    <loc>https://joaojunior.org/tags/threads/</loc>
     <lastmod>2024-07-17T12:40:06-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/atomic-operations/</loc>
+    <loc>https://joaojunior.org/tags/atomic-operations/</loc>
     <lastmod>2024-04-08T14:15:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/lua-scripts/</loc>
+    <loc>https://joaojunior.org/tags/lua-scripts/</loc>
     <lastmod>2024-04-08T14:15:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/lua-scripts-are-not-atomic-in-redis/</loc>
+    <loc>https://joaojunior.org/posts/lua-scripts-are-not-atomic-in-redis/</loc>
     <lastmod>2024-04-08T14:15:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/redis/</loc>
+    <loc>https://joaojunior.org/tags/redis/</loc>
     <lastmod>2024-04-08T14:15:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/data-structure/</loc>
+    <loc>https://joaojunior.org/tags/data-structure/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/flamegraph/</loc>
+    <loc>https://joaojunior.org/tags/flamegraph/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hashmap/</loc>
+    <loc>https://joaojunior.org/tags/hashmap/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/improving-comparisons/</loc>
+    <loc>https://joaojunior.org/tags/improving-comparisons/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/improving-performance/</loc>
+    <loc>https://joaojunior.org/tags/improving-performance/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/</loc>
+    <loc>https://joaojunior.org/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ruby/</loc>
+    <loc>https://joaojunior.org/tags/ruby/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/set/</loc>
+    <loc>https://joaojunior.org/tags/set/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/book-review/</loc>
+    <loc>https://joaojunior.org/tags/book-review/</loc>
     <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/peopleware/</loc>
+    <loc>https://joaojunior.org/tags/peopleware/</loc>
     <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/peopleware-productive-projects-and-teams/</loc>
+    <loc>https://joaojunior.org/posts/peopleware-productive-projects-and-teams/</loc>
     <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/acid/</loc>
+    <loc>https://joaojunior.org/tags/acid/</loc>
     <lastmod>2022-05-11T10:29:19-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/concurrent-transactions/</loc>
+    <loc>https://joaojunior.org/tags/concurrent-transactions/</loc>
     <lastmod>2022-05-11T10:29:19-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/database-transactions/</loc>
+    <loc>https://joaojunior.org/tags/database-transactions/</loc>
     <lastmod>2022-05-11T10:29:19-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/isolation-level/</loc>
+    <loc>https://joaojunior.org/tags/isolation-level/</loc>
     <lastmod>2022-05-11T10:29:19-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/why-is-atomicity-not-enough/</loc>
+    <loc>https://joaojunior.org/posts/why-is-atomicity-not-enough/</loc>
     <lastmod>2022-05-11T10:29:19-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/quicksort/</loc>
+    <loc>https://joaojunior.org/posts/quicksort/</loc>
     <lastmod>2021-07-22T15:54:55-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/data-intensive-applications/</loc>
+    <loc>https://joaojunior.org/tags/data-intensive-applications/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/designing-data-intensive-applications-review/</loc>
+    <loc>https://joaojunior.org/posts/designing-data-intensive-applications-review/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/distributed-system/</loc>
+    <loc>https://joaojunior.org/tags/distributed-system/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/chrome/</loc>
+    <loc>https://joaojunior.org/tags/chrome/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
+    <loc>https://joaojunior.org/posts/my-first-post/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/crashed/</loc>
+    <loc>https://joaojunior.org/tags/crashed/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/docker/</loc>
+    <loc>https://joaojunior.org/tags/docker/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/selenium/</loc>
+    <loc>https://joaojunior.org/tags/selenium/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/webdriverexception/</loc>
+    <loc>https://joaojunior.org/tags/webdriverexception/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/computer-vision/</loc>
+    <loc>https://joaojunior.org/tags/computer-vision/</loc>
     <lastmod>2017-03-29T17:00:19-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/identify-paragraphs/</loc>
+    <loc>https://joaojunior.org/posts/identify-paragraphs/</loc>
     <lastmod>2017-03-29T17:00:19-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/opencv/</loc>
+    <loc>https://joaojunior.org/tags/opencv/</loc>
     <lastmod>2017-03-29T17:00:19-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/operational-research/</loc>
+    <loc>https://joaojunior.org/tags/operational-research/</loc>
     <lastmod>2017-02-26T09:42:04-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/my-second-post/</loc>
+    <loc>https://joaojunior.org/posts/my-second-post/</loc>
     <lastmod>2017-02-26T09:42:04-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/branch-and-cut/</loc>
+    <loc>https://joaojunior.org/tags/branch-and-cut/</loc>
     <lastmod>2017-01-08T16:48:25-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/callbacks-in-cplex/</loc>
+    <loc>https://joaojunior.org/posts/callbacks-in-cplex/</loc>
     <lastmod>2017-01-08T16:48:25-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cplex/</loc>
+    <loc>https://joaojunior.org/tags/cplex/</loc>
     <lastmod>2017-01-08T16:48:25-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/optimization/</loc>
+    <loc>https://joaojunior.org/tags/optimization/</loc>
     <lastmod>2017-01-08T16:48:25-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://joaojunior.org/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://joaojunior.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/mcs/</loc>
+    <loc>https://joaojunior.org/mcs/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://joaojunior.org/series/</loc>
   </url>
 </urlset>

@@ -2,115 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joao Junior</title>
-    <link>http://localhost:1313/</link>
+    <link>https://joaojunior.org/</link>
     <description>Recent content on Joao Junior</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 22 Apr 2025 11:27:45 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://joaojunior.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Composition, Inheritance, and Liskov Substitution Principle</title>
-      <link>http://localhost:1313/posts/composition-inheritance-and-liskov-substitution-principle/</link>
+      <link>https://joaojunior.org/posts/composition-inheritance-and-liskov-substitution-principle/</link>
       <pubDate>Tue, 22 Apr 2025 11:27:45 -0400</pubDate>
-      <guid>http://localhost:1313/posts/composition-inheritance-and-liskov-substitution-principle/</guid>
+      <guid>https://joaojunior.org/posts/composition-inheritance-and-liskov-substitution-principle/</guid>
       <description>&lt;p&gt;In software development, organizing our codebase in a way that is easy to maintain is always a good practice, and this idea is not new.&#xA;Actually, I think this started in 1968 when the term &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_crisis&#34;&gt;software crisis&lt;/a&gt; was coined. Since then, we have developed many principles to help us achieve this goal.&#xA;One person who has made many contributions to this field is &lt;a href=&#34;https://pmg.csail.mit.edu/~liskov/&#34;&gt;Barbara Liskov&lt;/a&gt;. She is very famous for the &lt;a href=&#34;https://en.wikipedia.org/wiki/Liskov_substitution_principle&#34;&gt;Liskov Substitution Principle (LSP)&lt;/a&gt;, but she also invented the &lt;a href=&#34;https://dl.acm.org/doi/pdf/10.1145/800233.807045&#34;&gt;Abstract Data Type(ADT)&lt;/a&gt;, which is the core concept of classes and &lt;a href=&#34;https://en.wikipedia.org/wiki/Object-oriented_programming&#34;&gt;object-oriented programming&lt;/a&gt;.&#xA;Here, I want to discuss composition compared to inheritance and how understanding the Liskov Substitution Principle can help you develop better software.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Improving legacy code: Using Task Queue to Speed Up a Crawler in an ETL Process</title>
-      <link>http://localhost:1313/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/</link>
+      <link>https://joaojunior.org/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate>
-      <guid>http://localhost:1313/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/</guid>
+      <guid>https://joaojunior.org/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/</guid>
       <description>&lt;p&gt;In this post, I will present how I improved an ETL process to be more than 4x faster using the same resources. While the old architecture used Python threads, the new one used task queue architecture to be more reliable and scalable. So, I will explain how we can improve a legacy code and speed it up by only modifying the architecture to run the code.&lt;/p&gt;&#xA;&lt;p&gt;Almost 10 years ago, I was hired to improve a system and train a team of engineers in Python and scalable systems. The company had an ETL process to provide financial information for the finance team. The ETL was composed of the crawler, the parser, and the normalizer. The crawler&amp;rsquo;s primary responsibility was crawling finance data on our partners’ websites, which were protected by a username and password. The parser converted CSV, HTML, and JSON data and saved the result in our intermediate database. The last step, the normalizer, summarized the data using some keys and sent it to the system where the finance team could access it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Is CPython Faster Without the Global Interpreter Lock(GIL)?</title>
-      <link>http://localhost:1313/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</link>
+      <link>https://joaojunior.org/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</link>
       <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate>
-      <guid>http://localhost:1313/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</guid>
+      <guid>https://joaojunior.org/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://docs.python.org/3/glossary.html#term-global-interpreter-lock&#34;&gt;Global interpreter lock(GIL)&lt;/a&gt; is a mechanism in &lt;a href=&#34;https://github.com/python/cpython&#34;&gt;CPython&lt;/a&gt; implementation to ensure only one thread is running at a time.&#xA;This means that even if we use &lt;a href=&#34;https://docs.python.org/3/library/threading.html&#34;&gt;threads&lt;/a&gt; to try to speed up our programs&amp;rsquo; runtime, this will not work because, in the end, the interpreter will block that two or more threads will be executed in parallel.&lt;/p&gt;&#xA;&lt;p&gt;As the name suggests, the GIL is a locker that a thread gets when it starts and releases at some moment. There is only one locker, so two threads cannot get it simultaneously. As a result, our program with threads will be slower than the same program without threads because of the time to create threads and not take advantage of them.&#xA;However, this is true only for &lt;a href=&#34;https://en.wikipedia.org/wiki/CPU-bound&#34;&gt;CPU bound problems&lt;/a&gt;, which requires a large amount of CPU time to process, like &lt;a href=&#34;https://en.wikipedia.org/wiki/Invertible_matrix&#34;&gt;inverse matrix&lt;/a&gt;. For I/O bound problems, CPython releases the locker as soon as an I/O call happens. We still have only one thread running at once on the CPU, but now, a thread does not block other threads while waiting for the I/O result.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lua Scripts Are Not Atomic in Redis</title>
-      <link>http://localhost:1313/posts/lua-scripts-are-not-atomic-in-redis/</link>
+      <link>https://joaojunior.org/posts/lua-scripts-are-not-atomic-in-redis/</link>
       <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/lua-scripts-are-not-atomic-in-redis/</guid>
+      <guid>https://joaojunior.org/posts/lua-scripts-are-not-atomic-in-redis/</guid>
       <description>&lt;p&gt;Redis is an in-memory data structure store, very powerful, with an excellent abstraction via its API to manipulate its data structure. What makes Redis very powerful, in my opinion, is the variety of data structures it provides and the performance of its operations. This last feature is an effect of being an in-memory store.&lt;/p&gt;&#xA;&lt;p&gt;As with every software, Redis also has technical decisions and limitations that we need to be aware of and consider when choosing it. In this post, I will not describe a technical limitation but a poor documentation description of one feature.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Improving the check if an object is in a Set/HashMap data structure in Ruby by using better comparisons, memoization, and object orientation practices</title>
-      <link>http://localhost:1313/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/</link>
+      <link>https://joaojunior.org/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate>
-      <guid>http://localhost:1313/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/</guid>
+      <guid>https://joaojunior.org/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/</guid>
       <description>&lt;p&gt;I was verifying the performance of an endpoint in an API using &lt;a href=&#34;https://rbspy.github.io/profiling-guide/using-flamegraphs.html&#34;&gt;framegraph&lt;/a&gt; when I noticed that checking if an object is in a set or a hash data structure was consuming a lot of time.&#xA;This post explains the problem and the solution to it.&lt;/p&gt;&#xA;&lt;p&gt;First of all, checking if an object is in a &lt;a href=&#34;https://en.wikipedia.org/wiki/Set_(abstract_data_type)&#34;&gt;Set&lt;/a&gt; or &lt;a href=&#34;https://en.wikipedia.org/wiki/Hash_table&#34;&gt;HashMap&lt;/a&gt; is &lt;code&gt;O(1)&lt;/code&gt; when we don&amp;rsquo;t consider collisions. Even in the presence of collisions, it should be much less than &lt;code&gt;O(n)&lt;/code&gt;, where &lt;code&gt;n&lt;/code&gt; is the number of items in the set. Otherwise, we are operating as a linked list.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Peopleware: Productive Projects and Teams</title>
-      <link>http://localhost:1313/posts/peopleware-productive-projects-and-teams/</link>
+      <link>https://joaojunior.org/posts/peopleware-productive-projects-and-teams/</link>
       <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate>
-      <guid>http://localhost:1313/posts/peopleware-productive-projects-and-teams/</guid>
+      <guid>https://joaojunior.org/posts/peopleware-productive-projects-and-teams/</guid>
       <description>&lt;p&gt;First things first, this is a classic &lt;a href=&#34;https://www.goodreads.com/book/show/67825.Peopleware&#34;&gt;book&lt;/a&gt; by &lt;a href=&#34;https://en.wikipedia.org/wiki/Tom_DeMarco&#34;&gt;Tom DeMarco&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Tim_Lister&#34;&gt;Timothy Lister&lt;/a&gt; that everyone working in the software industry must read.&lt;/p&gt;&#xA;&lt;p&gt;The third edition divides this book into 6 parts with 39 chapters and 249 pages. It is an easy book to read and follow. However, it is necessary to stop constantly to reflect on the facts and ideas presented. Also, the reading would be like a map of the industry if you had a lot of experience in the software development industry. By this, I would like to say that many, maybe all, of the ideas presented in the book are implemented in all software-based companies I have seen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why Is Atomicity Not Enough?</title>
-      <link>http://localhost:1313/posts/why-is-atomicity-not-enough/</link>
+      <link>https://joaojunior.org/posts/why-is-atomicity-not-enough/</link>
       <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate>
-      <guid>http://localhost:1313/posts/why-is-atomicity-not-enough/</guid>
+      <guid>https://joaojunior.org/posts/why-is-atomicity-not-enough/</guid>
       <description>&lt;p&gt;When we study transactions in &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_database&#34;&gt;relational databases&lt;/a&gt;, one of the first&#xA;things we learn are the guarantees that a transaction must provide.&#xA;&lt;a href=&#34;https://en.wikipedia.org/wiki/ACID&#34;&gt;ACID(Atomicity, Consistency, Isolation, Durability)&lt;/a&gt; are the properties that we desire. Here, I will discuss the Isolation level in more detail and&#xA;show that atomicity alone is not enough when handling concurrency.&lt;/p&gt;&#xA;&lt;p&gt;One classic example of the importance of atomicity is moving money&#xA;between accounts. So, imagine that we have two accounts and we would like to transfer the total amount from one account to another one. In a relational database, what we need to do is three steps:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Quicksort</title>
-      <link>http://localhost:1313/posts/quicksort/</link>
+      <link>https://joaojunior.org/posts/quicksort/</link>
       <pubDate>Thu, 22 Jul 2021 15:54:55 -0400</pubDate>
-      <guid>http://localhost:1313/posts/quicksort/</guid>
+      <guid>https://joaojunior.org/posts/quicksort/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://doi.org/10.1145/366622.366644&#34;&gt;Quicksort&lt;/a&gt; algorithm was created by &lt;a href=&#34;https://www.cs.ox.ac.uk/people/tony.hoare/&#34;&gt;Tony Hoare&lt;/a&gt; in 1961 and it is a very powerful algorithm to sort an array in memory until today. Here, I will describe the Quicksort algorithm, show an implementation in Python, and analyze the time complexity of this algorithm in the worst and best scenarios.&lt;/p&gt;&#xA;&lt;p&gt;The idea behind the Quicksort is so simple: to sort an array \(V\) of \(n\) elements, it is easier to sort smaller sub-arrays of \(V\).&#xA;We can think of this approach as &lt;a href=&#34;https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm&#34;&gt;divide-and-conquer&lt;/a&gt;, where we break a problem into smaller sub-problems and combine their solutions to form the solution to the original problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Designing Data-Intensive Applications: Review</title>
-      <link>http://localhost:1313/posts/designing-data-intensive-applications-review/</link>
+      <link>https://joaojunior.org/posts/designing-data-intensive-applications-review/</link>
       <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate>
-      <guid>http://localhost:1313/posts/designing-data-intensive-applications-review/</guid>
+      <guid>https://joaojunior.org/posts/designing-data-intensive-applications-review/</guid>
       <description>&lt;p&gt;Disclaimer: Don&amp;rsquo;t read this review, go ahead and read the &lt;a href=&#34;https://dataintensive.net/&#34;&gt;book&lt;/a&gt;, it will be much better for you. The only reason that I wrote this is for my future reference.&lt;/p&gt;&#xA;&lt;p&gt;First of all, I love to read books and I do not believe that a review should influence someone to read or not a book. However, as a researcher, one of the most important things that I learned during my years at the university was the importance to write a review of papers. After reading a paper, we should write a review. Not to publish, but to describe in our words what we read and also to future references. So, do not expect here a complete resume of the book or the concepts present in it. Also, do not think that this is a replacement or a complement of the book, it is not. This book is fantastic and you should read it if you like this subject.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chrome with selenium, python and docker</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>https://joaojunior.org/posts/my-first-post/</link>
       <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>https://joaojunior.org/posts/my-first-post/</guid>
       <description>&lt;p&gt;Sometimes, when I execute the Chrome inside a docker container I receive the error below:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: crashed&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is caused because Chrome uses the &lt;code&gt;/dev/shm&lt;/code&gt; to share memory and the docker, by default, set 64MB for this partition.&lt;/p&gt;&#xA;&lt;p&gt;Here, I will describe how to reproduce this error and how to resolve it.&lt;/p&gt;&#xA;&lt;h1 id=&#34;how-to-reproduce&#34;&gt;How to reproduce&lt;/h1&gt;&#xA;&lt;p&gt;To reproduce this error, we need to create a docker image with chrome and python. Then, I created this &lt;a href=&#34;https://github.com/joaojunior/python_selenium_chrome_docker/blob/master/Dockerfile&#34;&gt;Dockerfile&lt;/a&gt; which uses a &lt;a href=&#34;https://docs.docker.com/develop/develop-images/multistage-build/&#34;&gt;multi-stage build&lt;/a&gt; to install the chrome and the python.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Identifying Paragraphs</title>
-      <link>http://localhost:1313/posts/identify-paragraphs/</link>
+      <link>https://joaojunior.org/posts/identify-paragraphs/</link>
       <pubDate>Wed, 29 Mar 2017 17:00:19 -0500</pubDate>
-      <guid>http://localhost:1313/posts/identify-paragraphs/</guid>
+      <guid>https://joaojunior.org/posts/identify-paragraphs/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m learning computer vision and I&amp;rsquo;m using the &lt;a href=&#34;http://docs.opencv.org/&#34;&gt;Opencv&lt;/a&gt;&#xA;and &lt;a href=&#34;https://www.python.org/&#34;&gt;Python&lt;/a&gt; to write algorithms in this field of computer science. This field&#xA;is very interesting because it involves computer science and math and also, it is necessary to have good ideas to solve problems.&lt;/p&gt;&#xA;&lt;p&gt;Here, I will show my first algorithm in computer vision. It is to identifies paragraphs in a text image. It consider that the image&#xA;have a white background and that the characters have a black color.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resources in Operational Research</title>
-      <link>http://localhost:1313/posts/my-second-post/</link>
+      <link>https://joaojunior.org/posts/my-second-post/</link>
       <pubDate>Sun, 26 Feb 2017 09:42:04 -0400</pubDate>
-      <guid>http://localhost:1313/posts/my-second-post/</guid>
+      <guid>https://joaojunior.org/posts/my-second-post/</guid>
       <description>&lt;p&gt;I wrote a list of operational research resource which contains many name of books, events, groups, solvers and teachers.&#xA;I publish this list &lt;a href=&#34;https://github.com/joaojunior/awesome-operational_research&#34;&gt;here&lt;/a&gt;. It is a github&amp;rsquo;s repository and you can help to update :-)&lt;/p&gt;&#xA;&lt;p&gt;I wrote it based on the list, wrote by &lt;a href=&#34;https://medium.com/@avelino0&#34;&gt;Avelino&lt;/a&gt;, about resources for &lt;a href=&#34;https://github.com/avelino/awesome-go&#34;&gt;go programming language&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Callbacks in Cplex</title>
-      <link>http://localhost:1313/posts/callbacks-in-cplex/</link>
+      <link>https://joaojunior.org/posts/callbacks-in-cplex/</link>
       <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate>
-      <guid>http://localhost:1313/posts/callbacks-in-cplex/</guid>
+      <guid>https://joaojunior.org/posts/callbacks-in-cplex/</guid>
       <description>&lt;h1 id=&#34;callbacks-in-cplex&#34;&gt;Callbacks in Cplex&lt;/h1&gt;&#xA;&lt;p&gt;I used &lt;a href=&#34;https://www.ibm.com/support/knowledgecenter/SSSA5P_12.6.0/ilog.odms.cplex.help/refpythoncplex/html/cplex.callbacks.LazyConstraintCallback-class.html&#34;&gt;LazyConstraintCallback&lt;/a&gt;&#xA;to implement a &lt;a href=&#34;https://en.wikipedia.org/wiki/Branch_and_cut&#34;&gt;Branch and Cut&lt;/a&gt; algorithm with&#xA;&lt;a href=&#34;https://www-01.ibm.com/software/commerce/optimization/cplex-optimizer/&#34;&gt;CPLEX&lt;/a&gt;, but when I implemented and run this algorithm, it was very slow if I compare it with its version that doesn&amp;rsquo;t use callbacks in Cplex. The reason is because ControlCallback(LazyConstraintCallback is a ControlCallback) switch Cplex to sequential mode by default and turn off dynamic search.&#xA;I wrote this post, because I didn&amp;rsquo;t find this information in Cplex’s documentation, I only found it in this &lt;a href=&#34;https://www.ibm.com/developerworks/community/forums/html/topic?id=55bc851b-cba5-446f-a6b9-696ad8ab0481&#34;&gt;technical forum&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About me</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://joaojunior.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://joaojunior.org/about/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m from &lt;a href=&#34;https://en.wikipedia.org/wiki/Belo_Horizonte&#34;&gt;Belo Horizonte - MG&lt;/a&gt;, Brazil and I already lived in United States, France, Malta and Canada.&lt;/p&gt;&#xA;&lt;p&gt;I have been using computers since 1994 when my father gave me my first &lt;a href=&#34;https://en.wikipedia.org/wiki/Intel_80486&#34;&gt;486DX2 66MHz&lt;/a&gt; with 16MB of memory and a 2.1GB hard disk. On this computer, I started using &lt;a href=&#34;https://en.wikipedia.org/wiki/MS-DOS&#34;&gt;MS-DOS&lt;/a&gt; as an operating system. After I used Windows &lt;a href=&#34;https://en.wikipedia.org/wiki/Windows_3.1x&#34;&gt;Windows 3.11&lt;/a&gt;, Windows 95, Windows 98, and many other Windows operation system. About 1999/2000 I knew &lt;a href=&#34;https://en.wikipedia.org/wiki/GNU&#34;&gt;GNU/Linux&lt;/a&gt; and I started to use it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MCS</title>
-      <link>http://localhost:1313/mcs/</link>
+      <link>https://joaojunior.org/mcs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mcs/</guid>
+      <guid>https://joaojunior.org/mcs/</guid>
       <description>&lt;p&gt;I have a Master Degree in Computer Science (MCS) at &lt;a href=&#34;http://www.dcc.ufmg.br/dcc/&#34;&gt;Departamento de Ciência da Computação (DCC)&lt;/a&gt;, &lt;a href=&#34;https://www.ufmg.br/&#34;&gt;Universidade Federal de Minas Gerais (UFMG)&lt;/a&gt;.&#xA;During my MCS, I have worked with two interesting NP-Hard optimization problems. I studied, the Robust Shortest&#xA;Path Problem (RSP) and the Tree Hub Location problem (THLP). The former relies on a Shortest Path problem where&#xA;uncertainties are considered over the arc costs. The latter is a network design problem where one looks to locate hubs in a&#xA;tree backbone in order to reduce the routing total costs.&lt;/p&gt;</description>
     </item>
   </channel>
