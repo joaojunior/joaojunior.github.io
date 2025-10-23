@@ -19,7 +19,8 @@ selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome fa
 It is caused because Chrome uses the /dev/shm to share memory and the docker, by default, set 64MB for this partition.
 Here, I will describe how to reproduce this error and how to resolve it.
 How to reproduce
-To reproduce this error, we need to create a docker image with chrome and python. Then, I created this Dockerfile which uses a multi-stage build to install the chrome and the python."><script type="application/ld+json">
+To reproduce this error, we need to create a docker image with chrome and python. Then, I created this Dockerfile which uses a multi-stage build to install the chrome and the python.">
+  <meta name="author" content="Joao Junior"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
@@ -64,7 +65,7 @@ To reproduce this error, we need to create a docker image with chrome and python
   "@context": "http://schema.org",
   "@type": "Article",
   "author": {
-    "name" : ""
+    "name" : "Joao Junior"
   },
   "headline": "Chrome with selenium, python and docker",
   "description" : "Sometimes, when I execute the Chrome inside a docker container I receive the error below:\nselenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: crashed\nIt is caused because Chrome uses the \/dev\/shm to share memory and the docker, by default, set 64MB for this partition.\nHere, I will describe how to reproduce this error and how to resolve it.\nHow to reproduce To reproduce this error, we need to create a docker image with chrome and python. Then, I created this Dockerfile which uses a multi-stage build to install the chrome and the python.\n",
@@ -72,7 +73,7 @@ To reproduce this error, we need to create a docker image with chrome and python
   "wordCount":  219 ,
   "datePublished" : "2019-09-16T09:15:55-04:00",
   "dateModified" : "2019-09-16T09:15:55-04:00",
-  "image" : "https:\/\/joaojunior.org\/jj.jpg",
+  "image" : "https:\/\/joaojunior.org\/jj1.jpg",
   "keywords" : [ "Python, Selenium, Chrome, Docker, Crashed, WebDriverException" ],
   "mainEntityOfPage" : "https:\/\/joaojunior.org\/posts\/my-first-post\/",
   "publisher" : {
@@ -80,7 +81,7 @@ To reproduce this error, we need to create a docker image with chrome and python
     "name" : "https:\/\/joaojunior.org\/",
     "logo" : {
         "@type" : "ImageObject",
-        "url" : "https:\/\/joaojunior.org\/jj.jpg",
+        "url" : "https:\/\/joaojunior.org\/jj1.jpg",
         "height" :  60 ,
         "width" :  60
     }
@@ -96,7 +97,7 @@ It is caused because Chrome uses the /dev/shm to share memory and the docker, by
 Here, I will describe how to reproduce this error and how to resolve it.
 How to reproduce
 To reproduce this error, we need to create a docker image with chrome and python. Then, I created this Dockerfile which uses a multi-stage build to install the chrome and the python.">
-<meta property="og:image" content="https://joaojunior.org/jj.jpg" />
+<meta property="og:image" content="https://joaojunior.org/jj1.jpg" />
 <meta property="og:url" content="https://joaojunior.org/posts/my-first-post/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Joao Junior" />
@@ -105,10 +106,10 @@ To reproduce this error, we need to create a docker image with chrome and python
   <meta name="twitter:description" content="Sometimes, when I execute the Chrome inside a docker container I receive the error below:
 selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: crashed
 It is …">
-  <meta name="twitter:image" content="https://joaojunior.org/jj.jpg" />
+  <meta name="twitter:image" content="https://joaojunior.org/jj1.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <link href='https://joaojunior.org/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.140.2">
+  <meta name="generator" content="Hugo 0.152.1">
   <link rel="alternate" href="https://joaojunior.org/index.xml" type="application/rss+xml" title="Joao Junior"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="https://joaojunior.org/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -162,7 +163,7 @@ It is …">
       <div class="avatar-container">
         <div class="avatar-img-border">
           <a title="Joao Junior" href="https://joaojunior.org/">
-            <img class="avatar-img" src="https://joaojunior.org/jj.jpg" alt="Joao Junior" />
+            <img class="avatar-img" src="https://joaojunior.org/jj1.jpg" alt="Joao Junior" />
            
           </a>
         </div>
@@ -438,11 +439,55 @@ It is …">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
           
+              <li>
+		
+		  <a href="mailto:blog@joaojunior.org" title="Email me">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://github.com/joaojunior" title="GitHub">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://gitlab.com/joaojunior_jj" title="GitLab">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://linkedin.com/in/joaojunior" title="LinkedIn">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
           
           
           
         </ul>
         <p class="credits copyright text-muted">
+          
+            
+              <a href="https://joaojunior.org/">Joao Junior</a>
+            
           
 
           &nbsp;&bull;&nbsp;&copy;
@@ -457,7 +502,7 @@ It is …">
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.140.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.152.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
@@ -505,7 +550,6 @@ $(function(){
 
 
 
-    
     
   </body>
 </html>

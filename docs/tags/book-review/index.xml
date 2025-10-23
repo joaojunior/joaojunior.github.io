@@ -6,19 +6,21 @@
     <description>Recent content in Book Review on Joao Junior</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
+    <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
     <lastBuildDate>Mon, 07 Nov 2022 22:51:26 -0500</lastBuildDate>
     <atom:link href="https://joaojunior.org/tags/book-review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Peopleware: Productive Projects and Teams</title>
       <link>https://joaojunior.org/posts/peopleware-productive-projects-and-teams/</link>
-      <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate>
+      <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
       <guid>https://joaojunior.org/posts/peopleware-productive-projects-and-teams/</guid>
       <description>&lt;p&gt;First things first, this is a classic &lt;a href=&#34;https://www.goodreads.com/book/show/67825.Peopleware&#34;&gt;book&lt;/a&gt; by &lt;a href=&#34;https://en.wikipedia.org/wiki/Tom_DeMarco&#34;&gt;Tom DeMarco&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Tim_Lister&#34;&gt;Timothy Lister&lt;/a&gt; that everyone working in the software industry must read.&lt;/p&gt;&#xA;&lt;p&gt;The third edition divides this book into 6 parts with 39 chapters and 249 pages. It is an easy book to read and follow. However, it is necessary to stop constantly to reflect on the facts and ideas presented. Also, the reading would be like a map of the industry if you had a lot of experience in the software development industry. By this, I would like to say that many, maybe all, of the ideas presented in the book are implemented in all software-based companies I have seen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Designing Data-Intensive Applications: Review</title>
       <link>https://joaojunior.org/posts/designing-data-intensive-applications-review/</link>
-      <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate>
+      <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate><author>blog@joaojunior.org (Joao Junior)</author>
       <guid>https://joaojunior.org/posts/designing-data-intensive-applications-review/</guid>
       <description>&lt;p&gt;Disclaimer: Don&amp;rsquo;t read this review, go ahead and read the &lt;a href=&#34;https://dataintensive.net/&#34;&gt;book&lt;/a&gt;, it will be much better for you. The only reason that I wrote this is for my future reference.&lt;/p&gt;&#xA;&lt;p&gt;First of all, I love to read books and I do not believe that a review should influence someone to read or not a book. However, as a researcher, one of the most important things that I learned during my years at the university was the importance to write a review of papers. After reading a paper, we should write a review. Not to publish, but to describe in our words what we read and also to future references. So, do not expect here a complete resume of the book or the concepts present in it. Also, do not think that this is a replacement or a complement of the book, it is not. This book is fantastic and you should read it if you like this subject.&lt;/p&gt;</description>
     </item>

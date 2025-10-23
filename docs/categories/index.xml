@@ -6,6 +6,8 @@
     <description>Recent content in Categories on Joao Junior</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <managingEditor>blog@joaojunior.org (Joao Junior)</managingEditor>
+    <webMaster>blog@joaojunior.org (Joao Junior)</webMaster>
     <atom:link href="https://joaojunior.org/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

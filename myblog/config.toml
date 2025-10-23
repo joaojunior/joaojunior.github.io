@@ -3,7 +3,8 @@ publishDir = "../docs"
 defaultContentLanguage = "en"
 hasCJKLanguage = true
 languageCode = "en"
-paginate = 4
+#paginate = 4
+pagination.pagerSize = 4
 theme = "beautifulhugo"
 title = "Joao Junior"
 
@@ -15,7 +16,7 @@ pygmentsUseClasses = true
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
   subtitle = "a.k.a JJ"
   mainSections = ["post","posts"]
-  logo = "jj.jpg" # Expecting square dimensions
+  logo = "jj1.jpg" # Expecting square dimensions
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
@@ -31,8 +32,15 @@ pygmentsUseClasses = true
 #  hideAuthor = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
-[Author]
+[Params.author]
   name = "Joao Junior"
+  website = "https://joaojunior.org/"
+  email = "blog@joaojunior.org"
+  github = "joaojunior"
+  gitlab = "joaojunior_jj"
+  linkedin = "joaojunior"
+
+[params.social]
   website = "https://joaojunior.org/"
   email = "blog@joaojunior.org"
   github = "joaojunior"

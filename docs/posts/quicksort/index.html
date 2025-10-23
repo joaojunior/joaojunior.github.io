@@ -16,7 +16,8 @@
 
   <meta name="description" content="The Quicksort algorithm was created by Tony Hoare in 1961 and it is a very powerful algorithm to sort an array in memory until today. Here, I will describe the Quicksort algorithm, show an implementation in Python, and analyze the time complexity of this algorithm in the worst and best scenarios.
 The idea behind the Quicksort is so simple: to sort an array \(V\) of \(n\) elements, it is easier to sort smaller sub-arrays of \(V\).
-We can think of this approach as divide-and-conquer, where we break a problem into smaller sub-problems and combine their solutions to form the solution to the original problem."><script type="application/ld+json">
+We can think of this approach as divide-and-conquer, where we break a problem into smaller sub-problems and combine their solutions to form the solution to the original problem.">
+  <meta name="author" content="Joao Junior"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
@@ -61,7 +62,7 @@ We can think of this approach as divide-and-conquer, where we break a problem in
   "@context": "http://schema.org",
   "@type": "Article",
   "author": {
-    "name" : ""
+    "name" : "Joao Junior"
   },
   "headline": "Quicksort",
   "description" : "The Quicksort algorithm was created by Tony Hoare in 1961 and it is a very powerful algorithm to sort an array in memory until today. Here, I will describe the Quicksort algorithm, show an implementation in Python, and analyze the time complexity of this algorithm in the worst and best scenarios.\nThe idea behind the Quicksort is so simple: to sort an array \\(V\\) of \\(n\\) elements, it is easier to sort smaller sub-arrays of \\(V\\). We can think of this approach as divide-and-conquer, where we break a problem into smaller sub-problems and combine their solutions to form the solution to the original problem.\n",
@@ -69,7 +70,7 @@ We can think of this approach as divide-and-conquer, where we break a problem in
   "wordCount":  1277 ,
   "datePublished" : "2021-07-22T15:54:55-04:00",
   "dateModified" : "2021-07-22T15:54:55-04:00",
-  "image" : "https:\/\/joaojunior.org\/jj.jpg",
+  "image" : "https:\/\/joaojunior.org\/jj1.jpg",
   "keywords" : [ "" ],
   "mainEntityOfPage" : "https:\/\/joaojunior.org\/posts\/quicksort\/",
   "publisher" : {
@@ -77,7 +78,7 @@ We can think of this approach as divide-and-conquer, where we break a problem in
     "name" : "https:\/\/joaojunior.org\/",
     "logo" : {
         "@type" : "ImageObject",
-        "url" : "https:\/\/joaojunior.org\/jj.jpg",
+        "url" : "https:\/\/joaojunior.org\/jj1.jpg",
         "height" :  60 ,
         "width" :  60
     }
@@ -90,17 +91,17 @@ We can think of this approach as divide-and-conquer, where we break a problem in
 <meta property="og:description" content="The Quicksort algorithm was created by Tony Hoare in 1961 and it is a very powerful algorithm to sort an array in memory until today. Here, I will describe the Quicksort algorithm, show an implementation in Python, and analyze the time complexity of this algorithm in the worst and best scenarios.
 The idea behind the Quicksort is so simple: to sort an array \(V\) of \(n\) elements, it is easier to sort smaller sub-arrays of \(V\).
 We can think of this approach as divide-and-conquer, where we break a problem into smaller sub-problems and combine their solutions to form the solution to the original problem.">
-<meta property="og:image" content="https://joaojunior.org/jj.jpg" />
+<meta property="og:image" content="https://joaojunior.org/jj1.jpg" />
 <meta property="og:url" content="https://joaojunior.org/posts/quicksort/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Joao Junior" />
 
   <meta name="twitter:title" content="Quicksort" />
   <meta name="twitter:description" content="The Quicksort algorithm was created by Tony Hoare in 1961 and it is a very powerful algorithm to sort an array in memory until today. Here, I will describe the Quicksort algorithm, show an …">
-  <meta name="twitter:image" content="https://joaojunior.org/jj.jpg" />
+  <meta name="twitter:image" content="https://joaojunior.org/jj1.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <link href='https://joaojunior.org/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.140.2">
+  <meta name="generator" content="Hugo 0.152.1">
   <link rel="alternate" href="https://joaojunior.org/index.xml" type="application/rss+xml" title="Joao Junior"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="https://joaojunior.org/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -154,7 +155,7 @@ We can think of this approach as divide-and-conquer, where we break a problem in
       <div class="avatar-container">
         <div class="avatar-img-border">
           <a title="Joao Junior" href="https://joaojunior.org/">
-            <img class="avatar-img" src="https://joaojunior.org/jj.jpg" alt="Joao Junior" />
+            <img class="avatar-img" src="https://joaojunior.org/jj1.jpg" alt="Joao Junior" />
            
           </a>
         </div>
@@ -453,11 +454,55 @@ So
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
           
+              <li>
+		
+		  <a href="mailto:blog@joaojunior.org" title="Email me">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://github.com/joaojunior" title="GitHub">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://gitlab.com/joaojunior_jj" title="GitLab">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://linkedin.com/in/joaojunior" title="LinkedIn">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
           
           
           
         </ul>
         <p class="credits copyright text-muted">
+          
+            
+              <a href="https://joaojunior.org/">Joao Junior</a>
+            
           
 
           &nbsp;&bull;&nbsp;&copy;
@@ -472,7 +517,7 @@ So
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.140.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.152.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
@@ -520,7 +565,6 @@ $(function(){
 
 
 
-    
     
   </body>
 </html>
