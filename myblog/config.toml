@@ -1,4 +1,4 @@
-baseURL = "https://joaojunior.org/"
+baseURL = "https://johnjr.dev/"
 publishDir = "../docs"
 defaultContentLanguage = "en"
 hasCJKLanguage = true
@@ -34,8 +34,8 @@ pygmentsUseClasses = true
 
 [Params.author]
   name = "Joao Junior"
-  website = "https://joaojunior.org/"
-  email = "blog@joaojunior.org"
+  website = "https://johnjr.dev/"
+  email = "blog@johnjr.dev"
   github = "joaojunior"
   gitlab = "joaojunior_jj"
   linkedin = "joaojunior"
