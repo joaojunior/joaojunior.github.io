@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Joao Junior</title>
+    <title>Series on John Jr</title>
     <link>https://johnjr.dev/series/</link>
-    <description>Recent content in Series on Joao Junior</description>
+    <description>Recent content in Series on John Jr</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blog@johnjr.dev (Joao Junior)</managingEditor>
-    <webMaster>blog@johnjr.dev (Joao Junior)</webMaster>
+    <managingEditor>blog@johnjr.dev (John Jr)</managingEditor>
+    <webMaster>blog@johnjr.dev (John Jr)</webMaster>
     <atom:link href="https://johnjr.dev/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

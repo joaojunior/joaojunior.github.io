@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Joao Junior</title>
+    <title>Python on John Jr</title>
     <link>https://johnjr.dev/tags/python/</link>
-    <description>Recent content in Python on Joao Junior</description>
+    <description>Recent content in Python on John Jr</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blog@johnjr.dev (Joao Junior)</managingEditor>
-    <webMaster>blog@johnjr.dev (Joao Junior)</webMaster>
+    <managingEditor>blog@johnjr.dev (John Jr)</managingEditor>
+    <webMaster>blog@johnjr.dev (John Jr)</webMaster>
     <lastBuildDate>Wed, 17 Jul 2024 12:40:06 -0400</lastBuildDate>
     <atom:link href="https://johnjr.dev/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Is CPython Faster Without the Global Interpreter Lock(GIL)?</title>
       <link>https://johnjr.dev/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</link>
-      <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate><author>blog@johnjr.dev (Joao Junior)</author>
+      <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
       <guid>https://johnjr.dev/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://docs.python.org/3/glossary.html#term-global-interpreter-lock&#34;&gt;Global interpreter lock(GIL)&lt;/a&gt; is a mechanism in &lt;a href=&#34;https://github.com/python/cpython&#34;&gt;CPython&lt;/a&gt; implementation to ensure only one thread is running at a time.&#xA;This means that even if we use &lt;a href=&#34;https://docs.python.org/3/library/threading.html&#34;&gt;threads&lt;/a&gt; to try to speed up our programs&amp;rsquo; runtime, this will not work because, in the end, the interpreter will block that two or more threads will be executed in parallel.&lt;/p&gt;&#xA;&lt;p&gt;As the name suggests, the GIL is a locker that a thread gets when it starts and releases at some moment. There is only one locker, so two threads cannot get it simultaneously. As a result, our program with threads will be slower than the same program without threads because of the time to create threads and not take advantage of them.&#xA;However, this is true only for &lt;a href=&#34;https://en.wikipedia.org/wiki/CPU-bound&#34;&gt;CPU bound problems&lt;/a&gt;, which requires a large amount of CPU time to process, like &lt;a href=&#34;https://en.wikipedia.org/wiki/Invertible_matrix&#34;&gt;inverse matrix&lt;/a&gt;. For I/O bound problems, CPython releases the locker as soon as an I/O call happens. We still have only one thread running at once on the CPU, but now, a thread does not block other threads while waiting for the I/O result.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chrome with selenium, python and docker</title>
       <link>https://johnjr.dev/posts/my-first-post/</link>
-      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@johnjr.dev (Joao Junior)</author>
+      <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
       <guid>https://johnjr.dev/posts/my-first-post/</guid>
       <description>&lt;p&gt;Sometimes, when I execute the Chrome inside a docker container I receive the error below:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: crashed&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is caused because Chrome uses the &lt;code&gt;/dev/shm&lt;/code&gt; to share memory and the docker, by default, set 64MB for this partition.&lt;/p&gt;&#xA;&lt;p&gt;Here, I will describe how to reproduce this error and how to resolve it.&lt;/p&gt;&#xA;&lt;h1 id=&#34;how-to-reproduce&#34;&gt;How to reproduce&lt;/h1&gt;&#xA;&lt;p&gt;To reproduce this error, we need to create a docker image with chrome and python. Then, I created this &lt;a href=&#34;https://github.com/joaojunior/python_selenium_chrome_docker/blob/master/Dockerfile&#34;&gt;Dockerfile&lt;/a&gt; which uses a &lt;a href=&#34;https://docs.docker.com/develop/develop-images/multistage-build/&#34;&gt;multi-stage build&lt;/a&gt; to install the chrome and the python.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Identifying Paragraphs</title>
       <link>https://johnjr.dev/posts/identify-paragraphs/</link>
-      <pubDate>Wed, 29 Mar 2017 17:00:19 -0500</pubDate><author>blog@johnjr.dev (Joao Junior)</author>
+      <pubDate>Wed, 29 Mar 2017 17:00:19 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
       <guid>https://johnjr.dev/posts/identify-paragraphs/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m learning computer vision and I&amp;rsquo;m using the &lt;a href=&#34;http://docs.opencv.org/&#34;&gt;Opencv&lt;/a&gt;&#xA;and &lt;a href=&#34;https://www.python.org/&#34;&gt;Python&lt;/a&gt; to write algorithms in this field of computer science. This field&#xA;is very interesting because it involves computer science and math and also, it is necessary to have good ideas to solve problems.&lt;/p&gt;&#xA;&lt;p&gt;Here, I will show my first algorithm in computer vision. It is to identifies paragraphs in a text image. It consider that the image&#xA;have a white background and that the characters have a black color.&lt;/p&gt;</description>
     </item>

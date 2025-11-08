@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>NoGIL on Joao Junior</title>
+    <title>NoGIL on John Jr</title>
     <link>https://johnjr.dev/tags/nogil/</link>
-    <description>Recent content in NoGIL on Joao Junior</description>
+    <description>Recent content in NoGIL on John Jr</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blog@johnjr.dev (Joao Junior)</managingEditor>
-    <webMaster>blog@johnjr.dev (Joao Junior)</webMaster>
+    <managingEditor>blog@johnjr.dev (John Jr)</managingEditor>
+    <webMaster>blog@johnjr.dev (John Jr)</webMaster>
     <lastBuildDate>Wed, 17 Jul 2024 12:40:06 -0400</lastBuildDate>
     <atom:link href="https://johnjr.dev/tags/nogil/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Is CPython Faster Without the Global Interpreter Lock(GIL)?</title>
       <link>https://johnjr.dev/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</link>
-      <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate><author>blog@johnjr.dev (Joao Junior)</author>
+      <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
       <guid>https://johnjr.dev/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://docs.python.org/3/glossary.html#term-global-interpreter-lock&#34;&gt;Global interpreter lock(GIL)&lt;/a&gt; is a mechanism in &lt;a href=&#34;https://github.com/python/cpython&#34;&gt;CPython&lt;/a&gt; implementation to ensure only one thread is running at a time.&#xA;This means that even if we use &lt;a href=&#34;https://docs.python.org/3/library/threading.html&#34;&gt;threads&lt;/a&gt; to try to speed up our programs&amp;rsquo; runtime, this will not work because, in the end, the interpreter will block that two or more threads will be executed in parallel.&lt;/p&gt;&#xA;&lt;p&gt;As the name suggests, the GIL is a locker that a thread gets when it starts and releases at some moment. There is only one locker, so two threads cannot get it simultaneously. As a result, our program with threads will be slower than the same program without threads because of the time to create threads and not take advantage of them.&#xA;However, this is true only for &lt;a href=&#34;https://en.wikipedia.org/wiki/CPU-bound&#34;&gt;CPU bound problems&lt;/a&gt;, which requires a large amount of CPU time to process, like &lt;a href=&#34;https://en.wikipedia.org/wiki/Invertible_matrix&#34;&gt;inverse matrix&lt;/a&gt;. For I/O bound problems, CPython releases the locker as soon as an I/O call happens. We still have only one thread running at once on the CPU, but now, a thread does not block other threads while waiting for the I/O result.&lt;/p&gt;</description>
     </item>

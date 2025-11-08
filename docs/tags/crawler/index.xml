@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Crawler on Joao Junior</title>
+    <title>Crawler on John Jr</title>
     <link>https://johnjr.dev/tags/crawler/</link>
-    <description>Recent content in Crawler on Joao Junior</description>
+    <description>Recent content in Crawler on John Jr</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>blog@johnjr.dev (Joao Junior)</managingEditor>
-    <webMaster>blog@johnjr.dev (Joao Junior)</webMaster>
+    <managingEditor>blog@johnjr.dev (John Jr)</managingEditor>
+    <webMaster>blog@johnjr.dev (John Jr)</webMaster>
     <lastBuildDate>Mon, 10 Feb 2025 14:07:06 -0500</lastBuildDate>
     <atom:link href="https://johnjr.dev/tags/crawler/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Improving legacy code: Using Task Queue to Speed Up a Crawler in an ETL Process</title>
       <link>https://johnjr.dev/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/</link>
-      <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate><author>blog@johnjr.dev (Joao Junior)</author>
+      <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
       <guid>https://johnjr.dev/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/</guid>
       <description>&lt;p&gt;In this post, I will present how I improved an ETL process to be more than 4x faster using the same resources. While the old architecture used Python threads, the new one used task queue architecture to be more reliable and scalable. So, I will explain how we can improve a legacy code and speed it up by only modifying the architecture to run the code.&lt;/p&gt;&#xA;&lt;p&gt;Almost 10 years ago, I was hired to improve a system and train a team of engineers in Python and scalable systems. The company had an ETL process to provide financial information for the finance team. The ETL was composed of the crawler, the parser, and the normalizer. The crawler&amp;rsquo;s primary responsibility was crawling finance data on our partners’ websites, which were protected by a username and password. The parser converted CSV, HTML, and JSON data and saved the result in our intermediate database. The last step, the normalizer, summarized the data using some keys and sent it to the system where the finance team could access it.&lt;/p&gt;</description>
     </item>

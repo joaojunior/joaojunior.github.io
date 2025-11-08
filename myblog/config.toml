@@ -6,10 +6,10 @@ languageCode = "en"
 #paginate = 4
 pagination.pagerSize = 4
 theme = "beautifulhugo"
-title = "Joao Junior"
+title = "John Jr"
 
 disqusShortname = "joaojunior"
-googleAnalytics = "UA-96580878-1"
+googleAnalytics = "G-VW82YJDGMJ"
 pygmentsUseClasses = true
 
 [Params]
@@ -33,7 +33,7 @@ pygmentsUseClasses = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
 [Params.author]
-  name = "Joao Junior"
+  name = "John Jr"
   website = "https://johnjr.dev/"
   email = "blog@johnjr.dev"
   github = "joaojunior"
@@ -41,8 +41,8 @@ pygmentsUseClasses = true
   linkedin = "joaojunior"
 
 [params.social]
-  website = "https://joaojunior.org/"
-  email = "blog@joaojunior.org"
+  website = "https://johnjr.dev/"
+  email = "blog@johnjr.dev"
   github = "joaojunior"
   gitlab = "joaojunior_jj"
   twitter = "joaojunior_ma"
