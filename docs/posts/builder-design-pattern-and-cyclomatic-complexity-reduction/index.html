@@ -1,0 +1,667 @@
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>Builder Design Pattern and Cyclomatic Complexity Reduction - </title>
+
+  <meta name="description" content="In this post, I will explain in detail how I used the builder design pattern together with the bit mask field technique to reduce complexity. As a result, I decreased the cyclomatic complexity from 24 to 0 and reduced development time from hours to minutes.
+The rest of this post is organized as follows sections:
+
+The problem explains the problem I was solving.
+Creating the bit mask field presents a solution to the problem.
+Cyclomatic Complexity discusses cyclomatic complexity and calculates this metric for the solution presented in the section above.
+Builder design pattern explains the builder design pattern and describes the refactoring process that removed complexity.
+Conclusion summarizes this post.
+References provides references related to the topics discussed here.
+
+All the examples shown here are in C&#43;&#43;.">
+  <meta name="author" content="John Jr"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "John Jr",
+    
+    "url": "https:\/\/johnjr.dev\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/johnjr.dev\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/johnjr.dev\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/johnjr.dev\/posts\/builder-design-pattern-and-cyclomatic-complexity-reduction\/",
+          "name": "Builder design pattern and cyclomatic complexity reduction"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "John Jr"
+  },
+  "headline": "Builder Design Pattern and Cyclomatic Complexity Reduction",
+  "description" : "In this post, I will explain in detail how I used the builder design pattern together with the bit mask field technique to reduce complexity. As a result, I decreased the cyclomatic complexity from 24 to 0 and reduced development time from hours to minutes.\nThe rest of this post is organized as follows sections:\nThe problem explains the problem I was solving. Creating the bit mask field presents a solution to the problem. Cyclomatic Complexity discusses cyclomatic complexity and calculates this metric for the solution presented in the section above. Builder design pattern explains the builder design pattern and describes the refactoring process that removed complexity. Conclusion summarizes this post. References provides references related to the topics discussed here. All the examples shown here are in C\u002b\u002b.\n",
+  "inLanguage" : "en",
+  "wordCount":  1590 ,
+  "datePublished" : "2025-11-10T10:00:00-05:00",
+  "dateModified" : "2025-11-10T10:00:00-05:00",
+  "image" : "https:\/\/johnjr.dev\/jj1.jpg",
+  "keywords" : [ "Builder design pattern, Cyclomatic Complexity, Bit Mask, Design Pattern, C\u002b\u002b" ],
+  "mainEntityOfPage" : "https:\/\/johnjr.dev\/posts\/builder-design-pattern-and-cyclomatic-complexity-reduction\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/johnjr.dev\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/johnjr.dev\/jj1.jpg",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+
+<meta property="og:title" content="Builder Design Pattern and Cyclomatic Complexity Reduction" />
+<meta property="og:description" content="In this post, I will explain in detail how I used the builder design pattern together with the bit mask field technique to reduce complexity. As a result, I decreased the cyclomatic complexity from 24 to 0 and reduced development time from hours to minutes.
+The rest of this post is organized as follows sections:
+
+The problem explains the problem I was solving.
+Creating the bit mask field presents a solution to the problem.
+Cyclomatic Complexity discusses cyclomatic complexity and calculates this metric for the solution presented in the section above.
+Builder design pattern explains the builder design pattern and describes the refactoring process that removed complexity.
+Conclusion summarizes this post.
+References provides references related to the topics discussed here.
+
+All the examples shown here are in C&#43;&#43;.">
+<meta property="og:image" content="https://johnjr.dev/jj1.jpg" />
+<meta property="og:url" content="https://johnjr.dev/posts/builder-design-pattern-and-cyclomatic-complexity-reduction/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="John Jr" />
+
+  <meta name="twitter:title" content="Builder Design Pattern and Cyclomatic Complexity Reduction" />
+  <meta name="twitter:description" content="In this post, I will explain in detail how I used the builder design pattern together with the bit mask field technique to reduce complexity. As a result, I decreased the cyclomatic complexity from 24 …">
+  <meta name="twitter:image" content="https://johnjr.dev/jj1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link href='https://johnjr.dev/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.152.1">
+  <link rel="alternate" href="https://johnjr.dev/index.xml" type="application/rss+xml" title="John Jr"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="https://johnjr.dev/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://johnjr.dev/css/highlight.min.css" /><link rel="stylesheet" href="https://johnjr.dev/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW82YJDGMJ"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-VW82YJDGMJ');
+        }
+      </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://johnjr.dev/">John Jr</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Posts" href="/">Posts</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="MCS" href="/mcs/">MCS</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About me" href="/about/">About me</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="John Jr" href="https://johnjr.dev/">
+            <img class="avatar-img" src="https://johnjr.dev/jj1.jpg" alt="John Jr" />
+           
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>Builder Design Pattern and Cyclomatic Complexity Reduction</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>In this post, I will explain in detail how I used the <a href="https://en.wikipedia.org/wiki/Builder_pattern">builder design pattern</a> together with the <a href="https://en.wikipedia.org/wiki/Bit_field">bit mask field</a> technique to reduce complexity. As a result, I decreased the <a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity">cyclomatic complexity</a> from 24 to 0 and reduced development time from hours to minutes.</p>
+<p>The rest of this post is organized as follows sections:</p>
+<ul>
+<li><a href="#the-problem"><strong>The problem</strong></a> explains the problem I was solving.</li>
+<li><a href="#creating-the-bit-mask-field"><strong>Creating the bit mask field</strong></a> presents a solution to the problem.</li>
+<li><a href="#cyclomatic-complexity"><strong>Cyclomatic Complexity</strong></a> discusses cyclomatic complexity and calculates this metric for the solution presented in the section above.</li>
+<li><a href="#builder-design-pattern"><strong>Builder design pattern</strong></a> explains the builder design pattern and describes the refactoring process that removed complexity.</li>
+<li><a href="#conclusion"><strong>Conclusion</strong></a> summarizes this post.</li>
+<li><a href="#references"><strong>References</strong></a> provides references related to the topics discussed here.</li>
+</ul>
+<p>All the examples shown here are in C++.</p>
+<h1 id="the-problem">The problem</h1>
+<p>I&rsquo;m working in an extreme scenario where every millisecond and byte counts. In this type of scenario, we need to design our solutions with extra care regarding the details.
+For example, how can we represent 32 Boolean variables for storage and transmission over computer networks?</p>
+<p>In C++, the simplest way is to create 32 different Boolean variables. A Boolean variable in C++ occupies 1 byte (8 bits). So, we will need 32 × 1 = 32 bytes to represent all of these variables.
+This is not so bad. However, these variables are part of an object, and we could have one billion of these objects. Then, we would consume 32 gigabytes (GB) only to represent these Boolean variables.</p>
+<p>We can improve this by using a technique called a bit mask field, where each bit of an integer variable is used to represent a Boolean variable. Considering an integer variable of 4 bytes (32 bits), we need only one integer variable to represent all 32 Boolean variables. With one billion objects, we would now consume 4 GB instead of 32 GB. This is an 87.5% savings.</p>
+<p>This is a huge saving, considering that we need to store these variables on disk and transport them via a network between many different systems. The savings here are in both money and time. For the end user, this means they can get results more quickly.</p>
+<p>You may be wondering, why don’t we use this technique in all systems to represent our set of Booleans? The reason is pretty simple: we are reducing simplicity to cut costs.
+In a non-extreme scenario, using this technique is over-engineering. Instead of saving money, you are creating complexity for your team to handle.</p>
+<p>When we decide to use this technique, we need to resolve the problem: how can we create an integer variable to represent Boolean variables in our codebase in an easy-to-maintain way? The short answer is to encapsulate the complexity, which is explained in the rest of this post.</p>
+<h1 id="creating-the-bit-mask-field">Creating the bit mask field</h1>
+<p>For a bit mask field, each bit of an integer variable represents a field. We need a way to set and check if a field is true in this variable. For both operations, we need to use bitwise operators.
+For example, let&rsquo;s say we have the int variable <code>fields</code>, and we need to set and check the value of field 3 (bit 2, since we start counting from 0).
+To set field 3 to true in <code>fields</code>, we can do:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">fields</span> <span class="o">|=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">);</span>
+</span></span></code></pre></div><p>The <code>&lt;&lt;</code> is the <a href="https://en.cppreference.com/w/cpp/utility/bitset/operator_ltltgtgt.html">left shift operator</a> that shifts the number by 2 positions to the left. So, this will create the number 4 (100 in binary).</p>
+<p>To check if field 3 is true in <code>fields</code>, we can do:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">mask</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="n">fields</span> <span class="o">&amp;</span> <span class="n">mask</span><span class="p">)</span> <span class="o">==</span> <span class="n">mask</span><span class="p">;</span>
+</span></span></code></pre></div><p>The <code>&amp;</code> is the <a href="https://en.cppreference.com/w/cpp/language/operator_arithmetic.html#Bitwise_logic_operators">bitwise AND operator</a> that returns 1 when both corresponding bits in <code>fields</code> and <code>mask</code> are 1, and 0 otherwise. In other words, field 3 is true only when the bitwise AND operator returns <code>mask</code> as the result.</p>
+<p>These are the operations in isolation; our solution needs to create the variable <code>fields</code> and set each field based on some conditions, as shown below:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">condition1</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//call complexity methods here
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span> <span class="c1">// just as an example
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">condition2</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//call complexity methods here
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span> <span class="c1">// just as an example
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">createFields</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">fields</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">condition1</span><span class="p">()){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">fields</span> <span class="o">|=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">condition2</span><span class="p">()){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">fields</span> <span class="o">|=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">fields</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h1 id="cyclomatic-complexity">Cyclomatic complexity</h1>
+<p>The cyclomatic complexity metric was developed by <a href="https://ieeexplore.ieee.org/author/37860859000">Thomas J. McCabe</a> in the paper <a href="https://ieeexplore.ieee.org/document/1702388">&ldquo;A Complexity Measure&rdquo;</a>. Basically, it is a metric used to calculate how many paths your code has. To calculate this metric in your codebase, you can use <a href="https://github.com/terryyin/lizard">lizard</a>, which is an extensible Cyclomatic Complexity Analyzer for many programming languages.</p>
+<p>The function <code>createFields</code>, presented in the last section, has a cyclomatic complexity of 3: 1 for the function itself, +1 for the first condition, and +1 for the second condition.</p>
+<p>One question naturally emerges: What is a good cyclomatic complexity? The answer is not simple. There is no magic number, and this metric is just an indicator of potential issues in your codebase. Generally, smaller numbers are better.</p>
+<p>In my opinion, the most important aspect is not just the number or the conditions in the code. The biggest problems are complexity and dependencies, which this metric can help you discover. Of course, you do not need this metric to identify complexity; you can do it yourself by reading the code. However, in a large codebase, this metric helps you decide which places to review first.</p>
+<p>Let&rsquo;s go back and analyze the function <code>createFields</code>. The cyclomatic complexity metric counts +1 for each condition, which is only an indicator. For each of these conditions, the function <code>createFields</code> is coupled with the functions <code>condition1</code> and <code>condition2</code>, and the path our program will take depends on the result of these functions.</p>
+<p>In other words, the client of this code—the caller—is responsible for knowing all these details and handling them. The most basic client is the tests. In this case, to test if <code>fields1</code> is set correctly, we need to either set up everything that the functions <code>condition1</code> and <code>condition2</code> need or mock these functions. Even though I want to check just <code>field1</code>, I need to set up all the dependencies of <code>createFields</code>, not just the dependencies for <code>field1</code>.</p>
+<p>We can reduce the complexity of the function <code>createFields</code> by using the Builder design pattern, as explained in the next section.</p>
+<h1 id="builder-design-pattern">Builder design pattern</h1>
+<p>The <a href="https://en.wikipedia.org/wiki/Builder_pattern">Builder design pattern</a> is a creational patterns that helps encapsulate the complexity of creating an object. It is described in the famous book <a href="https://en.wikipedia.org/wiki/Design_Patterns">Design Patterns: Elements of Reusable Object-Oriented Software</a> by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides, also known as the Gang of Four (GoF). This book is a classic and a must-read for experienced software engineers. I agree with Martin Fowler - it&rsquo;s a great book, but not an easy read. It&rsquo;s best approached when you&rsquo;re comfortable with object-oriented design. As <a href="https://martinfowler.com/aboutMe.html">Martin Fowler</a> noted in 2004, <a href="https://martinfowler.com/bliki/GangOfFour.html">&ldquo;In my view, the Gang of Four is the best book ever written on object-oriented design&rdquo;</a>.</p>
+<p>The function <code>createFields</code> is responsible for creating the variable <code>fields</code>, which maps many Boolean variables into a single integer variable to save memory. This is a very good candidate to be simplified using the Builder design pattern.
+So, we can rewrite <code>createFields</code> using the Builder design pattern to encapsulate and reduce complexity. Below, we present the new code.
+You can notice some differences here. Now, we have classes instead of just a function. The <code>BitMaskField</code> class encapsulates the integer variable that represents the Boolean variables and provides a clear API for clients. The <code>BitMaskFieldBuilder</code> class is used to construct <code>BitMaskField</code> objects. The <code>withField1</code> and <code>withField2</code> methods handle the creation of each field, respectively.</p>
+<p>Besides the improved organization, one major benefit is that the code is now decoupled. To use <code>field1</code>, callers do not need to know anything about the dependencies of other fields. All the complexity of creating an integer variable to map many Boolean variables is encapsulated in the <code>BitMaskFieldBuilder</code> class, and each field is completely decoupled from the others. Adding a new field is an easy task now. We just need to add a new method in the builder class.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">BitMaskField</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">data</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">void</span> <span class="n">setField</span><span class="p">(</span><span class="kt">int</span> <span class="n">position</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="k">this</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">|=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">position</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kt">bool</span> <span class="nf">isFieldUsed</span><span class="p">(</span><span class="kt">int</span> <span class="n">position</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">mask</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">position</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">&amp;</span> <span class="n">mask</span><span class="p">)</span> <span class="o">==</span> <span class="n">mask</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">BitMaskFieldBuilder</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">BitMaskField</span> <span class="n">bitMaskField</span> <span class="o">=</span> <span class="n">BitMaskField</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">BitMaskFieldBuilder</span> <span class="n">withField1</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">condition1</span><span class="p">()){</span>
+</span></span><span class="line"><span class="cl">                <span class="n">bitMaskField</span><span class="p">.</span><span class="n">setField</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">BitMaskFieldBuilder</span> <span class="nf">withField2</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">condition2</span><span class="p">()){</span>
+</span></span><span class="line"><span class="cl">                <span class="n">bitMaskField</span><span class="p">.</span><span class="n">setField</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">BitMaskField</span> <span class="nf">build</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">bitMaskField</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">BitMaskField</span> <span class="nf">createFields</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="n">BitMaskField</span> <span class="n">fields</span> <span class="o">=</span> <span class="n">BitMaskFieldBuilder</span><span class="p">().</span><span class="n">withField1</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">withField2</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">build</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">fields</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h1 id="conclusion">Conclusion</h1>
+<p>In this post, I demonstrated how combining the Bit Mask technique with the Builder design pattern can reduce cyclomatic complexity and simplify the codebase. The benefits are multiples: developers can easily test new implementations without needing to know the details of other fields, the company saves on storage and network transport costs, and users experience faster system responses.</p>
+<p>The bit mask field is a valuable technique for minimizing memory and storage usage. However, it can introduce complexity if not implemented thoughtfully. Here, I showed how leveraging abstraction and the Builder design pattern can encapsulate this technique, making it more manageable and reducing overall complexity.</p>
+<h1 id="references">References</h1>
+<ul>
+<li><a href="https://ieeexplore.ieee.org/document/1702388">A Complexity Measure</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bit_field">Bit Mask Field Technique</a></li>
+<li><a href="https://en.cppreference.com/w/cpp/language/operator_arithmetic.html#Bitwise_logic_operators">Bitwise AND operator</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Builder_pattern">Builder Design Pattern</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity">Cyclomatic Complexity</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_Patterns">Design Patterns: Elements of Reusable Object-Oriented Software</a></li>
+<li><a href="https://en.cppreference.com/w/cpp/utility/bitset/operator_ltltgtgt.html">Left shift Operator</a></li>
+<li><a href="https://martinfowler.com/bliki/GangOfFour.html">Martin Fowler notes about the Gang of Four</a></li>
+<li><a href="https://martinfowler.com/aboutMe.html">Martin Fowler</a></li>
+<li><a href="https://ieeexplore.ieee.org/author/37860859000">Thomas J. McCabe</a></li>
+<li><a href="https://github.com/terryyin/lizard">lizard: extensible Cyclomatic Complexity Analyzer for many programming languages</a></li>
+</ul>
+
+
+        
+          <div class="blog-tags">
+            
+              
+              <a href="https://johnjr.dev/tags/builder-design-pattern/">Builder design pattern</a>&nbsp;
+            
+              
+              <a href="https://johnjr.dev/tags/cyclomatic-complexity/">Cyclomatic Complexity</a>&nbsp;
+            
+              
+              <a href="https://johnjr.dev/tags/bit-mask/">Bit Mask</a>&nbsp;
+            
+              
+              <a href="https://johnjr.dev/tags/design-pattern/">Design Pattern</a>&nbsp;
+            
+              
+              <a href="https://johnjr.dev/tags/c&#43;&#43;/">C&#43;&#43;</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fjohnjr.dev%2fposts%2fbuilder-design-pattern-and-cyclomatic-complexity-reduction%2f&amp;text=Builder%20Design%20Pattern%20and%20Cyclomatic%20Complexity%20Reduction&amp;via=" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjohnjr.dev%2fposts%2fbuilder-design-pattern-and-cyclomatic-complexity-reduction%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjohnjr.dev%2fposts%2fbuilder-design-pattern-and-cyclomatic-complexity-reduction%2f&amp;title=Builder%20Design%20Pattern%20and%20Cyclomatic%20Complexity%20Reduction" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjohnjr.dev%2fposts%2fbuilder-design-pattern-and-cyclomatic-complexity-reduction%2f&amp;title=Builder%20Design%20Pattern%20and%20Cyclomatic%20Complexity%20Reduction" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjohnjr.dev%2fposts%2fbuilder-design-pattern-and-cyclomatic-complexity-reduction%2f&amp;title=Builder%20Design%20Pattern%20and%20Cyclomatic%20Complexity%20Reduction" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjohnjr.dev%2fposts%2fbuilder-design-pattern-and-cyclomatic-complexity-reduction%2f&amp;description=Builder%20Design%20Pattern%20and%20Cyclomatic%20Complexity%20Reduction" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://johnjr.dev/posts/composition-inheritance-and-liskov-substitution-principle/" data-toggle="tooltip" data-placement="top" title="Composition, Inheritance, and Liskov Substitution Principle">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+      
+      
+      
+      
+          
+          <div class="disqus-comments">                  
+            <button id="show-comments" class="btn btn-default" type="button">Show <span class="disqus-comment-count" data-disqus-url="https://johnjr.dev/posts/builder-design-pattern-and-cyclomatic-complexity-reduction">comments</span></button>
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+              var disqus_config = function () {
+              this.page.url = 'https:\/\/johnjr.dev\/posts\/builder-design-pattern-and-cyclomatic-complexity-reduction';
+            };
+
+          </script>
+          </div>
+          
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      <footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+		
+		  <a href="mailto:blog@johnjr.dev" title="Email me">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://github.com/joaojunior" title="GitHub">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://gitlab.com/joaojunior_jj" title="GitLab">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://linkedin.com/in/joaojunior" title="LinkedIn">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://johnjr.dev/">John Jr</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2025
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://johnjr.dev/">John Jr</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.152.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="https://johnjr.dev/js/main.js"></script>
+<script src="https://johnjr.dev/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://johnjr.dev/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+  $('#show-comments').on('click', function(){
+    var disqus_shortname = 'joaojunior';
+      
+    (function() {
+      var disqus = document.createElement('script'); 
+      disqus.type = 'text/javascript'; 
+      disqus.async = true;
+      disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
+    })();
+      
+    $(this).hide(); 
+    });
+  });
+      
+</script>
+<script id="dsq-count-scr" src="//joaojunior.disqus.com/count.js" async></script>
+
+
+
+
+    
+  </body>
+</html>
+

@@ -8,8 +8,43 @@
     <language>en</language>
     <managingEditor>blog@johnjr.dev (John Jr)</managingEditor>
     <webMaster>blog@johnjr.dev (John Jr)</webMaster>
-    <lastBuildDate>Tue, 22 Apr 2025 11:27:45 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 10 Nov 2025 10:00:00 -0500</lastBuildDate>
     <atom:link href="https://johnjr.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bit Mask</title>
+      <link>https://johnjr.dev/tags/bit-mask/</link>
+      <pubDate>Mon, 10 Nov 2025 10:00:00 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
+      <guid>https://johnjr.dev/tags/bit-mask/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Builder Design Pattern</title>
+      <link>https://johnjr.dev/tags/builder-design-pattern/</link>
+      <pubDate>Mon, 10 Nov 2025 10:00:00 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
+      <guid>https://johnjr.dev/tags/builder-design-pattern/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://johnjr.dev/tags/c&#43;&#43;/</link>
+      <pubDate>Mon, 10 Nov 2025 10:00:00 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
+      <guid>https://johnjr.dev/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cyclomatic Complexity</title>
+      <link>https://johnjr.dev/tags/cyclomatic-complexity/</link>
+      <pubDate>Mon, 10 Nov 2025 10:00:00 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
+      <guid>https://johnjr.dev/tags/cyclomatic-complexity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design Pattern</title>
+      <link>https://johnjr.dev/tags/design-pattern/</link>
+      <pubDate>Mon, 10 Nov 2025 10:00:00 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
+      <guid>https://johnjr.dev/tags/design-pattern/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Barbara Liskov</title>
       <link>https://johnjr.dev/tags/barbara-liskov/</link>

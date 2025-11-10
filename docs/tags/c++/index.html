@@ -12,7 +12,7 @@
  
 
 
-      <title>Posts - </title>
+      <title>C&#43;&#43; - </title>
 
   <meta name="author" content="John Jr"/><script type="application/ld+json">
 {
@@ -35,13 +35,13 @@
 }
 </script>
 
-<meta property="og:title" content="Posts" />
+<meta property="og:title" content="C&#43;&#43;" />
 <meta property="og:image" content="https://johnjr.dev/jj1.jpg" />
-<meta property="og:url" content="https://johnjr.dev/posts/" />
+<meta property="og:url" content="https://johnjr.dev/tags/c&#43;&#43;/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="John Jr" />
 
-  <meta name="twitter:title" content="Posts" />
+  <meta name="twitter:title" content="C&#43;&#43;" />
   <meta name="twitter:image" content="https://johnjr.dev/jj1.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <link href='https://johnjr.dev/img/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -192,9 +192,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="posts-heading">
+            <div class="tags-heading">
               
-                <h1>Posts</h1>
+                <h1>C&#43;&#43;</h1>
               
               
                 <hr class="small">
@@ -218,8 +218,8 @@
         <div class="posts-list">
           
             <article class="post-preview">
-    <a href="https://johnjr.dev/posts/lua-scripts-are-not-atomic-in-redis/">
-        <h2 class="post-title">Lua Scripts Are Not Atomic in Redis</h2>
+    <a href="https://johnjr.dev/posts/builder-design-pattern-and-cyclomatic-complexity-reduction/">
+        <h2 class="post-title">Builder Design Pattern and Cyclomatic Complexity Reduction</h2>
         
         
         
@@ -229,13 +229,13 @@
         <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on April 8, 2024
+  <i class="fas fa-calendar"></i>&nbsp;Posted on November 10, 2025
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;8&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;611&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1590&nbsp;words
   
   
     
@@ -249,9 +249,18 @@
     </p>
     <div class="post-entry">
         
-        <p>Redis is an in-memory data structure store, very powerful, with an excellent abstraction via its API to manipulate its data structure. What makes Redis very powerful, in my opinion, is the variety of data structures it provides and the performance of its operations. This last feature is an effect of being an in-memory store.</p>
-<p>As with every software, Redis also has technical decisions and limitations that we need to be aware of and consider when choosing it. In this post, I will not describe a technical limitation but a poor documentation description of one feature.</p>
-        <a href="https://johnjr.dev/posts/lua-scripts-are-not-atomic-in-redis/" class="post-read-more">[Read More]</a>
+        <p>In this post, I will explain in detail how I used the <a href="https://en.wikipedia.org/wiki/Builder_pattern">builder design pattern</a> together with the <a href="https://en.wikipedia.org/wiki/Bit_field">bit mask field</a> technique to reduce complexity. As a result, I decreased the <a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity">cyclomatic complexity</a> from 24 to 0 and reduced development time from hours to minutes.</p>
+<p>The rest of this post is organized as follows sections:</p>
+<ul>
+<li><a href="#the-problem"><strong>The problem</strong></a> explains the problem I was solving.</li>
+<li><a href="#creating-the-bit-mask-field"><strong>Creating the bit mask field</strong></a> presents a solution to the problem.</li>
+<li><a href="#cyclomatic-complexity"><strong>Cyclomatic Complexity</strong></a> discusses cyclomatic complexity and calculates this metric for the solution presented in the section above.</li>
+<li><a href="#builder-design-pattern"><strong>Builder design pattern</strong></a> explains the builder design pattern and describes the refactoring process that removed complexity.</li>
+<li><a href="#conclusion"><strong>Conclusion</strong></a> summarizes this post.</li>
+<li><a href="#references"><strong>References</strong></a> provides references related to the topics discussed here.</li>
+</ul>
+<p>All the examples shown here are in C++.</p>
+        <a href="https://johnjr.dev/posts/builder-design-pattern-and-cyclomatic-complexity-reduction/" class="post-read-more">[Read More]</a>
         
     </div>
 
@@ -259,195 +268,19 @@
     <div class="blog-tags">
         
        
-       <a href="https://johnjr.dev/tags/redis/">Redis</a>&nbsp;
+       <a href="https://johnjr.dev/tags/builder-design-pattern/">Builder design pattern</a>&nbsp;
         
        
-       <a href="https://johnjr.dev/tags/lua-scripts/">Lua scripts</a>&nbsp;
+       <a href="https://johnjr.dev/tags/cyclomatic-complexity/">Cyclomatic Complexity</a>&nbsp;
         
        
-       <a href="https://johnjr.dev/tags/atomic-operations/">Atomic operations</a>&nbsp;
-         
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://johnjr.dev/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/">
-        <h2 class="post-title">Improving the check if an object is in a Set/HashMap data structure in Ruby by using better comparisons, memoization, and object orientation practices</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on March 13, 2023
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;599&nbsp;words
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;John Jr
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>I was verifying the performance of an endpoint in an API using <a href="https://rbspy.github.io/profiling-guide/using-flamegraphs.html">framegraph</a> when I noticed that checking if an object is in a set or a hash data structure was consuming a lot of time.
-This post explains the problem and the solution to it.</p>
-<p>First of all, checking if an object is in a <a href="https://en.wikipedia.org/wiki/Set_(abstract_data_type)">Set</a> or <a href="https://en.wikipedia.org/wiki/Hash_table">HashMap</a> is <code>O(1)</code> when we don&rsquo;t consider collisions. Even in the presence of collisions, it should be much less than <code>O(n)</code>, where <code>n</code> is the number of items in the set. Otherwise, we are operating as a linked list.</p>
-        <a href="https://johnjr.dev/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
+       <a href="https://johnjr.dev/tags/bit-mask/">Bit Mask</a>&nbsp;
         
        
-       <a href="https://johnjr.dev/tags/ruby/">Ruby</a>&nbsp;
+       <a href="https://johnjr.dev/tags/design-pattern/">Design Pattern</a>&nbsp;
         
        
-       <a href="https://johnjr.dev/tags/data-structure/">Data structure</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/set/">Set</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/hashmap/">HashMap</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/improving-comparisons/">Improving comparisons</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/improving-performance/">Improving performance</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/flamegraph/">FlameGraph</a>&nbsp;
-         
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://johnjr.dev/posts/peopleware-productive-projects-and-teams/">
-        <h2 class="post-title">Peopleware: Productive Projects and Teams</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on November 7, 2022
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;318&nbsp;words
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;John Jr
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>First things first, this is a classic <a href="https://www.goodreads.com/book/show/67825.Peopleware">book</a> by <a href="https://en.wikipedia.org/wiki/Tom_DeMarco">Tom DeMarco</a> and <a href="https://en.wikipedia.org/wiki/Tim_Lister">Timothy Lister</a> that everyone working in the software industry must read.</p>
-<p>The third edition divides this book into 6 parts with 39 chapters and 249 pages. It is an easy book to read and follow. However, it is necessary to stop constantly to reflect on the facts and ideas presented. Also, the reading would be like a map of the industry if you had a lot of experience in the software development industry. By this, I would like to say that many, maybe all, of the ideas presented in the book are implemented in all software-based companies I have seen.</p>
-        <a href="https://johnjr.dev/posts/peopleware-productive-projects-and-teams/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-       
-       <a href="https://johnjr.dev/tags/book-review/">Book review</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/peopleware/">Peopleware</a>&nbsp;
-         
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://johnjr.dev/posts/why-is-atomicity-not-enough/">
-        <h2 class="post-title">Why Is Atomicity Not Enough?</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 11, 2022
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1231&nbsp;words
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;John Jr
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>When we study transactions in <a href="https://en.wikipedia.org/wiki/Relational_database">relational databases</a>, one of the first
-things we learn are the guarantees that a transaction must provide.
-<a href="https://en.wikipedia.org/wiki/ACID">ACID(Atomicity, Consistency, Isolation, Durability)</a> are the properties that we desire. Here, I will discuss the Isolation level in more detail and
-show that atomicity alone is not enough when handling concurrency.</p>
-<p>One classic example of the importance of atomicity is moving money
-between accounts. So, imagine that we have two accounts and we would like to transfer the total amount from one account to another one. In a relational database, what we need to do is three steps:</p>
-        <a href="https://johnjr.dev/posts/why-is-atomicity-not-enough/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-       
-       <a href="https://johnjr.dev/tags/acid/">ACID</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/isolation-level/">Isolation level</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/database-transactions/">Database transactions</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/concurrent-transactions/">Concurrent transactions</a>&nbsp;
+       <a href="https://johnjr.dev/tags/c&#43;&#43;/">C&#43;&#43;</a>&nbsp;
          
     </div>
     
@@ -455,19 +288,6 @@ between accounts. So, imagine that we have two accounts and we would like to tra
 </article>
           
         </div>
-        
-          <ul class="pager main-pager">
-            
-              <li class="previous">
-                <a href="https://johnjr.dev/posts/page/1/">&larr; Newer Posts</a>
-              </li>
-            
-            
-              <li class="next">
-                <a href="https://johnjr.dev/posts/page/3/">Older Posts &rarr;</a>
-              </li>
-            
-          </ul>
         
       </div>
     </div>
@@ -523,7 +343,7 @@ between accounts. So, imagine that we have two accounts and we would like to tra
           
           
           <li>
-            <a href="/posts/index.xml" title="RSS">
+            <a href="/tags/c&#43;&#43;/index.xml" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
