@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Branch and Cut on John Jr</title>
-    <link>http://localhost:1313/tags/branch-and-cut/</link>
+    <link>https://johnjr.dev/tags/branch-and-cut/</link>
     <description>Recent content in Branch and Cut on John Jr</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>blog@johnjr.dev (John Jr)</managingEditor>
     <webMaster>blog@johnjr.dev (John Jr)</webMaster>
     <lastBuildDate>Sun, 08 Jan 2017 16:48:25 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/branch-and-cut/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://johnjr.dev/tags/branch-and-cut/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Callbacks in Cplex</title>
-      <link>http://localhost:1313/posts/callbacks-in-cplex/</link>
+      <link>https://johnjr.dev/posts/callbacks-in-cplex/</link>
       <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/posts/callbacks-in-cplex/</guid>
+      <guid>https://johnjr.dev/posts/callbacks-in-cplex/</guid>
       <description>&lt;h1 id=&#34;callbacks-in-cplex&#34;&gt;Callbacks in Cplex&lt;/h1&gt;&#xA;&lt;p&gt;I used &lt;a href=&#34;https://www.ibm.com/support/knowledgecenter/SSSA5P_12.6.0/ilog.odms.cplex.help/refpythoncplex/html/cplex.callbacks.LazyConstraintCallback-class.html&#34;&gt;LazyConstraintCallback&lt;/a&gt;&#xA;to implement a &lt;a href=&#34;https://en.wikipedia.org/wiki/Branch_and_cut&#34;&gt;Branch and Cut&lt;/a&gt; algorithm with&#xA;&lt;a href=&#34;https://www-01.ibm.com/software/commerce/optimization/cplex-optimizer/&#34;&gt;CPLEX&lt;/a&gt;, but when I implemented and run this algorithm, it was very slow if I compare it with its version that doesn&amp;rsquo;t use callbacks in Cplex. The reason is because ControlCallback(LazyConstraintCallback is a ControlCallback) switch Cplex to sequential mode by default and turn off dynamic search.&#xA;I wrote this post, because I didn&amp;rsquo;t find this information in Cplex’s documentation, I only found it in this &lt;a href=&#34;https://www.ibm.com/developerworks/community/forums/html/topic?id=55bc851b-cba5-446f-a6b9-696ad8ab0481&#34;&gt;technical forum&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

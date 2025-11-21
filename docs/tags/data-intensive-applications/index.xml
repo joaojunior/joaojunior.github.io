@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Intensive Applications on John Jr</title>
-    <link>http://localhost:1313/tags/data-intensive-applications/</link>
+    <link>https://johnjr.dev/tags/data-intensive-applications/</link>
     <description>Recent content in Data Intensive Applications on John Jr</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>blog@johnjr.dev (John Jr)</managingEditor>
     <webMaster>blog@johnjr.dev (John Jr)</webMaster>
     <lastBuildDate>Tue, 20 Jul 2021 10:02:04 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/data-intensive-applications/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://johnjr.dev/tags/data-intensive-applications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Designing Data-Intensive Applications: Review</title>
-      <link>http://localhost:1313/posts/designing-data-intensive-applications-review/</link>
+      <link>https://johnjr.dev/posts/designing-data-intensive-applications-review/</link>
       <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/posts/designing-data-intensive-applications-review/</guid>
+      <guid>https://johnjr.dev/posts/designing-data-intensive-applications-review/</guid>
       <description>&lt;p&gt;Disclaimer: Don&amp;rsquo;t read this review, go ahead and read the &lt;a href=&#34;https://dataintensive.net/&#34;&gt;book&lt;/a&gt;, it will be much better for you. The only reason that I wrote this is for my future reference.&lt;/p&gt;&#xA;&lt;p&gt;First of all, I love to read books and I do not believe that a review should influence someone to read or not a book. However, as a researcher, one of the most important things that I learned during my years at the university was the importance to write a review of papers. After reading a paper, we should write a review. Not to publish, but to describe in our words what we read and also to future references. So, do not expect here a complete resume of the book or the concepts present in it. Also, do not think that this is a replacement or a complement of the book, it is not. This book is fantastic and you should read it if you like this subject.&lt;/p&gt;</description>
     </item>
   </channel>

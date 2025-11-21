@@ -2,348 +2,348 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on John Jr</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://johnjr.dev/tags/</link>
     <description>Recent content in Tags on John Jr</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>blog@johnjr.dev (John Jr)</managingEditor>
     <webMaster>blog@johnjr.dev (John Jr)</webMaster>
     <lastBuildDate>Mon, 10 Nov 2025 10:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://johnjr.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bit Mask</title>
-      <link>http://localhost:1313/tags/bit-mask/</link>
+      <link>https://johnjr.dev/tags/bit-mask/</link>
       <pubDate>Mon, 10 Nov 2025 10:00:00 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/bit-mask/</guid>
+      <guid>https://johnjr.dev/tags/bit-mask/</guid>
       <description></description>
     </item>
     <item>
       <title>Builder Design Pattern</title>
-      <link>http://localhost:1313/tags/builder-design-pattern/</link>
+      <link>https://johnjr.dev/tags/builder-design-pattern/</link>
       <pubDate>Mon, 10 Nov 2025 10:00:00 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/builder-design-pattern/</guid>
+      <guid>https://johnjr.dev/tags/builder-design-pattern/</guid>
       <description></description>
     </item>
     <item>
       <title>C&#43;&#43;</title>
-      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+      <link>https://johnjr.dev/tags/c&#43;&#43;/</link>
       <pubDate>Mon, 10 Nov 2025 10:00:00 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
+      <guid>https://johnjr.dev/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
       <title>Cyclomatic Complexity</title>
-      <link>http://localhost:1313/tags/cyclomatic-complexity/</link>
+      <link>https://johnjr.dev/tags/cyclomatic-complexity/</link>
       <pubDate>Mon, 10 Nov 2025 10:00:00 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/cyclomatic-complexity/</guid>
+      <guid>https://johnjr.dev/tags/cyclomatic-complexity/</guid>
       <description></description>
     </item>
     <item>
       <title>Design Pattern</title>
-      <link>http://localhost:1313/tags/design-pattern/</link>
+      <link>https://johnjr.dev/tags/design-pattern/</link>
       <pubDate>Mon, 10 Nov 2025 10:00:00 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/design-pattern/</guid>
+      <guid>https://johnjr.dev/tags/design-pattern/</guid>
       <description></description>
     </item>
     <item>
       <title>Barbara Liskov</title>
-      <link>http://localhost:1313/tags/barbara-liskov/</link>
+      <link>https://johnjr.dev/tags/barbara-liskov/</link>
       <pubDate>Tue, 22 Apr 2025 11:27:45 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/barbara-liskov/</guid>
+      <guid>https://johnjr.dev/tags/barbara-liskov/</guid>
       <description></description>
     </item>
     <item>
       <title>Composition</title>
-      <link>http://localhost:1313/tags/composition/</link>
+      <link>https://johnjr.dev/tags/composition/</link>
       <pubDate>Tue, 22 Apr 2025 11:27:45 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/composition/</guid>
+      <guid>https://johnjr.dev/tags/composition/</guid>
       <description></description>
     </item>
     <item>
       <title>Inheritance</title>
-      <link>http://localhost:1313/tags/inheritance/</link>
+      <link>https://johnjr.dev/tags/inheritance/</link>
       <pubDate>Tue, 22 Apr 2025 11:27:45 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/inheritance/</guid>
+      <guid>https://johnjr.dev/tags/inheritance/</guid>
       <description></description>
     </item>
     <item>
       <title>Liskov Substitution Principle</title>
-      <link>http://localhost:1313/tags/liskov-substitution-principle/</link>
+      <link>https://johnjr.dev/tags/liskov-substitution-principle/</link>
       <pubDate>Tue, 22 Apr 2025 11:27:45 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/liskov-substitution-principle/</guid>
+      <guid>https://johnjr.dev/tags/liskov-substitution-principle/</guid>
       <description></description>
     </item>
     <item>
       <title>Architecture</title>
-      <link>http://localhost:1313/tags/architecture/</link>
+      <link>https://johnjr.dev/tags/architecture/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/architecture/</guid>
+      <guid>https://johnjr.dev/tags/architecture/</guid>
       <description></description>
     </item>
     <item>
       <title>Celery</title>
-      <link>http://localhost:1313/tags/celery/</link>
+      <link>https://johnjr.dev/tags/celery/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/celery/</guid>
+      <guid>https://johnjr.dev/tags/celery/</guid>
       <description></description>
     </item>
     <item>
       <title>Crawler</title>
-      <link>http://localhost:1313/tags/crawler/</link>
+      <link>https://johnjr.dev/tags/crawler/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/crawler/</guid>
+      <guid>https://johnjr.dev/tags/crawler/</guid>
       <description></description>
     </item>
     <item>
       <title>ETL</title>
-      <link>http://localhost:1313/tags/etl/</link>
+      <link>https://johnjr.dev/tags/etl/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/etl/</guid>
+      <guid>https://johnjr.dev/tags/etl/</guid>
       <description></description>
     </item>
     <item>
       <title>Improving Legacy Code</title>
-      <link>http://localhost:1313/tags/improving-legacy-code/</link>
+      <link>https://johnjr.dev/tags/improving-legacy-code/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/improving-legacy-code/</guid>
+      <guid>https://johnjr.dev/tags/improving-legacy-code/</guid>
       <description></description>
     </item>
     <item>
       <title>Task Queue</title>
-      <link>http://localhost:1313/tags/task-queue/</link>
+      <link>https://johnjr.dev/tags/task-queue/</link>
       <pubDate>Mon, 10 Feb 2025 14:07:06 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/task-queue/</guid>
+      <guid>https://johnjr.dev/tags/task-queue/</guid>
       <description></description>
     </item>
     <item>
       <title>GIL</title>
-      <link>http://localhost:1313/tags/gil/</link>
+      <link>https://johnjr.dev/tags/gil/</link>
       <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/gil/</guid>
+      <guid>https://johnjr.dev/tags/gil/</guid>
       <description></description>
     </item>
     <item>
       <title>NoGIL</title>
-      <link>http://localhost:1313/tags/nogil/</link>
+      <link>https://johnjr.dev/tags/nogil/</link>
       <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/nogil/</guid>
+      <guid>https://johnjr.dev/tags/nogil/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://johnjr.dev/tags/python/</link>
       <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://johnjr.dev/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Threads</title>
-      <link>http://localhost:1313/tags/threads/</link>
+      <link>https://johnjr.dev/tags/threads/</link>
       <pubDate>Wed, 17 Jul 2024 12:40:06 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/threads/</guid>
+      <guid>https://johnjr.dev/tags/threads/</guid>
       <description></description>
     </item>
     <item>
       <title>Atomic Operations</title>
-      <link>http://localhost:1313/tags/atomic-operations/</link>
+      <link>https://johnjr.dev/tags/atomic-operations/</link>
       <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/atomic-operations/</guid>
+      <guid>https://johnjr.dev/tags/atomic-operations/</guid>
       <description></description>
     </item>
     <item>
       <title>Lua Scripts</title>
-      <link>http://localhost:1313/tags/lua-scripts/</link>
+      <link>https://johnjr.dev/tags/lua-scripts/</link>
       <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/lua-scripts/</guid>
+      <guid>https://johnjr.dev/tags/lua-scripts/</guid>
       <description></description>
     </item>
     <item>
       <title>Redis</title>
-      <link>http://localhost:1313/tags/redis/</link>
+      <link>https://johnjr.dev/tags/redis/</link>
       <pubDate>Mon, 08 Apr 2024 14:15:00 +0000</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/redis/</guid>
+      <guid>https://johnjr.dev/tags/redis/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Structure</title>
-      <link>http://localhost:1313/tags/data-structure/</link>
+      <link>https://johnjr.dev/tags/data-structure/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/data-structure/</guid>
+      <guid>https://johnjr.dev/tags/data-structure/</guid>
       <description></description>
     </item>
     <item>
       <title>FlameGraph</title>
-      <link>http://localhost:1313/tags/flamegraph/</link>
+      <link>https://johnjr.dev/tags/flamegraph/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/flamegraph/</guid>
+      <guid>https://johnjr.dev/tags/flamegraph/</guid>
       <description></description>
     </item>
     <item>
       <title>HashMap</title>
-      <link>http://localhost:1313/tags/hashmap/</link>
+      <link>https://johnjr.dev/tags/hashmap/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/hashmap/</guid>
+      <guid>https://johnjr.dev/tags/hashmap/</guid>
       <description></description>
     </item>
     <item>
       <title>Improving Comparisons</title>
-      <link>http://localhost:1313/tags/improving-comparisons/</link>
+      <link>https://johnjr.dev/tags/improving-comparisons/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/improving-comparisons/</guid>
+      <guid>https://johnjr.dev/tags/improving-comparisons/</guid>
       <description></description>
     </item>
     <item>
       <title>Improving Performance</title>
-      <link>http://localhost:1313/tags/improving-performance/</link>
+      <link>https://johnjr.dev/tags/improving-performance/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/improving-performance/</guid>
+      <guid>https://johnjr.dev/tags/improving-performance/</guid>
       <description></description>
     </item>
     <item>
       <title>Ruby</title>
-      <link>http://localhost:1313/tags/ruby/</link>
+      <link>https://johnjr.dev/tags/ruby/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/ruby/</guid>
+      <guid>https://johnjr.dev/tags/ruby/</guid>
       <description></description>
     </item>
     <item>
       <title>Set</title>
-      <link>http://localhost:1313/tags/set/</link>
+      <link>https://johnjr.dev/tags/set/</link>
       <pubDate>Mon, 13 Mar 2023 14:04:03 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/set/</guid>
+      <guid>https://johnjr.dev/tags/set/</guid>
       <description></description>
     </item>
     <item>
       <title>Book Review</title>
-      <link>http://localhost:1313/tags/book-review/</link>
+      <link>https://johnjr.dev/tags/book-review/</link>
       <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/book-review/</guid>
+      <guid>https://johnjr.dev/tags/book-review/</guid>
       <description></description>
     </item>
     <item>
       <title>Peopleware</title>
-      <link>http://localhost:1313/tags/peopleware/</link>
+      <link>https://johnjr.dev/tags/peopleware/</link>
       <pubDate>Mon, 07 Nov 2022 22:51:26 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/peopleware/</guid>
+      <guid>https://johnjr.dev/tags/peopleware/</guid>
       <description></description>
     </item>
     <item>
       <title>ACID</title>
-      <link>http://localhost:1313/tags/acid/</link>
+      <link>https://johnjr.dev/tags/acid/</link>
       <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/acid/</guid>
+      <guid>https://johnjr.dev/tags/acid/</guid>
       <description></description>
     </item>
     <item>
       <title>Concurrent Transactions</title>
-      <link>http://localhost:1313/tags/concurrent-transactions/</link>
+      <link>https://johnjr.dev/tags/concurrent-transactions/</link>
       <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/concurrent-transactions/</guid>
+      <guid>https://johnjr.dev/tags/concurrent-transactions/</guid>
       <description></description>
     </item>
     <item>
       <title>Database Transactions</title>
-      <link>http://localhost:1313/tags/database-transactions/</link>
+      <link>https://johnjr.dev/tags/database-transactions/</link>
       <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/database-transactions/</guid>
+      <guid>https://johnjr.dev/tags/database-transactions/</guid>
       <description></description>
     </item>
     <item>
       <title>Isolation Level</title>
-      <link>http://localhost:1313/tags/isolation-level/</link>
+      <link>https://johnjr.dev/tags/isolation-level/</link>
       <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/isolation-level/</guid>
+      <guid>https://johnjr.dev/tags/isolation-level/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Intensive Applications</title>
-      <link>http://localhost:1313/tags/data-intensive-applications/</link>
+      <link>https://johnjr.dev/tags/data-intensive-applications/</link>
       <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/data-intensive-applications/</guid>
+      <guid>https://johnjr.dev/tags/data-intensive-applications/</guid>
       <description></description>
     </item>
     <item>
       <title>Distributed System</title>
-      <link>http://localhost:1313/tags/distributed-system/</link>
+      <link>https://johnjr.dev/tags/distributed-system/</link>
       <pubDate>Tue, 20 Jul 2021 10:02:04 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/distributed-system/</guid>
+      <guid>https://johnjr.dev/tags/distributed-system/</guid>
       <description></description>
     </item>
     <item>
       <title>Chrome</title>
-      <link>http://localhost:1313/tags/chrome/</link>
+      <link>https://johnjr.dev/tags/chrome/</link>
       <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/chrome/</guid>
+      <guid>https://johnjr.dev/tags/chrome/</guid>
       <description></description>
     </item>
     <item>
       <title>Crashed</title>
-      <link>http://localhost:1313/tags/crashed/</link>
+      <link>https://johnjr.dev/tags/crashed/</link>
       <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/crashed/</guid>
+      <guid>https://johnjr.dev/tags/crashed/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
+      <link>https://johnjr.dev/tags/docker/</link>
       <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/docker/</guid>
+      <guid>https://johnjr.dev/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Selenium</title>
-      <link>http://localhost:1313/tags/selenium/</link>
+      <link>https://johnjr.dev/tags/selenium/</link>
       <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/selenium/</guid>
+      <guid>https://johnjr.dev/tags/selenium/</guid>
       <description></description>
     </item>
     <item>
       <title>WebDriverException</title>
-      <link>http://localhost:1313/tags/webdriverexception/</link>
+      <link>https://johnjr.dev/tags/webdriverexception/</link>
       <pubDate>Mon, 16 Sep 2019 09:15:55 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/webdriverexception/</guid>
+      <guid>https://johnjr.dev/tags/webdriverexception/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer Vision</title>
-      <link>http://localhost:1313/tags/computer-vision/</link>
+      <link>https://johnjr.dev/tags/computer-vision/</link>
       <pubDate>Wed, 29 Mar 2017 17:00:19 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/computer-vision/</guid>
+      <guid>https://johnjr.dev/tags/computer-vision/</guid>
       <description></description>
     </item>
     <item>
       <title>OpenCV</title>
-      <link>http://localhost:1313/tags/opencv/</link>
+      <link>https://johnjr.dev/tags/opencv/</link>
       <pubDate>Wed, 29 Mar 2017 17:00:19 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/opencv/</guid>
+      <guid>https://johnjr.dev/tags/opencv/</guid>
       <description></description>
     </item>
     <item>
       <title>Operational Research</title>
-      <link>http://localhost:1313/tags/operational-research/</link>
+      <link>https://johnjr.dev/tags/operational-research/</link>
       <pubDate>Sun, 26 Feb 2017 09:42:04 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/operational-research/</guid>
+      <guid>https://johnjr.dev/tags/operational-research/</guid>
       <description></description>
     </item>
     <item>
       <title>Branch and Cut</title>
-      <link>http://localhost:1313/tags/branch-and-cut/</link>
+      <link>https://johnjr.dev/tags/branch-and-cut/</link>
       <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/branch-and-cut/</guid>
+      <guid>https://johnjr.dev/tags/branch-and-cut/</guid>
       <description></description>
     </item>
     <item>
       <title>CPLEX</title>
-      <link>http://localhost:1313/tags/cplex/</link>
+      <link>https://johnjr.dev/tags/cplex/</link>
       <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/cplex/</guid>
+      <guid>https://johnjr.dev/tags/cplex/</guid>
       <description></description>
     </item>
     <item>
       <title>Optimization</title>
-      <link>http://localhost:1313/tags/optimization/</link>
+      <link>https://johnjr.dev/tags/optimization/</link>
       <pubDate>Sun, 08 Jan 2017 16:48:25 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>http://localhost:1313/tags/optimization/</guid>
+      <guid>https://johnjr.dev/tags/optimization/</guid>
       <description></description>
     </item>
   </channel>
