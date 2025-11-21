@@ -2,207 +2,207 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://johnjr.dev/tags/bit-mask/</loc>
+    <loc>http://localhost:1313/tags/bit-mask/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/builder-design-pattern/</loc>
+    <loc>http://localhost:1313/tags/builder-design-pattern/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/builder-design-pattern-and-cyclomatic-complexity-reduction/</loc>
+    <loc>http://localhost:1313/posts/builder-design-pattern-and-cyclomatic-complexity-reduction/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/c&#43;&#43;/</loc>
+    <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/cyclomatic-complexity/</loc>
+    <loc>http://localhost:1313/tags/cyclomatic-complexity/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/design-pattern/</loc>
+    <loc>http://localhost:1313/tags/design-pattern/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/barbara-liskov/</loc>
+    <loc>http://localhost:1313/tags/barbara-liskov/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/composition/</loc>
+    <loc>http://localhost:1313/tags/composition/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/composition-inheritance-and-liskov-substitution-principle/</loc>
+    <loc>http://localhost:1313/posts/composition-inheritance-and-liskov-substitution-principle/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/inheritance/</loc>
+    <loc>http://localhost:1313/tags/inheritance/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/liskov-substitution-principle/</loc>
+    <loc>http://localhost:1313/tags/liskov-substitution-principle/</loc>
     <lastmod>2025-04-22T11:27:45-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/architecture/</loc>
+    <loc>http://localhost:1313/tags/architecture/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/celery/</loc>
+    <loc>http://localhost:1313/tags/celery/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/crawler/</loc>
+    <loc>http://localhost:1313/tags/crawler/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/etl/</loc>
+    <loc>http://localhost:1313/tags/etl/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/improving-legacy-code/</loc>
+    <loc>http://localhost:1313/tags/improving-legacy-code/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/</loc>
+    <loc>http://localhost:1313/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/task-queue/</loc>
+    <loc>http://localhost:1313/tags/task-queue/</loc>
     <lastmod>2025-02-10T14:07:06-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/gil/</loc>
+    <loc>http://localhost:1313/tags/gil/</loc>
     <lastmod>2024-07-17T12:40:06-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</loc>
+    <loc>http://localhost:1313/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/</loc>
     <lastmod>2024-07-17T12:40:06-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/nogil/</loc>
+    <loc>http://localhost:1313/tags/nogil/</loc>
     <lastmod>2024-07-17T12:40:06-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/python/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2024-07-17T12:40:06-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/threads/</loc>
+    <loc>http://localhost:1313/tags/threads/</loc>
     <lastmod>2024-07-17T12:40:06-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/atomic-operations/</loc>
+    <loc>http://localhost:1313/tags/atomic-operations/</loc>
     <lastmod>2024-04-08T14:15:00+00:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/lua-scripts/</loc>
+    <loc>http://localhost:1313/tags/lua-scripts/</loc>
     <lastmod>2024-04-08T14:15:00+00:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/lua-scripts-are-not-atomic-in-redis/</loc>
+    <loc>http://localhost:1313/posts/lua-scripts-are-not-atomic-in-redis/</loc>
     <lastmod>2024-04-08T14:15:00+00:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/redis/</loc>
+    <loc>http://localhost:1313/tags/redis/</loc>
     <lastmod>2024-04-08T14:15:00+00:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/data-structure/</loc>
+    <loc>http://localhost:1313/tags/data-structure/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/flamegraph/</loc>
+    <loc>http://localhost:1313/tags/flamegraph/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/hashmap/</loc>
+    <loc>http://localhost:1313/tags/hashmap/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/improving-comparisons/</loc>
+    <loc>http://localhost:1313/tags/improving-comparisons/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/improving-performance/</loc>
+    <loc>http://localhost:1313/tags/improving-performance/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/</loc>
+    <loc>http://localhost:1313/posts/improving-the-check-if-an-object-is-in-a-set-hashmap-data-structure-in-ruby-by-using-better-comparisons-memoization-and-object-orientation-practices/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/ruby/</loc>
+    <loc>http://localhost:1313/tags/ruby/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/set/</loc>
+    <loc>http://localhost:1313/tags/set/</loc>
     <lastmod>2023-03-13T14:04:03-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/book-review/</loc>
+    <loc>http://localhost:1313/tags/book-review/</loc>
     <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/peopleware/</loc>
+    <loc>http://localhost:1313/tags/peopleware/</loc>
     <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/peopleware-productive-projects-and-teams/</loc>
+    <loc>http://localhost:1313/posts/peopleware-productive-projects-and-teams/</loc>
     <lastmod>2022-11-07T22:51:26-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/acid/</loc>
+    <loc>http://localhost:1313/tags/acid/</loc>
     <lastmod>2022-05-11T10:29:19-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/concurrent-transactions/</loc>
+    <loc>http://localhost:1313/tags/concurrent-transactions/</loc>
     <lastmod>2022-05-11T10:29:19-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/database-transactions/</loc>
+    <loc>http://localhost:1313/tags/database-transactions/</loc>
     <lastmod>2022-05-11T10:29:19-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/isolation-level/</loc>
+    <loc>http://localhost:1313/tags/isolation-level/</loc>
     <lastmod>2022-05-11T10:29:19-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/why-is-atomicity-not-enough/</loc>
+    <loc>http://localhost:1313/posts/why-is-atomicity-not-enough/</loc>
     <lastmod>2022-05-11T10:29:19-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/quicksort/</loc>
+    <loc>http://localhost:1313/posts/quicksort/</loc>
     <lastmod>2021-07-22T15:54:55-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/data-intensive-applications/</loc>
+    <loc>http://localhost:1313/tags/data-intensive-applications/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/designing-data-intensive-applications-review/</loc>
+    <loc>http://localhost:1313/posts/designing-data-intensive-applications-review/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/distributed-system/</loc>
+    <loc>http://localhost:1313/tags/distributed-system/</loc>
     <lastmod>2021-07-20T10:02:04-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/chrome/</loc>
+    <loc>http://localhost:1313/tags/chrome/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/my-first-post/</loc>
+    <loc>http://localhost:1313/posts/my-first-post/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/crashed/</loc>
+    <loc>http://localhost:1313/tags/crashed/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/docker/</loc>
+    <loc>http://localhost:1313/tags/docker/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/selenium/</loc>
+    <loc>http://localhost:1313/tags/selenium/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/webdriverexception/</loc>
+    <loc>http://localhost:1313/tags/webdriverexception/</loc>
     <lastmod>2019-09-16T09:15:55-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/computer-vision/</loc>
+    <loc>http://localhost:1313/tags/computer-vision/</loc>
     <lastmod>2017-03-29T17:00:19-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/identify-paragraphs/</loc>
+    <loc>http://localhost:1313/posts/identify-paragraphs/</loc>
     <lastmod>2017-03-29T17:00:19-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/opencv/</loc>
+    <loc>http://localhost:1313/tags/opencv/</loc>
     <lastmod>2017-03-29T17:00:19-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/operational-research/</loc>
+    <loc>http://localhost:1313/tags/operational-research/</loc>
     <lastmod>2017-02-26T09:42:04-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/my-second-post/</loc>
+    <loc>http://localhost:1313/posts/my-second-post/</loc>
     <lastmod>2017-02-26T09:42:04-04:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/branch-and-cut/</loc>
+    <loc>http://localhost:1313/tags/branch-and-cut/</loc>
     <lastmod>2017-01-08T16:48:25-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/posts/callbacks-in-cplex/</loc>
+    <loc>http://localhost:1313/posts/callbacks-in-cplex/</loc>
     <lastmod>2017-01-08T16:48:25-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/cplex/</loc>
+    <loc>http://localhost:1313/tags/cplex/</loc>
     <lastmod>2017-01-08T16:48:25-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/optimization/</loc>
+    <loc>http://localhost:1313/tags/optimization/</loc>
     <lastmod>2017-01-08T16:48:25-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://johnjr.dev/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://johnjr.dev/mcs/</loc>
+    <loc>http://localhost:1313/mcs/</loc>
   </url><url>
-    <loc>https://johnjr.dev/series/</loc>
+    <loc>http://localhost:1313/series/</loc>
   </url>
 </urlset>

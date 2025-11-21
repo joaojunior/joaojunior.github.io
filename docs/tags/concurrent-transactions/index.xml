@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Concurrent Transactions on John Jr</title>
-    <link>https://johnjr.dev/tags/concurrent-transactions/</link>
+    <link>http://localhost:1313/tags/concurrent-transactions/</link>
     <description>Recent content in Concurrent Transactions on John Jr</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>blog@johnjr.dev (John Jr)</managingEditor>
     <webMaster>blog@johnjr.dev (John Jr)</webMaster>
     <lastBuildDate>Wed, 11 May 2022 10:29:19 -0400</lastBuildDate>
-    <atom:link href="https://johnjr.dev/tags/concurrent-transactions/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/concurrent-transactions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Is Atomicity Not Enough?</title>
-      <link>https://johnjr.dev/posts/why-is-atomicity-not-enough/</link>
+      <link>http://localhost:1313/posts/why-is-atomicity-not-enough/</link>
       <pubDate>Wed, 11 May 2022 10:29:19 -0400</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>https://johnjr.dev/posts/why-is-atomicity-not-enough/</guid>
+      <guid>http://localhost:1313/posts/why-is-atomicity-not-enough/</guid>
       <description>&lt;p&gt;When we study transactions in &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_database&#34;&gt;relational databases&lt;/a&gt;, one of the first&#xA;things we learn are the guarantees that a transaction must provide.&#xA;&lt;a href=&#34;https://en.wikipedia.org/wiki/ACID&#34;&gt;ACID(Atomicity, Consistency, Isolation, Durability)&lt;/a&gt; are the properties that we desire. Here, I will discuss the Isolation level in more detail and&#xA;show that atomicity alone is not enough when handling concurrency.&lt;/p&gt;&#xA;&lt;p&gt;One classic example of the importance of atomicity is moving money&#xA;between accounts. So, imagine that we have two accounts and we would like to transfer the total amount from one account to another one. In a relational database, what we need to do is three steps:&lt;/p&gt;</description>
     </item>
   </channel>
