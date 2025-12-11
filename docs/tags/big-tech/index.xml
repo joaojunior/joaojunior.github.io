@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Big Tech on John Jr</title>
+    <link>https://johnjr.dev/tags/big-tech/</link>
+    <description>Recent content in Big Tech on John Jr</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>blog@johnjr.dev (John Jr)</managingEditor>
+    <webMaster>blog@johnjr.dev (John Jr)</webMaster>
+    <lastBuildDate>Thu, 11 Dec 2025 13:11:25 -0500</lastBuildDate>
+    <atom:link href="https://johnjr.dev/tags/big-tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binary Search</title>
+      <link>https://johnjr.dev/posts/binary-search/</link>
+      <pubDate>Thu, 11 Dec 2025 13:11:25 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
+      <guid>https://johnjr.dev/posts/binary-search/</guid>
+      <description>&lt;p&gt;One of the most fundamental algorithms that appears in interviews at big tech companies is &lt;a href=&#34;https://en.wikipedia.org/wiki/Binary_search&#34;&gt;Binary Search&lt;/a&gt;. Of course, nobody will ask you to implement binary search directly. However, as &lt;a href=&#34;https://en.wikipedia.org/wiki/Jon_Bentley_(computer_scientist)&#34;&gt;Jon Bentley&lt;/a&gt; cited in his famous book &lt;a href=&#34;https://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880&#34;&gt;Programming Pearls&lt;/a&gt;, only a small percentage of people he asked—10% to be precise—were able to code this algorithm without any errors.&lt;/p&gt;&#xA;&lt;p&gt;Here, I will show you a correct implementation of binary search, its variants that appear in interviews, and &lt;a href=&#34;https://leetcode.com/&#34;&gt;LeetCode&lt;/a&gt; problems that you can solve using these techniques.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

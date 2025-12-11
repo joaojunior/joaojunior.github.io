@@ -223,6 +223,70 @@
           
           
             <article class="post-preview">
+    <a href="https://johnjr.dev/posts/binary-search/">
+        <h2 class="post-title">Binary Search</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on December 11, 2025
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;7&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1362&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;John Jr
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <p>One of the most fundamental algorithms that appears in interviews at big tech companies is <a href="https://en.wikipedia.org/wiki/Binary_search">Binary Search</a>. Of course, nobody will ask you to implement binary search directly. However, as <a href="https://en.wikipedia.org/wiki/Jon_Bentley_(computer_scientist)">Jon Bentley</a> cited in his famous book <a href="https://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880">Programming Pearls</a>, only a small percentage of people he asked—10% to be precise—were able to code this algorithm without any errors.</p>
+<p>Here, I will show you a correct implementation of binary search, its variants that appear in interviews, and <a href="https://leetcode.com/">LeetCode</a> problems that you can solve using these techniques.</p>
+        <a href="https://johnjr.dev/posts/binary-search/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+       
+       <a href="https://johnjr.dev/tags/big-tech/">Big tech</a>&nbsp;
+        
+       
+       <a href="https://johnjr.dev/tags/faang/">FAANG</a>&nbsp;
+        
+       
+       <a href="https://johnjr.dev/tags/maang/">MAANG</a>&nbsp;
+        
+       
+       <a href="https://johnjr.dev/tags/interview/">Interview</a>&nbsp;
+        
+       
+       <a href="https://johnjr.dev/tags/binary-search/">Binary Search</a>&nbsp;
+        
+       
+       <a href="https://johnjr.dev/tags/c&#43;&#43;/">C&#43;&#43;</a>&nbsp;
+         
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
     <a href="https://johnjr.dev/posts/builder-design-pattern-and-cyclomatic-complexity-reduction/">
         <h2 class="post-title">Builder Design Pattern and Cyclomatic Complexity Reduction</h2>
         
@@ -410,66 +474,6 @@ Here, I want to discuss composition compared to inheritance and how understandin
         
        
        <a href="https://johnjr.dev/tags/architecture/">Architecture</a>&nbsp;
-         
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://johnjr.dev/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/">
-        <h2 class="post-title">Is CPython Faster Without the Global Interpreter Lock(GIL)?</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 17, 2024
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;7&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1335&nbsp;words
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;John Jr
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>The <a href="https://docs.python.org/3/glossary.html#term-global-interpreter-lock">Global interpreter lock(GIL)</a> is a mechanism in <a href="https://github.com/python/cpython">CPython</a> implementation to ensure only one thread is running at a time.
-This means that even if we use <a href="https://docs.python.org/3/library/threading.html">threads</a> to try to speed up our programs&rsquo; runtime, this will not work because, in the end, the interpreter will block that two or more threads will be executed in parallel.</p>
-<p>As the name suggests, the GIL is a locker that a thread gets when it starts and releases at some moment. There is only one locker, so two threads cannot get it simultaneously. As a result, our program with threads will be slower than the same program without threads because of the time to create threads and not take advantage of them.
-However, this is true only for <a href="https://en.wikipedia.org/wiki/CPU-bound">CPU bound problems</a>, which requires a large amount of CPU time to process, like <a href="https://en.wikipedia.org/wiki/Invertible_matrix">inverse matrix</a>. For I/O bound problems, CPython releases the locker as soon as an I/O call happens. We still have only one thread running at once on the CPU, but now, a thread does not block other threads while waiting for the I/O result.</p>
-        <a href="https://johnjr.dev/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-       
-       <a href="https://johnjr.dev/tags/python/">Python</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/threads/">Threads</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/gil/">GIL</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/nogil/">NoGIL</a>&nbsp;
          
     </div>
     

@@ -8,8 +8,50 @@
     <language>en</language>
     <managingEditor>blog@johnjr.dev (John Jr)</managingEditor>
     <webMaster>blog@johnjr.dev (John Jr)</webMaster>
-    <lastBuildDate>Mon, 10 Nov 2025 10:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 11 Dec 2025 13:11:25 -0500</lastBuildDate>
     <atom:link href="https://johnjr.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big Tech</title>
+      <link>https://johnjr.dev/tags/big-tech/</link>
+      <pubDate>Thu, 11 Dec 2025 13:11:25 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
+      <guid>https://johnjr.dev/tags/big-tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Binary Search</title>
+      <link>https://johnjr.dev/tags/binary-search/</link>
+      <pubDate>Thu, 11 Dec 2025 13:11:25 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
+      <guid>https://johnjr.dev/tags/binary-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://johnjr.dev/tags/c&#43;&#43;/</link>
+      <pubDate>Thu, 11 Dec 2025 13:11:25 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
+      <guid>https://johnjr.dev/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FAANG</title>
+      <link>https://johnjr.dev/tags/faang/</link>
+      <pubDate>Thu, 11 Dec 2025 13:11:25 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
+      <guid>https://johnjr.dev/tags/faang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interview</title>
+      <link>https://johnjr.dev/tags/interview/</link>
+      <pubDate>Thu, 11 Dec 2025 13:11:25 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
+      <guid>https://johnjr.dev/tags/interview/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MAANG</title>
+      <link>https://johnjr.dev/tags/maang/</link>
+      <pubDate>Thu, 11 Dec 2025 13:11:25 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
+      <guid>https://johnjr.dev/tags/maang/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Bit Mask</title>
       <link>https://johnjr.dev/tags/bit-mask/</link>
@@ -22,13 +64,6 @@
       <link>https://johnjr.dev/tags/builder-design-pattern/</link>
       <pubDate>Mon, 10 Nov 2025 10:00:00 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
       <guid>https://johnjr.dev/tags/builder-design-pattern/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>C&#43;&#43;</title>
-      <link>https://johnjr.dev/tags/c&#43;&#43;/</link>
-      <pubDate>Mon, 10 Nov 2025 10:00:00 -0500</pubDate><author>blog@johnjr.dev (John Jr)</author>
-      <guid>https://johnjr.dev/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>

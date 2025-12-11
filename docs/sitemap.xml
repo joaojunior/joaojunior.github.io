@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://johnjr.dev/tags/big-tech/</loc>
+    <lastmod>2025-12-11T13:11:25-05:00</lastmod>
+  </url><url>
+    <loc>https://johnjr.dev/posts/binary-search/</loc>
+    <lastmod>2025-12-11T13:11:25-05:00</lastmod>
+  </url><url>
+    <loc>https://johnjr.dev/tags/binary-search/</loc>
+    <lastmod>2025-12-11T13:11:25-05:00</lastmod>
+  </url><url>
+    <loc>https://johnjr.dev/tags/c&#43;&#43;/</loc>
+    <lastmod>2025-12-11T13:11:25-05:00</lastmod>
+  </url><url>
+    <loc>https://johnjr.dev/tags/faang/</loc>
+    <lastmod>2025-12-11T13:11:25-05:00</lastmod>
+  </url><url>
+    <loc>https://johnjr.dev/tags/interview/</loc>
+    <lastmod>2025-12-11T13:11:25-05:00</lastmod>
+  </url><url>
+    <loc>https://johnjr.dev/</loc>
+    <lastmod>2025-12-11T13:11:25-05:00</lastmod>
+  </url><url>
+    <loc>https://johnjr.dev/tags/maang/</loc>
+    <lastmod>2025-12-11T13:11:25-05:00</lastmod>
+  </url><url>
+    <loc>https://johnjr.dev/posts/</loc>
+    <lastmod>2025-12-11T13:11:25-05:00</lastmod>
+  </url><url>
+    <loc>https://johnjr.dev/tags/</loc>
+    <lastmod>2025-12-11T13:11:25-05:00</lastmod>
+  </url><url>
     <loc>https://johnjr.dev/tags/bit-mask/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
@@ -11,22 +41,10 @@
     <loc>https://johnjr.dev/posts/builder-design-pattern-and-cyclomatic-complexity-reduction/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://johnjr.dev/tags/c&#43;&#43;/</loc>
-    <lastmod>2025-11-10T10:00:00-05:00</lastmod>
-  </url><url>
     <loc>https://johnjr.dev/tags/cyclomatic-complexity/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
     <loc>https://johnjr.dev/tags/design-pattern/</loc>
-    <lastmod>2025-11-10T10:00:00-05:00</lastmod>
-  </url><url>
-    <loc>https://johnjr.dev/</loc>
-    <lastmod>2025-11-10T10:00:00-05:00</lastmod>
-  </url><url>
-    <loc>https://johnjr.dev/posts/</loc>
-    <lastmod>2025-11-10T10:00:00-05:00</lastmod>
-  </url><url>
-    <loc>https://johnjr.dev/tags/</loc>
     <lastmod>2025-11-10T10:00:00-05:00</lastmod>
   </url><url>
     <loc>https://johnjr.dev/tags/barbara-liskov/</loc>

@@ -218,6 +218,66 @@
         <div class="posts-list">
           
             <article class="post-preview">
+    <a href="https://johnjr.dev/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/">
+        <h2 class="post-title">Is CPython Faster Without the Global Interpreter Lock(GIL)?</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 17, 2024
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;7&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1335&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;John Jr
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <p>The <a href="https://docs.python.org/3/glossary.html#term-global-interpreter-lock">Global interpreter lock(GIL)</a> is a mechanism in <a href="https://github.com/python/cpython">CPython</a> implementation to ensure only one thread is running at a time.
+This means that even if we use <a href="https://docs.python.org/3/library/threading.html">threads</a> to try to speed up our programs&rsquo; runtime, this will not work because, in the end, the interpreter will block that two or more threads will be executed in parallel.</p>
+<p>As the name suggests, the GIL is a locker that a thread gets when it starts and releases at some moment. There is only one locker, so two threads cannot get it simultaneously. As a result, our program with threads will be slower than the same program without threads because of the time to create threads and not take advantage of them.
+However, this is true only for <a href="https://en.wikipedia.org/wiki/CPU-bound">CPU bound problems</a>, which requires a large amount of CPU time to process, like <a href="https://en.wikipedia.org/wiki/Invertible_matrix">inverse matrix</a>. For I/O bound problems, CPython releases the locker as soon as an I/O call happens. We still have only one thread running at once on the CPU, but now, a thread does not block other threads while waiting for the I/O result.</p>
+        <a href="https://johnjr.dev/posts/is-cpython-faster-without-the-global-interpreter-lock-gil/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+       
+       <a href="https://johnjr.dev/tags/python/">Python</a>&nbsp;
+        
+       
+       <a href="https://johnjr.dev/tags/threads/">Threads</a>&nbsp;
+        
+       
+       <a href="https://johnjr.dev/tags/gil/">GIL</a>&nbsp;
+        
+       
+       <a href="https://johnjr.dev/tags/nogil/">NoGIL</a>&nbsp;
+         
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
     <a href="https://johnjr.dev/posts/lua-scripts-are-not-atomic-in-redis/">
         <h2 class="post-title">Lua Scripts Are Not Atomic in Redis</h2>
         
@@ -386,68 +446,6 @@ This post explains the problem and the solution to it.</p>
         
        
        <a href="https://johnjr.dev/tags/peopleware/">Peopleware</a>&nbsp;
-         
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://johnjr.dev/posts/why-is-atomicity-not-enough/">
-        <h2 class="post-title">Why Is Atomicity Not Enough?</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 11, 2022
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1231&nbsp;words
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;John Jr
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>When we study transactions in <a href="https://en.wikipedia.org/wiki/Relational_database">relational databases</a>, one of the first
-things we learn are the guarantees that a transaction must provide.
-<a href="https://en.wikipedia.org/wiki/ACID">ACID(Atomicity, Consistency, Isolation, Durability)</a> are the properties that we desire. Here, I will discuss the Isolation level in more detail and
-show that atomicity alone is not enough when handling concurrency.</p>
-<p>One classic example of the importance of atomicity is moving money
-between accounts. So, imagine that we have two accounts and we would like to transfer the total amount from one account to another one. In a relational database, what we need to do is three steps:</p>
-        <a href="https://johnjr.dev/posts/why-is-atomicity-not-enough/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-       
-       <a href="https://johnjr.dev/tags/acid/">ACID</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/isolation-level/">Isolation level</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/database-transactions/">Database transactions</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/concurrent-transactions/">Concurrent transactions</a>&nbsp;
          
     </div>
     

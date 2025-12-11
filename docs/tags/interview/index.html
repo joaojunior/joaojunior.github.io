@@ -12,7 +12,7 @@
  
 
 
-      <title>Posts - </title>
+      <title>Interview - </title>
 
   <meta name="author" content="John Jr"/><script type="application/ld+json">
 {
@@ -35,13 +35,13 @@
 }
 </script>
 
-<meta property="og:title" content="Posts" />
+<meta property="og:title" content="Interview" />
 <meta property="og:image" content="https://johnjr.dev/jj1.jpg" />
-<meta property="og:url" content="https://johnjr.dev/posts/" />
+<meta property="og:url" content="https://johnjr.dev/tags/interview/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="John Jr" />
 
-  <meta name="twitter:title" content="Posts" />
+  <meta name="twitter:title" content="Interview" />
   <meta name="twitter:image" content="https://johnjr.dev/jj1.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <link href='https://johnjr.dev/img/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -192,9 +192,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="posts-heading">
+            <div class="tags-heading">
               
-                <h1>Posts</h1>
+                <h1>Interview</h1>
               
               
                 <hr class="small">
@@ -281,210 +281,7 @@
 
 </article>
           
-            <article class="post-preview">
-    <a href="https://johnjr.dev/posts/builder-design-pattern-and-cyclomatic-complexity-reduction/">
-        <h2 class="post-title">Builder Design Pattern and Cyclomatic Complexity Reduction</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on November 10, 2025
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;8&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1590&nbsp;words
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;John Jr
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>In this post, I will explain in detail how I used the <a href="https://en.wikipedia.org/wiki/Builder_pattern">builder design pattern</a> together with the <a href="https://en.wikipedia.org/wiki/Bit_field">bit mask field</a> technique to reduce complexity. As a result, I decreased the <a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity">cyclomatic complexity</a> from 24 to 0 and reduced development time from hours to minutes.</p>
-<p>The rest of this post is organized as follows sections:</p>
-<ul>
-<li><a href="#the-problem"><strong>The problem</strong></a> explains the problem I was solving.</li>
-<li><a href="#creating-the-bit-mask-field"><strong>Creating the bit mask field</strong></a> presents a solution to the problem.</li>
-<li><a href="#cyclomatic-complexity"><strong>Cyclomatic Complexity</strong></a> discusses cyclomatic complexity and calculates this metric for the solution presented in the section above.</li>
-<li><a href="#builder-design-pattern"><strong>Builder design pattern</strong></a> explains the builder design pattern and describes the refactoring process that removed complexity.</li>
-<li><a href="#conclusion"><strong>Conclusion</strong></a> summarizes this post.</li>
-<li><a href="#references"><strong>References</strong></a> provides references related to the topics discussed here.</li>
-</ul>
-<p>All the examples shown here are in C++.</p>
-        <a href="https://johnjr.dev/posts/builder-design-pattern-and-cyclomatic-complexity-reduction/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-       
-       <a href="https://johnjr.dev/tags/builder-design-pattern/">Builder design pattern</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/cyclomatic-complexity/">Cyclomatic Complexity</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/bit-mask/">Bit Mask</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/design-pattern/">Design Pattern</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/c&#43;&#43;/">C&#43;&#43;</a>&nbsp;
-         
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://johnjr.dev/posts/composition-inheritance-and-liskov-substitution-principle/">
-        <h2 class="post-title">Composition, Inheritance, and Liskov Substitution Principle</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on April 22, 2025
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;5&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;865&nbsp;words
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;John Jr
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>In software development, organizing our codebase in a way that is easy to maintain is always a good practice, and this idea is not new.
-Actually, I think this started in 1968 when the term <a href="https://en.wikipedia.org/wiki/Software_crisis">software crisis</a> was coined. Since then, we have developed many principles to help us achieve this goal.
-One person who has made many contributions to this field is <a href="https://pmg.csail.mit.edu/~liskov/">Barbara Liskov</a>. She is very famous for the <a href="https://en.wikipedia.org/wiki/Liskov_substitution_principle">Liskov Substitution Principle (LSP)</a>, but she also invented the <a href="https://dl.acm.org/doi/pdf/10.1145/800233.807045">Abstract Data Type(ADT)</a>, which is the core concept of classes and <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">object-oriented programming</a>.
-Here, I want to discuss composition compared to inheritance and how understanding the Liskov Substitution Principle can help you develop better software.</p>
-        <a href="https://johnjr.dev/posts/composition-inheritance-and-liskov-substitution-principle/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-       
-       <a href="https://johnjr.dev/tags/inheritance/">Inheritance</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/composition/">Composition</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/liskov-substitution-principle/">Liskov Substitution Principle</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/barbara-liskov/">Barbara Liskov</a>&nbsp;
-         
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://johnjr.dev/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/">
-        <h2 class="post-title">Improving legacy code: Using Task Queue to Speed Up a Crawler in an ETL Process</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 10, 2025
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;9&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1861&nbsp;words
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;John Jr
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>In this post, I will present how I improved an ETL process to be more than 4x faster using the same resources. While the old architecture used Python threads, the new one used task queue architecture to be more reliable and scalable. So, I will explain how we can improve a legacy code and speed it up by only modifying the architecture to run the code.</p>
-<p>Almost 10 years ago, I was hired to improve a system and train a team of engineers in Python and scalable systems. The company had an ETL process to provide financial information for the finance team. The ETL was composed of the crawler, the parser, and the normalizer. The crawler&rsquo;s primary responsibility was crawling finance data on our partners’ websites, which were protected by a username and password. The parser converted CSV, HTML, and JSON data and saved the result in our intermediate database. The last step, the normalizer, summarized the data using some keys and sent it to the system where the finance team could access it.</p>
-        <a href="https://johnjr.dev/posts/using-task-queue-to-speed-up-a-crawler-in-an-etl-process/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-       
-       <a href="https://johnjr.dev/tags/etl/">ETL</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/crawler/">Crawler</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/improving-legacy-code/">Improving legacy code</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/task-queue/">Task queue</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/celery/">Celery</a>&nbsp;
-        
-       
-       <a href="https://johnjr.dev/tags/architecture/">Architecture</a>&nbsp;
-         
-    </div>
-    
-
-</article>
-          
         </div>
-        
-          <ul class="pager main-pager">
-            
-            
-              <li class="next">
-                <a href="https://johnjr.dev/posts/page/2/">Older Posts &rarr;</a>
-              </li>
-            
-          </ul>
         
       </div>
     </div>
@@ -540,7 +337,7 @@ Here, I want to discuss composition compared to inheritance and how understandin
           
           
           <li>
-            <a href="/posts/index.xml" title="RSS">
+            <a href="/tags/interview/index.xml" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
